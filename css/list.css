@@ -1,4 +1,18 @@
 @import "./_color.css";
 @import "./_input.css";
 @import "./_button.css";
+@import "./_header.css";
 @import "./_sidebar.css";
+
+/* contents_container */
+.contents_container{
+  position: relative;
+  z-index: 1100;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contents_container .contents{
+  position: relative;
+  z-index: 999;
+  width: calc(100% - 190px);
+}

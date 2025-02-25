@@ -2,81 +2,82 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
   <title>Title</title>
 </head>
 <body>
 <div class="wrap">
-  <div class="container">
-    <aside class="side_bar">
-      <div class="nav_head_logo">
+  <div class="container contents_container">
+    
+    <!-- aside lnb -->
+    <aside class="lnb_bar__area">
+      <div class="nav_logo__box">
         <img src="../img/logo/default_head_logo.svg" />
       </div>
-      <div class="side_bar_content">
-        <div class="side_bar_box">
+      <div class="lnb_bar__box">
+        <nav class="lnb_bar_content">
           <ul>
-            <li class="gnb1 home">
+            <li class="lnb1 home">
               <div>
-                <a href="#" class="">DashBoard</a>
+                <a href="javascript:;" class="">DashBoard</a>
               </div>
             </li>
-            <li class="gnb1 project on">
+            <li class="lnb1 project on">
               <div>
                 <p>Project</p>
                 <span class="menu_arrow"></span>
               </div>
-
-<!--                          <ol class="sub_menu">-->
-<!--                            <li>-->
-<!--                              SubMenu 1-->
-<!--                            </li>-->
-<!--                            <li>-->
-<!--                              SubMenu 2-->
-<!--                            </li>-->
-<!--                            <li>-->
-<!--                              SubMenu 3-->
-<!--                            </li>-->
-<!--                            <li>-->
-<!--                              SubMenu 4-->
-<!--                            </li>-->
-<!--                          </ol>-->
+                <ol class="sub_menu">
+                  <li>
+                    <a href="javascript:;">SubMenu 1</a>
+                  </li>
+                  <li class="on">
+                    <a href="javascript:;">SubMenu 2</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">SubMenu 3</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">SubMenu 4</a>
+                  </li>
+                </ol>
             </li>
-            <li class="gnb1 overview">
+            <li class="lnb1 overview">
               <div>
                 <p>Overview</p>
                 <span class="menu_arrow"></span>
               </div>
             </li>
-            <li class="gnb1 category">
+            <li class="lnb1 category">
               <div>
                 <p>List</p>
                 <span class="menu_arrow"></span>
               </div>
             </li>
-            <li class="gnb1 dashboard">
+            <li class="lnb1 dashboard">
               <div>
                 <p>Dashboard</p>
                 <span class="menu_arrow"></span>
               </div>
             </li>
-            <li class="gnb1 favorite">
+            <li class="lnb1 favorite">
               <div>
                 <p>Favorite</p>
                 <span class="menu_arrow"></span>
               </div>
             </li>
-            <li class="gnb1 schedule">
+            <li class="lnb1 schedule">
               <div>
                 <p>Schedule</p>
                 <span class="menu_arrow"></span>
               </div>
             </li>
           </ul>
-        </div>
-        <div class="side_bar_user_box">
+        </nav>
+        <div class="lnb_bar_user_box">
           <div class="profile_img">
-
+            <img src="/img/icon/light/icon_default_profile.svg" alt="default_profile">
           </div>
           <div class="profile_info">
             <p>UserName</p>
@@ -85,6 +86,52 @@
         </div>
       </div>
     </aside>
+    <!-- aside lnb fin -->
+
+    <div class="contents">
+      <!-- header -->
+      <header>
+        <div class="gnb_bar__area">
+          <div class="depth__box">
+            <ul>
+              <li class="home">HOME</li>
+              <li class="depth">List</li>
+            </ul>
+          </div>
+          <div class="control__box">
+            <div class="notify on">
+              <a href="javascript:;">notify</a>
+            </div>
+            <div class="mail">
+              <a href="javascript:;">mail</a>
+            </div>
+            <div class="language on">
+              <div>
+                <span class="icon">language</span>
+                <span class="text">KOR</span>
+              </div>
+              <ul>
+                <li>ENG</li>
+                <li>JPN</li>
+              </ul>
+            </div>
+            <div class="logout">
+              <a href="javascript:;">logout</a>
+            </div>
+            <div class="screen_mode">
+              <a href="javascript:;">screen_mode</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header fin -->
+
+      <!-- list content -->
+      <section class="content">
+
+      </section>
+      <!-- list content fin -->
+    </div>
   </div>
 
 </div>
