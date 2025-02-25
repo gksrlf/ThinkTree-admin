@@ -10,12 +10,12 @@
   box-sizing: border-box;
 }
 
-.login_content {
+.login__area {
   width: 100%;
   max-width: 600px;
 }
 
-.logo_box {
+.logo__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,7 @@
   margin-bottom: 24px;
 }
 
-.login_form {
+.login_form__box {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -49,54 +49,54 @@
   margin-bottom: 50px;
 }
 
-.title_txt {
+.form_title .title_txt {
   color : var(--brand-primary-default);
   font-size: 56px;
 }
 
-.form_input_box {
+.form_input{
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-bottom: 35px;
 }
 
-.login_text_input {
+.form_input .login_text_input {
   border-radius: 6px;
   height: 60px;
   padding: 0 48px;
   box-sizing: border-box;
 }
 
-.login_text_input:first-child {
+.form_input .login_text_input:first-child {
   margin-bottom: 14px;
   background: var(--field-login-bg) url("../img/icon/icon_login_id.svg") no-repeat 14px center;
 }
 
-.login_text_input:last-child {
+.form_input .login_text_input:last-child {
   background: url("../img/icon/icon_login_pw.svg"),url("../img/icon/icon_login_pw_eye.svg") var(--field-login-bg);
   background-position: 14px center, right 14px center;
   background-repeat: no-repeat;
 
 }
 
-.form_check_box {
+.form_check {
   display: flex;
   align-items: center;
   width: 100%;
   margin-bottom: 35px;
 }
-.form_check_box input,
-.form_check_box label{
+.form_check input,
+.form_check label{
   cursor: pointer;
 }
 
-.form_btn_box {
+.form_btn {
   width: 100%;
     margin-bottom: 35px;
 }
 
-.form_submit {
+.form_btn .form_submit {
   width: 100%;
   background-color: var(--brand-primary-default);
   border-radius: 4px;
@@ -116,31 +116,35 @@
 }
 
 @media screen and (max-width: 640px) {
-  .login_content{
+  .login__area{
     max-width: 80%;
   }
-  .login_form{
+  .login_form__box{
     height: auto;
-    padding: 40px 25px 40px;
+    padding: 40px 20px 40px;
   }
-  .logo_box{height: auto;}
+  .logo_box{
+    height: auto;
+  }
   .form_title{
     margin-bottom: 30px;
   }
-  .title_txt{font-size: 30px;}
-  .form_input_box{
+  .form_title .title_txt{
+    font-size: 30px;
+  }
+  .form_input{
     margin-bottom: 25px;
   }
-  .login_text_input{
+  .form_input .login_text_input{
     height: 50px;
   }
-  .form_check_box{
+  .form_check{
     margin-bottom: 25px;
   }
-  .form_submit{
+  .form_btn{
+    margin-bottom: 25px;
+  }
+  .form_btn .form_submit{
     height: 50px;
-  }
-  .form_btn_box{
-    margin-bottom: 25px;
   }
 }
