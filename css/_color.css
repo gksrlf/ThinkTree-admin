@@ -1,0 +1,375 @@
+:root {
+  /* common */
+  --common-100 : #FFFFFF;
+  --common-0 : #000000;
+
+  /* Gray */
+  --gray-99 : #F8F8F8;
+  --gray-95 : #EEEEEE;
+  --gray-90 : #DDDDDD;
+  --gray-80 : #CCCCCC;
+  --gray-75 : #BBBBBB;
+  --gray-70 : #999999;
+  --gray-60 : #888888;
+  --gray-50 : #666666;
+  --gray-45 : #5C5C5C;
+  --gray-40 : #474747;
+  --gray-35 : #333333;
+  --gray-30 : #282828;
+  --gray-25 : #222222;
+  --gray-20 : #1D1D1D;
+  --gray-15 : #1C1C1C;
+  --gray-10 : #0F0F0F;
+  --gray-5 : #0D0D0D;
+
+  /* Gray Gradation */
+  --gray-gradation-20-10: linear-gradient(133deg, #222 54%, #1c1c1c 91%);
+  --gray-gradation-30-20: linear-gradient(133deg, #333 54%, #222 91%);
+
+  /* Blue */
+  --blue-50 : #F7FAFD;
+  --blue-100 : #DBEAFE;
+  --blue-200 : #BFDBFE;
+  --blue-300 : #93C5FD;
+  --blue-400 : #60A5FA;
+  --blue-500 : #3B82F6;
+  --blue-600 : #2563EB;
+  --blue-700 : #1D4ED8;
+  --blue-800 : #1E40AF;
+  --blue-900 : #1E3A8A;
+
+  /* GrayBlue  */
+  --gray-blue-50 : #F7FAFD;
+  --gray-blue-100 : #F7FAFD;
+  --gray-blue-300 : #E2EDF8;
+  --gray-blue-500 : #D6E6F5;
+  --gray-blue-700 : #9FB4DD;
+  --gray-blue-900 : #5D83CA;
+
+  /* Pink */
+  /* pink-25 도없어서 따로 정리해둠 */
+  --pink-25 : #fff5f6;
+  --pink-50 : #FFF5F6;
+  --pink-100 : #FFDDE3;
+  --pink-200 : #FFC3CF;
+  --pink-300 : #FFA7B8;
+  --pink-400 : #FE889F;
+  --pink-500 : #F46B85;
+  --pink-600 : #DF5672;
+  --pink-700 : #C6435F;
+  --pink-800 : #AB2F4B;
+  --pink-900 : #8F1637;
+
+  /* GrayPink */
+  --gray-pink-50 : #FDF7F8;
+  --gray-pink-100 : #FAF1F3;
+  --gray-pink-300 : #F9ECEF;
+  --gray-pink-500 : #F5D6DD;
+  --gray-pink-700 : #DE8EA0;
+  --gray-pink-900 : #D96B84;
+
+  /* Apricot */
+  --apricot-50 : #FFF4EA;
+  --apricot-100 : #FEE8D3;
+  --apricot-200 : #FEDBBC;
+  --apricot-300 : #FECEA5;
+  --apricot-400 : #FEC79A;
+  --apricot-500 : #FEB17F;
+  --apricot-600 : #FEA074;
+  --apricot-700 : #FD8F6A;
+  --apricot-800 : #F6815C;
+  --apricot-900 : #EE744D;
+
+  /* GrayApricot */
+  /* --gray-apricot-50 은 없는데 쓴다고 되어있어 추가함. */
+  --gray-apricot-50 : #fff9f2;
+  --gray-apricot-100 : #F7E8D3;
+  --gray-apricot-300 : #F1D5B6;
+  --gray-apricot-500 : #E9C39B;
+  --gray-apricot-700 : #E1B081;
+  --gray-apricot-900 : #D99C6A;
+
+  /* Red */
+  --red-50 : #FEF2F2;
+  --red-100 : #FEE2E2;
+  --red-200 : #FECACA;
+  --red-300 : #FCA5A5;
+  --red-400 : #F87171;
+  --red-500 : #EF4444;
+  --red-600 : #DC2626;
+  --red-700 : #B91C1C;
+  --red-800 : #991B1B;
+  --red-900 : #7F1D1D;
+
+  /* Yellow */
+  --yellow-50 : #FEFCE8;
+  --yellow-100 : #FEF9C3;
+  --yellow-200 : #FEF08A;
+  --yellow-300 : #FDE047;
+  --yellow-400 : #FACC15;
+  --yellow-500 : #EAB308;
+  --yellow-600 : #CA8A04;
+  --yellow-700 : #A16207;
+  --yellow-800 : #854D0E;
+  --yellow-900 : #713F12;
+
+  /* Green  */
+  --grren-500 : #8ED121;
+
+  /* Pastel Colors */
+  --pastel-purple-50 : #EFE4F9;
+  --pastel-purple-100 : #E6D5F6;
+  --pastel-red-50 : #F6E7E4;
+  --pastel-red-100 : #F1DAD5;
+  --pastel-green-50 : #E7F3E7;
+  --pastel-green-100 : #DAECDA;
+  --pastel-yellow-50 : #FAF1DA;
+  --pastel-yellow-100 : #F8EBC9;
+  --pastel-orange-50 : #FDE5CF;
+  --pastel-orange-100 : #FCDABA;
+  --pastel-skyblue-50 : #DCEFFD;
+  --pastel-skyblue-100 : #CAE7FC;
+
+  /* MutedColor */
+  --muted-blue : #215478;
+  --muted-purple : #4F2D74;
+  --muted-brown : #794716;
+  --muted-yellow : #735811;
+  --muted-brickred : #763326;
+  --muted-green : #325830;
+
+  /* Sementic */
+  --state-placeholder : #999999;
+  --state-alert-success : #8ed121;
+  --state-alert-warning : #facc15;
+  --state-alert-error : #ef4444;
+  --state-disabled-text : #888888;
+  --state-disabled-icon : #cccccc;
+}
+
+:root,
+:root.light {
+  --brand-primary-dark : var(--blue-900);
+  --brand-primary-dark-muted : var(--gray-blue-900);
+  --brand-primary-light-muted : var(--gray-blue-700);
+  --brand-primary-default : var(--blue-600);
+  --brand-primary-midium : var(--blue-400);
+  --brand-primary-light-table-focus : var(--blue-200);
+  --brand-primary-light : var(--blue-200);
+  --brand-primary-lighter : var(--blue-100);
+  --brand-primary-lightest : var(--blue-50);
+  --neutral-default : var(--gray-25);
+  --neutral-darkest : var(--gray-40);
+  --neutral-darker : var(--gray-50);
+  --neutral-dark : var(--gray-70);
+  --neutral-midium : var(--gray-80);
+  --neutral-light : var(--gray-90);
+  --neutral-lighter : var(--gray-95);
+  --neutral-lightest : var(--gray-99);
+  --bg-default : var(--common-100);
+  --field-login-bg :var(--gray-99);
+  --field-login-disabled-border : var(--gray-90);
+  --field-table-bg : var(--common-100);
+  --field-table-border : var(--gray-90);
+  --field-inactive-bg : var(--gray-blue-100);
+  --field-inactive-border : var(--gray-blue-500);
+  --field-focused-bg : var(--gray-blue-100);
+  --field-focused-border : var(--blue-600);
+  --field-disable-bg : var(--gray-99);
+  --field-disable-border : var(--gray-90);
+  --field-required-bg : var(--yellow-50);
+  --field-required-border : var(--yellow-200);
+  --field-error-bg : var(--red-50);
+  --field-error-border : var(--red-200);
+  --bg-base : var(--gray-99);
+  --button-icon-border-inverse : var(--common-100);
+  --button-bg-quickmenu-toggle-bg : var(--common-100);
+  --button-text-filled-text : var(--common-100);
+  --button-text-outlined-text : var(--blue-600);
+  --button-hover-outlined-bg : var(--gray-blue-100);
+  --button-hover-outlined-border : var(--blue-600);
+  --button-hover-filled-bg : var(--blue-900);
+  --button-hover-form-bg : var(--red-50);
+  --button-disabled-outlined-bg : var(--gray-99);
+  --button-tab-default-inactive-text : var(--gray-blue-900);
+  --button-tab-default-inactive-bg : var(--blue-100);
+  --button-tab-top-inactive-bg : var(--blue-700);
+  --button-tab-top-active-bg : var(--gray-blue-900);
+  --button-disabled-outlined-border :var(--gray-90);
+  --login-bg : var(--gray-80);
+  --button-disabled-filled-bg : var(--gray-80);
+  --button-disabled-filled-text : var(--common-100);
+  --login-box-bg : var(--common-100);
+  --login-box-border : var(--common-100);
+  --schedule-day-bg : var(--gray-blue-100);
+  --schedule-date-bg : var(--common-100);
+  --schedule-date-focus-bg : var(--gray-blue-100);
+  --schedule-date-focus-line : var(--blue-400);
+  --schedule-date-today-bg : var(--yellow-50);
+  --schedule-today-focus-line : var(--yellow-300);
+  --schedule-day-text : var(--blue-800);
+  --schedule-bar-text : var(--gray-50);
+  --schedule-bar-color1 : var(--pastel-purple-50);
+  --schedule-bar-color2 : var(--pastel-red-50);
+  --schedule-bar-color3 : var(--pastel-green-50);
+  --schedule-bar-color4 : var(--pastel-yellow-50);
+  --schedule-bar-color5 : var(--pastel-orange-100);
+  --schedule-bar-color6 : var(--pastel-skyblue-50);
+  --schedule-bullet-color1 : var(--pastel-purple-100);
+  --schedule-bullet-color2 : var(--pastel-red-100);
+  --schedule-bullet-color3 : var(--pastel-green-100);
+  --schedule-bullet-color4 : var(--pastel-yellow-100);
+  --schedule-bullet-color5 : var(--pastel-orange-50);
+  --schedule-bullet-color6 : var(--pastel-skyblue-100);
+}
+
+:root.pastel {
+  --brand-primary-dark : var(--blue-500);
+  --brand-primary-dark-muted : var(--gray-blue-900);
+  --brand-primary-light-muted : var(--gray-blue-700);
+  --brand-primary-default : var(--blue-400);
+  --brand-primary-midium : var(--blue-300);
+  --brand-primary-light-table-focus : var(--gray-blue-900);
+  --brand-primary-light : var(--gray-40);
+  --brand-primary-lighter : var(--gray-40);
+  --brand-primary-lightest : var(--gray-30);
+  --neutral-default : var(--common-100);
+  --neutral-darkest : var(--gray-75);
+  --neutral-darker : var(--gray-50);
+  --neutral-dark : var(--gray-60);
+  --neutral-midium : var(--gray-40);
+  --neutral-light : var(--gray-40);
+  --neutral-lighter : var(--gray-35);
+  --neutral-lightest : var(--gray-15);
+  --bg-default : var(--gray-5);
+  --field-login-bg :var(--gray-25);
+  --field-login-disabled-border : var(--gray-20);
+  --field-table-bg : var(--gray-20);
+  --field-table-border : var(--gray-90);
+  --field-inactive-bg : var(--gray-apricot-50);
+  --field-inactive-border : var(--apricot-300);
+  --field-focused-bg : var(--gray-apricot-50);
+  --field-focused-border : var(--apricot-800);
+  --field-disable-bg : var(--gray-99);
+  --field-disable-border : var(--gray-90);
+  --field-required-bg : var(--gray-pink-50);
+  --field-required-border : var(--gray-pink-50);
+  --field-error-bg : var(--common-100);
+  --field-error-border : var(--state-alert-error);
+  --bg-base : var(--gray-99);
+  --button-icon-border-inverse : var(--common-100);
+  --button-bg-quickmenu-toggle-bg : var(--common-100);
+  --button-text-filled-text : var(--common-100);
+  --button-text-outlined-text : var(--blue-600);
+  --button-hover-outlined-bg : var(--pink-25);
+  --button-hover-outlined-border : var(--blue-600);
+  --button-hover-filled-bg : var(--pink-600);
+  --button-hover-form-bg : var(--red-50);
+  --button-disabled-outlined-bg : var(--gray-99);
+  --button-tab-default-inactive-text : var(--gray-pink-900);
+  --button-tab-default-inactive-bg : var(--blue-100);
+  --button-tab-top-inactive-bg : var(--blue-700);
+  --button-tab-top-active-bg : var(--gray-blue-900);
+  --button-disabled-outlined-border :var(--gray-90);
+  --login-bg : var(--pink-25);
+  --button-disabled-filled-bg : var(--gray-15);
+  --button-disabled-filled-text : var(--gray-60);
+  --login-box-bg : var(--common-100);
+  --login-box-border : var(--common-100);
+  --schedule-day-bg : var(--gray-pink-100);
+  --schedule-date-bg : var(--common-100);
+  --schedule-date-focus-bg : var(--gray-pink-100);
+  --schedule-date-focus-line : var(--blue-400);
+  --schedule-date-today-bg : var(--yellow-50);
+  --schedule-today-focus-line : var(--yellow-300);
+  --schedule-day-text : var(--pink-700);
+  --schedule-bar-text : var(--gray-50);
+  --schedule-bar-color1 : var(--pastel-purple-50);
+  --schedule-bar-color2 : var(--pastel-red-50);
+  --schedule-bar-color3 : var(--pastel-green-50);
+  --schedule-bar-color4 : var(--pastel-yellow-50);
+  --schedule-bar-color5 : var(--pastel-orange-100);
+  --schedule-bar-color6 : var(--pastel-skyblue-50);
+  --schedule-bullet-color1 : var(--pastel-purple-100);
+  --schedule-bullet-color2 : var(--pastel-red-100);
+  --schedule-bullet-color3 : var(--pastel-green-100);
+  --schedule-bullet-color4 : var(--pastel-yellow-100);
+  --schedule-bullet-color5 : var(--pastel-orange-50);
+  --schedule-bullet-color6 : var(--pastel-skyblue-100);
+}
+
+:root.dark {
+  --brand-primary-dark : var(--pink-800);
+  --brand-primary-dark-muted : var(--gray-pink-900);
+  --brand-primary-light-muted : var(--gray-pink-700);
+  --brand-primary-default : var(--pink-500);
+  --brand-primary-midium : var(--pink-400);
+  --brand-primary-light-table-focus : var(--pink-200);
+  --brand-primary-light : var(--pink-200);
+  --brand-primary-lighter : var(--gray-pink-100);
+  --brand-primary-lightest : var(--gray-pink-50);
+  --neutral-default : var(--gray-25);
+  --neutral-darkest : var(--gray-40);
+  --neutral-darker : var(--gray-50);
+  --neutral-dark : var(--gray-70);
+  --neutral-midium : var(--gray-80);
+  --neutral-light : var(--gray-95);
+  --neutral-lighter : var(--gray-95);
+  --neutral-lightest : var(--gray-99);
+  --bg-default : var(--common-100);
+  --field-login-bg :var(--gray-99);
+  --field-login-disabled-border : var(--gray-90);
+  --field-table-bg : var(--common-100);
+  --field-table-border : var(--gray-35);
+  --field-inactive-bg : var(--gray-20);
+  --field-inactive-border : var(--gray-20);
+  --field-focused-bg : var(--gray-20);
+  --field-focused-border : var(--blue-400);
+  --field-disable-bg : var(--gray-5);
+  --field-disable-border : var(--gray-40);
+  --field-required-bg : var(--gray-5);
+  --field-required-border : var(--gray-45);
+  --field-error-bg : var(--gray-5);
+  --field-error-border : var(--state-alert-error);
+  --bg-base : var(--gray-15);
+  --button-icon-border-inverse : var(--gray-5);
+  --button-bg-quickmenu-toggle-bg : var(--gray-5);
+  --button-text-filled-text : var(--gray-5);
+  --button-text-outlined-text : var(--blue-400);
+  --button-hover-outlined-bg : var(--gray-30);
+  --button-hover-outlined-border : var(--blue-600);
+  --button-hover-filled-bg : var(--blue-600);
+  --button-hover-form-bg : var(--gray-30);
+  --button-disabled-outlined-bg : var(--gray-80);
+  --button-tab-default-inactive-text : var(--gray-80);
+  --button-tab-default-inactive-bg : var(--gray-35);
+  --button-tab-top-inactive-bg : var(--gray-90);
+  --button-tab-top-active-bg : var(--gray-70);
+  --button-disabled-outlined-border :var(--gray-35);
+  --login-bg : var(--gray-10);
+  --button-disabled-filled-bg : var(--gray-80);
+  --button-disabled-filled-text : var(--common-100);
+  --login-box-bg : var(--gray-25);
+  --login-box-border : var(--gray-25);
+  --schedule-day-bg : var(--gray-30);
+  --schedule-date-bg : var(--gray-10);
+  --schedule-date-focus-bg : var(--gray-25);
+  --schedule-date-focus-line : var(--blue-600);
+  --schedule-date-today-bg : var(--gray-10);
+  --schedule-today-focus-line : var(--common-100);
+  --schedule-day-text : var(--common-100);
+  --schedule-bar-text : var(--common-100);
+  --schedule-bar-color1 : var(--muted-purple);
+  --schedule-bar-color2 : var(--muted-brickred);
+  --schedule-bar-color3 : var(--muted-green);
+  --schedule-bar-color4 : var(--muted-yellow);
+  --schedule-bar-color5 : var(--muted-brown);
+  --schedule-bar-color6 : var(--muted-blue);
+  --schedule-bullet-color1 : var(--muted-purple);
+  --schedule-bullet-color2 : var(--muted-brickred);
+  --schedule-bullet-color3 : var(--muted-green);
+  --schedule-bullet-color4 : var(--muted-yellow);
+  --schedule-bullet-color5 : var(--muted-brown);
+  --schedule-bullet-color6 : var(--muted-blue);
+}
+
