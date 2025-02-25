@@ -47,8 +47,6 @@
   --gray-blue-900 : #5D83CA;
 
   /* Pink */
-  /* pink-25 도없어서 따로 정리해둠 */
-  --pink-25 : #fff5f6;
   --pink-50 : #FFF5F6;
   --pink-100 : #FFDDE3;
   --pink-200 : #FFC3CF;
@@ -261,7 +259,7 @@
   --button-bg-quickmenu-toggle-bg : var(--common-100);
   --button-text-filled-text : var(--common-100);
   --button-text-outlined-text : var(--blue-600);
-  --button-hover-outlined-bg : var(--pink-25);
+  --button-hover-outlined-bg : var(--pink-50);
   --button-hover-outlined-border : var(--blue-600);
   --button-hover-filled-bg : var(--pink-600);
   --button-hover-form-bg : var(--red-50);
@@ -271,7 +269,7 @@
   --button-tab-top-inactive-bg : var(--blue-700);
   --button-tab-top-active-bg : var(--gray-blue-900);
   --button-disabled-outlined-border :var(--gray-90);
-  --login-bg : var(--pink-25);
+  --login-bg : var(--pink-50);
   --button-disabled-filled-bg : var(--gray-15);
   --button-disabled-filled-text : var(--gray-60);
   --login-box-bg : var(--common-100);

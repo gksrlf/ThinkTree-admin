@@ -1,0 +1,134 @@
+:root {
+  /* 축소 네비게이션 */
+  --light-s-nav-smile: url('../img/icon/light/icon_small_nav_smile.svg');
+  --light-s-nav-favorite: url('../img/icon/light/icon_small_nav_favorite.svg');
+  --light-s-nav-menu: url('../img/icon/light/icon_small_nav_menu.svg');
+  --light-s-nav-card: url('../img/icon/light/icon_small_nav_card.svg');
+  --light-s-nav-backpack: url('../img/icon/light/icon_small_nav_backpack.svg');
+  --light-s-nav-back: url('../img/icon/light/icon_small_nav_back.svg');
+
+  --pastel-s-nav-smile: url('../img/icon/pastel/icon_small_nav_smile_p.svg');
+  --pastel-s-nav-favorite: url('../img/icon/pastel/icon_small_nav_favorite_p.svg');
+  --pastel-s-nav-menu: url('../img/icon/pastel/icon_small_nav_menu_p.svg');
+  --pastel-s-nav-card: url('../img/icon/pastel/icon_small_nav_card_p.svg');
+  --pastel-s-nav-backpack: url('../img/icon/pastel/icon_small_nav_backpack_p.svg');
+  --pastel-s-nav-back: url('../img/icon/pastel/icon_small_nav_back_p.svg');
+
+
+  --dark-s-nav-smile: url('../img/icon/dark/icon_small_nav_smile_d.svg');
+  --dark-s-nav-favorite: url('../img/icon/dark/icon_small_nav_favorite_d.svg');
+  --dark-s-nav-menu: url('../img/icon/dark/icon_small_nav_menu_d.svg');
+  --dark-s-nav-card: url('../img/icon/dark/icon_small_nav_card_d.svg');
+  --dark-s-nav-backpack: url('../img/icon/dark/icon_small_nav_backpack_d.svg');
+  --dark-s-nav-back: url('../img/icon/dark/icon_small_nav_back_d.svg');
+
+  /* 확대 네비게이션 */
+  --nav-home: url('../img/icon/icon_nav_home.svg');
+  --nav-diagram: url('../img/icon/icon_nav_diagram.svg');
+  --nav-overview: url('../img/icon/icon_nav_overview.svg');
+  --nav-category: url('../img/icon/icon_nav_category.svg');
+  --nav-dashboard: url('../img/icon/icon_nav_dashboard.svg');
+  --nav-favorite: url('../img/icon/icon_nav_favorite.svg');
+  --nav-schedule: url('../img/icon/icon_nav_schedule.svg');
+  --nav-default-profile: url('../img/icon/icon_default_profile.svg');
+  --nav-home-w: url('../img/icon/icon_nav_home_w.svg');
+  --nav-diagram-w: url('../img/icon/icon_nav_diagram_w.svg');
+  --nav-overview-w: url('../img/icon/icon_nav_overview_w.svg');
+  --nav-category-w: url('../img/icon/icon_nav_category_w.svg');
+  --nav-dashboard-w: url('../img/icon/icon_nav_dashboard_w.svg');
+  --nav-favorite-w: url('../img/icon/icon_nav_favorite_w.svg');
+  --nav-schedule-w: url('../img/icon/icon_nav_schedule_w.svg');
+
+  --light-nav-close: url('../img/icon/light/btn_navigation_close.svg');
+  --light-nav-open: url('../img/icon/light/btn_navigation_open.svg');
+  --pastel-nav-close: url('../img/icon/pastel/btn_navigation_close.svg');
+  --pastel-nav-open: url('../img/icon/pastel/btn_navigation_open.svg');
+}
+
+
+
+:root,
+:root.light {
+  /*축소 네비게이션*/
+  --s-nav-smile: var(--light-s-nav-smile);
+  --s-nav-favorite: var(--light-s-nav-favorite);
+  --s-nav-menu: var(--light-s-nav-menu);
+  --s-nav-card: var(--light-s-nav-card);
+  --s-nav-backpack: var(--light-s-nav-backpack);
+  --s-nav-back: var(--light-s-nav-back);
+
+  /*네비게이션*/
+  --gnb-home: var(--nav-home);
+  --gnb-diagram: var(--nav-diagram);
+  --gnb-overview: var(--nav-overview);
+  --gnb-category: var(--nav-category);
+  --gnb-dashboard: var(--nav-dashboard);
+  --gnb-favorite: var(--nav-favorite);
+  --gnb-schedule: var(--nav-schedule);
+  --gnb-default-profile: var(--nav-default-profile);
+  --gnb-home-on: var(--nav-home-w);
+  --gnb-diagram-on: var(--nav-diagram-w);
+  --gnb-overview-on: var(--nav-overview-w);
+  --gnb-category-on: var(--nav-category-w);
+  --gnb-dashboard-on: var(--nav-dashboard-w);
+  --gnb-favorite-on: var(--nav-favorite-w);
+  --gnb-schedule-on: var(--nav-schedule-w);
+  --gnb-open-btn: var(--light-nav-open);
+  --gnb-close-btn: var(--light-nav-close);
+}
+
+:root.pastel {
+  --s-nav-smile: var(--pastel-s-nav-smile);
+  --s-nav-favorite: var(--pastel-s-nav-favorite);
+  --s-nav-menu: var(--pastel-s-nav-menu);
+  --s-nav-card: var(--pastel-s-nav-card);
+  --s-nav-backpack: var(--pastel-s-nav-backpack);
+  --s-nav-back: var(--pastel-s-nav-back);
+
+  /*네비게이션*/
+  --gnb-home: var(--nav-home);
+  --gnb-diagram: var(--nav-diagram);
+  --gnb-overview: var(--nav-overview);
+  --gnb-category: var(--nav-category);
+  --gnb-dashboard: var(--nav-dashboard);
+  --gnb-favorite: var(--nav-favorite);
+  --gnb-schedule: var(--nav-schedule);
+  --gnb-default-profile: var(--nav-default-profile);
+  --gnb-home-on: var(--nav-home-w);
+  --gnb-diagram-on: var(--nav-diagram-w);
+  --gnb-overview-on: var(--nav-overview-w);
+  --gnb-category-on: var(--nav-category-w);
+  --gnb-dashboard-on: var(--nav-dashboard-w);
+  --gnb-favorite-on: var(--nav-favorite-w);
+  --gnb-schedule-on: var(--nav-schedule-w);
+  --gnb-open-btn: var(--pastel-nav-open);
+  --gnb-close-btn: var(--pastel-nav-close);
+}
+
+:root.dark {
+  --s-nav-smile: var(--dark-s-nav-smile);
+  --s-nav-favorite: var(--dark-s-nav-favorite);
+  --s-nav-menu: var(--dark-s-nav-menu);
+  --s-nav-card: var(--dark-s-nav-card);
+  --s-nav-backpack: var(--dark-s-nav-backpack);
+  --s-nav-back: var(--dark-s-nav-back);
+
+  /*네비게이션*/
+  --gnb-home: var(--nav-home-w);
+  --gnb-diagram: var(--nav-diagram-w);
+  --gnb-overview: var(--nav-overview-w);
+  --gnb-category: var(--nav-category-w);
+  --gnb-dashboard: var(--nav-dashboard-w);
+  --gnb-favorite: var(--nav-favorite-w);
+  --gnb-schedule: var(--nav-schedule-w);
+  --gnb-default-profile: var(--nav-default-profile);
+  --gnb-home-on: var(--nav-home);
+  --gnb-diagram-on: var(--nav-diagram);
+  --gnb-overview-on: var(--nav-overview);
+  --gnb-category-on: var(--nav-category);
+  --gnb-dashboard-on: var(--nav-dashboard);
+  --gnb-favorite-on: var(--nav-favorite);
+  --gnb-schedule-on: var(--nav-schedule);
+  --gnb-open-btn: var(--light-nav-open);
+  --gnb-close-btn: var(--light-nav-close);
+}
