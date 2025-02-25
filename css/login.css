@@ -77,7 +77,6 @@
   background: url("../img/icon/icon_login_pw.svg"),url("../img/icon/icon_login_pw_eye.svg") var(--field-login-bg);
   background-position: 14px center, right 14px center;
   background-repeat: no-repeat;
-
 }
 
 .form_check {
