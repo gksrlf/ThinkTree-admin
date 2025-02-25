@@ -14,6 +14,7 @@
   position: relative;
   z-index: 999;
   width: calc(100% - 190px);
+  max-height: 100dvh;
 }
 .contents_container .contents .content{
   height: calc(100% - 55px); /* header의 height 값을 뺀 높이 수치 */
@@ -63,26 +64,31 @@
 
 /* table__inner */
 .content .table__box{
-  border: 1px solid var(--neutral-midium);
-  border-radius: 6px;
   overflow: hidden;
   height: 100%;
-  max-height: calc(100% - 600px);
+  max-height: calc(100% - 86px);
 }
+/* 86 100  */
 .content .table__inner{
   overflow: auto;
-}
-
-.content .table__box table{width: 100%;}
-.content .table__box table thead{
-  height: 50px;
-  background-color: var(--brand-primary-lightest);
+  max-height: calc(100% - 55px);
+  border: 1px solid var(--neutral-midium);
+  border-bottom: 0;
+  border-radius: 6px 6px 0 0;
+  box-sizing: border-box;
 }
 .content .table__box table{
+  width: 100%;
+  height: 100%;
   table-layout: fixed;
   font-size: 14px;
   text-align: center;
+  background-color: var(--bg-default);
   color: var(--neutral-default);
+}
+.content .table__box table thead{
+  height: 50px;
+  background-color: var(--brand-primary-lightest);
 }
 .content .table__box table thead th,
 .content .table__box table tbody td{
@@ -136,9 +142,37 @@
   box-sizing: border-box;
   border-radius: 4px;
 }
+.content .table__box table tbody td select:focus{
+  outline: 1.5px solid var(--field-focused-border);
+}
 .content .table__box table tbody td select:invalid {
   color: var(--gray-70);
 }
 .content .table__box table tbody td option{
   color: var(--neutral-default);
+}
+
+/* table_control */
+.table_control{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  background-color: var(--bg-default);
+  border-radius: 0 0 6px 6px;
+  border: 1px solid var(--neutral-midium);
+  box-sizing: border-box;
+}
+.table_control .page_info{
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--neutral-darkest);
+}
+.table_control .page_control{
+  position: absolute;
+  right: 140px;
+  display: flex;
+  font-size: 14px;
+  color: var(--neutral-darker);
 }
