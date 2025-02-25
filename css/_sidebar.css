@@ -1,4 +1,5 @@
 @import './_color.css';
+@import './_icon.css';
 
 .lnb_bar__area {
   position: relative;
@@ -20,7 +21,7 @@
   height: 22px;
   border: none;
   background-color: transparent;
-  background-image: url("../img/icon/light/btn_navigation_close.svg");
+  background-image: var(--gnb-close-btn);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -28,7 +29,7 @@
   overflow: hidden;
 }
 .lnb_bar__area .lnb_bar_control__box.on button{
-  background-image: url("../img/icon/light/btn_navigation_open.svg");
+  background-image: var(--gnb-open-btn);
 }
 
 .lnb_bar__area .nav_logo__box {
@@ -103,25 +104,25 @@
 
 /* side_bar lnb1 icon */
 .lnb_bar_content ul .home > div{
-  background-image: url("../img/icon/icon_nav_home.svg");
+  background-image: var(--gnb-home);
 }
 .lnb_bar_content ul .project > div{
-  background-image: url("../img/icon/icon_nav_diagram.svg");
+  background-image: var(--gnb-diagram);
 }
 .lnb_bar_content ul .overview > div{
-  background-image: url("../img/icon/icon_nav_overview.svg");
+  background-image: var(--gnb-overview);
 }
 .lnb_bar_content ul .category > div{
-  background-image: url("../img/icon/icon_nav_category.svg");
+  background-image: var(--gnb-category);
 }
 .lnb_bar_content ul .dashboard > div{
-  background-image: url("../img/icon/icon_nav_dashboard.svg");
+  background-image: var(--gnb-dashboard);
 }
 .lnb_bar_content ul .favorite > div{
-  background-image: url("../img/icon/icon_nav_favorite.svg");
+  background-image: var(--gnb-favorite);
 }
 .lnb_bar_content ul .schedule > div{
-  background-image: url("../img/icon/icon_nav_schedule.svg");
+  background-image: var(--gnb-schedule);
 }
 
 /* side_bar sub_menu */
