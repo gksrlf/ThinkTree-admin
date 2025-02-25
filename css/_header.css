@@ -67,7 +67,7 @@ header .gnb_bar__area .control__box div{
 header .gnb_bar__area .control__box div:last-of-type{
 	margin-right: 0;
 }
-header .gnb_bar__area .control__box div a{
+header .gnb_bar__area .control__box div > a{
 	display: block;
 	width: 24px;
 	height: 24px;
@@ -125,7 +125,7 @@ header .gnb_bar__area .control__box .language div .icon{
 	margin-right: 7px;
 }
 header .gnb_bar__area .control__box .language div .text,
-header .gnb_bar__area .control__box .language ul li{
+header .gnb_bar__area .control__box .language ul li a{
 	font-size: 14px;
 	font-weight: 500;
 	color: var(--neutral-default);
@@ -147,14 +147,14 @@ header .gnb_bar__area .control__box .language ul{
   padding-top: 15px;
 	overflow: hidden;
 }
-header .gnb_bar__area .control__box .language ul li{
+header .gnb_bar__area .control__box .language ul li a{
 	display: flex;
 	align-items: center;
 	height: 30px;
 	padding-left: 39px;
 	cursor: pointer;
 }
-header .gnb_bar__area .control__box .language ul li:hover{
+header .gnb_bar__area .control__box .language ul li a:hover{
 	color: var(--brand-primary-default);
 }
 header .gnb_bar__area .control__box .screen_mode{

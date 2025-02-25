@@ -16,3 +16,10 @@
   z-index: 999;
   width: calc(100% - 190px);
 }
+
+.contents_container .contents .content{
+  height: calc(100% - 55px); /* header의 height 값을 뺀 높이 수치 */
+  background-color: var(--bg-base);
+  padding: 25px;
+  box-sizing: border-box;
+}

@@ -9,6 +9,28 @@
   border-right: 1px solid var(--neutral-midium);
   box-sizing: border-box;
 }
+.lnb_bar__area .lnb_bar_control__box{
+  position: absolute;
+  top: 44px;
+  left: 179px;
+}
+.lnb_bar__area .lnb_bar_control__box button{
+  text-indent: -99999px;
+  width: 22px;
+  height: 22px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon/light/btn_navigation_close.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.lnb_bar__area .lnb_bar_control__box.on button{
+  background-image: url("../img/icon/light/btn_navigation_open.svg");
+}
+
 .lnb_bar__area .nav_logo__box {
   display: flex;
   justify-content: center;
