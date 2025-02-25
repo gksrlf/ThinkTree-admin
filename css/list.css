@@ -1,6 +1,5 @@
 @import "./_color.css";
 @import "./_input.css";
-@import "./_button.css";
 @import "./_header.css";
 @import "./_sidebar.css";
 
@@ -16,10 +15,130 @@
   z-index: 999;
   width: calc(100% - 190px);
 }
-
 .contents_container .contents .content{
   height: calc(100% - 55px); /* header의 height 값을 뺀 높이 수치 */
   background-color: var(--bg-base);
   padding: 25px;
   box-sizing: border-box;
+}
+
+/* content_title__box */
+.content .content_title__box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.content .content_title__box h2{
+  font-size: 28px;
+  color: var(--neutral-default);
+  font-weight: 700;
+}
+.content .content_title__box .btn__box{
+  display: flex;
+  gap: 8px;
+}
+.content .content_title__box .btn__box button{
+  width: 90px;
+  height: 40px;
+  font-weight: 500;
+}
+/* filter__box */
+.content .filter__box{
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+.content .filter__box .filter_state{
+  display: block;
+  text-indent: -99999px;
+  width: 32px;
+  height: 16px;
+  background-color: var(--brand-primary-default);
+}
+.content .filter__box p{
+  font-weight: 500;
+  color: var(--brand-primary-dark);
+}
+
+/* table__inner */
+.content .table__box{
+  border: 1px solid var(--neutral-midium);
+  border-radius: 6px;
+  overflow: hidden;
+  height: 100%;
+  max-height: calc(100% - 600px);
+}
+.content .table__inner{
+  overflow: auto;
+}
+
+.content .table__box table{width: 100%;}
+.content .table__box table thead{
+  height: 50px;
+  background-color: var(--brand-primary-lightest);
+}
+.content .table__box table{
+  table-layout: fixed;
+  font-size: 14px;
+  text-align: center;
+  color: var(--neutral-default);
+}
+.content .table__box table thead th,
+.content .table__box table tbody td{
+  border: 1px solid var(--neutral-lighter);
+  vertical-align: middle;
+}
+.content .table__box table thead th,
+.content .table__box table tbody td{
+  position: relative;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+.content .table__box table thead th{
+  font-weight: 600;
+}
+.content .table__box table thead th:before,
+.content .table__box table thead th:after{
+  position: absolute;
+  top: 50%;
+  content: '';
+  width: 2px;
+  height: 10px;
+  transform: translateY(-50%);
+  background-color: var(--brand-primary-lighter);
+}
+.content .table__box table thead th:before{
+  left: 0;
+}
+.content .table__box table thead th:after{
+  right: 0;
+}
+.content .table__box table thead th:first-of-type::before,
+.content .table__box table thead th:last-of-type::after{
+  display: none;
+}
+.content .table__box table tbody tr:nth-of-type(odd){
+  background-color: var(--neutral-lightest);
+}
+.content .table__box table tbody tr:first-of-type,
+.content .table__box table tbody tr:nth-of-type(even){
+  background-color: var(--bg-default);
+}
+.content .table__box table tbody td{
+  height: 50px;
+}
+.content .table__box table tbody td input[type="text"],
+.content .table__box table tbody td select{
+  width: 100%;
+  border: 1px solid var(--field-table-border);
+  padding: 7px 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.content .table__box table tbody td select:invalid {
+  color: var(--gray-70);
+}
+.content .table__box table tbody td option{
+  color: var(--neutral-default);
 }

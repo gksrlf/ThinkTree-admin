@@ -4,3 +4,21 @@ button {
   font-family: "Pretendard";
   cursor: pointer;
 }
+
+/* 외곽선 button */
+.outlined_btn{
+  border: 1px solid var(--brand-primary-default);
+  color: var(--brand-primary-default);
+  background-color: transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* 색 채워진 button */
+.filled_btn{
+  background-color: var(--brand-primary-default);
+  color: var(--button-text-filled-text);
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
