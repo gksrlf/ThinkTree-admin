@@ -75,9 +75,38 @@
   --table-slide-last-dark: url('../img/icon/dark/table_slide_last_d.svg');
 
   /* 테이블 pdf 이미지 */
-  --table-pdf: url('../img/icon/light/table_pdf_download.svg');
+  --table-pdf-light: url('../img/icon/light/table_pdf_download.svg');
   --table-pdf-pastel: url('../img/icon/pastel/table_pdf_download_p.svg');
   --table-pdf-dark: url('../img/icon/dark/table_pdf_download_d.svg');
+
+  /* header */
+  --header-home-light: url('../img/icon/light/icon_home.svg');
+  --header-arrow-light: url('../img/icon/light/icon_arrow_right.svg');
+  --header-notify-light: url('../img/icon/light/btn_notify.svg');
+  --header-notify-on-light: url('../img/icon/light/btn_notify_on.svg');
+  --header-mail-light: url('../img/icon/light/btn_mail.svg');
+  --header-language-light: url('../img/icon/light/icon_language.svg');
+  --header-logout-light: url('../img/icon/light/icon_logout.svg');
+  --header-screen-light: url('../img/icon/light/btn_screen_mode.svg');
+
+  --header-home-pastel: url('../img/icon/light/icon_home.svg');
+  --header-arrow-pastel: url('../img/icon/light/icon_arrow_right.svg');
+  --header-notify-pastel: url('../img/icon/pastel/btn_notify_p.svg');
+  --header-notify-on-pastel: url('../img/icon/pastel/btn_notify_on_p.svg');
+  --header-mail-pastel: url('../img/icon/pastel/btn_mail_p.svg');
+  --header-language-pastel: url('../img/icon/pastel/icon_language_p.svg');
+  --header-logout-pastel: url('../img/icon/pastel/icon_logout_p.svg');
+  --header-screen-pastel: url('../img/icon/pastel/btn_screen_mode_p.svg');
+
+  --header-home-dark: url('../img/icon/light/icon_home.svg');
+  --header-arrow-dark: url('../img/icon/light/icon_arrow_right.svg');
+  --header-notify-dark: url('../img/icon/dark/btn_notify_d.svg');
+  --header-notify-on-dark: url('../img/icon/dark/btn_notify_on_d.svg');
+  --header-mail-dark: url('../img/icon/dark/btn_mail_d.svg');
+  --header-language-dark: url('../img/icon/dark/icon_language_d.svg');
+  --header-logout-dark: url('../img/icon/dark/icon_logout_d.svg');
+  --header-screen-dark: url('../img/icon/dark/btn_screen_mode_d.svg');
+
 }
 
 
@@ -124,7 +153,17 @@
   --table-slide-first: var(--table-slide-first-default);
 
   /* 테이블 pdf 이미지 */
-  --table-pdf: var(--table-pdf);
+  --table-pdf: var(--table-pdf-light);
+
+  /* header 아이콘 */
+  --header-home: var(--header-home-light);
+  --header-arrow: var(--header-arrow-light);
+  --header-notify: var(--header-notify-light);
+  --header-notify-on: var(--header-notify-on-light);
+  --header-mail: var(--header-mail-light);
+  --header-language: var(--header-language-light);
+  --header-logout: var(--header-logout-light);
+  --header-screen: var(--header-screen-light);
 }
 
 :root.pastel {
@@ -168,6 +207,16 @@
 
   /* 테이블 pdf 이미지 */
   --table-pdf: var(--table-pdf-pastel);
+
+  /* header 아이콘 */
+  --header-home: var(--header-home-pastel);
+  --header-arrow: var(--header-arrow-pastel);
+  --header-notify: var(--header-notify-pastel);
+  --header-notify-on: var(--header-notify-on-pastel);
+  --header-mail: var(--header-mail-pastel);
+  --header-language: var(--header-language-pastel);
+  --header-logout: var(--header-logout-pastel);
+  --header-screen: var(--header-screen-pastel);
 }
 
 :root.dark {
@@ -211,4 +260,14 @@
 
   /* 테이블 pdf 이미지 */
   --table-pdf: var(--table-pdf-dark);
+
+  /* header 아이콘 */
+  --header-home: var(--header-home-pastel);
+  --header-arrow: var(--header-arrow-pastel);
+  --header-notify: var(--header-notify-pastel);
+  --header-notify-on: var(--header-notify-on-pastel);
+  --header-mail: var(--header-mail-pastel);
+  --header-language: var(--header-language-pastel);
+  --header-logout: var(--header-logout-pastel);
+  --header-screen: var(--header-screen-pastel);
 }
