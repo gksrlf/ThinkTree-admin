@@ -3,3 +3,43 @@
   align-items: center;
   justify-content: center;
 }
+
+.w_40 {
+  width: 365px;
+}
+
+.w_60 {
+  width: calc(100% - 365px);
+}
+
+.w_45 {
+  width: 645px;
+}
+
+.w_55 {
+  width: calc(100% - 645px);
+}
+
+.w_quarter {
+  width: 25%;
+}
+
+.w_full {
+  width: 100%;
+}
+
+.w_260 {
+  width: 260px;
+}
+
+.mb_10 {
+  margin-bottom: 10px;
+}
+
+.pb_10 {
+  padding-bottom: 10px;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
