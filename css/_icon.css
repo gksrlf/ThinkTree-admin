@@ -60,6 +60,19 @@
   --filter-large-off-dark: url('../img/icon/dark/filter_slide_off_large_d.svg');
   --filter-small-on-dark: url('../img/icon/dark/filter_slide_on_large_d.svg');
   --filter-small-off-dark: url('../img/icon/dark/filter_slide_off_large_d.svg');
+
+  /* 테이블 페이지네이션 이동 버튼 */
+  /* disabled 이미지는 없음 우선 active가 된거는 next, last 뿐임 */
+  --table-slide-next-default: url('../img/icon/light/table_default_next.svg');
+  --table-slide-prev-default: url('../img/icon/light/table_default_prev.svg');
+  --table-slide-first-default: url('../img/icon/light/table_default_first.svg');
+  --table-slide-last-default: url('../img/icon/light/table_default_last.svg');
+
+  /* dark모드인데 전용 테이블 슬라이드 버튼이 없음*/
+  --table-slide-next-dark: url('../img/icon/dark/table_slide_next_d.svg');
+  --table-slide-prev-dark: url('../img/icon/dark/table_slide_prev_d.svg');
+  --table-slide-first-dark: url('../img/icon/dark/table_slide_firtst_d.svg');
+  --table-slide-last-dark: url('../img/icon/dark/table_slide_last_d.svg');
 }
 
 
@@ -98,6 +111,12 @@
   --filter-large-off: var(--filter-large-off-light);
   --filter-small-on: var(--filter-small-on-light);
   --filter-small-off: var(--filter-small-off-light);
+
+  /* 테이블 슬라이드 */
+  --table-slide-next: var(--table-slide-next-default);
+  --table-slide-prev: var(--table-slide-prev-default);
+  --table-slide-lasst: var(--table-slide-last-default);
+  --table-slide-first: var(--table-slide-first-default);
 }
 
 :root.pastel {
@@ -132,6 +151,12 @@
   --filter-large-off: var(--filter-large-off-pastel);
   --filter-small-on: var(--filter-small-on-pastel);
   --filter-small-off: var(--filter-small-off-pastel);
+
+  /* 테이블 슬라이드 */
+  --table-slide-next: var(--table-slide-next-default);
+  --table-slide-prev: var(--table-slide-prev-default);
+  --table-slide-lasst: var(--table-slide-last-default);
+  --table-slide-first: var(--table-slide-first-default);
 }
 
 :root.dark {
@@ -166,4 +191,10 @@
   --filter-large-off: var(--filter-large-off-dark);
   --filter-small-on: var(--filter-small-on-dark);
   --filter-small-off: var(--filter-small-off-dark);
+
+  /* 테이블 슬라이드 */
+  --table-slide-next: var(--table-slide-next-default);
+  --table-slide-prev: var(--table-slide-prev-default);
+  --table-slide-lasst: var(--table-slide-last-default);
+  --table-slide-first: var(--table-slide-first-default);
 }
