@@ -66,8 +66,6 @@
 .content .filter__box .filter_state.on{
   background-image: var(--filter-large-on);
 }
-
-
 .content .filter__box p{
   font-weight: 500;
   color: var(--brand-primary-dark);
@@ -119,6 +117,33 @@
 .content .table__box table thead th{
   font-weight: 600;
 }
+.content .table__box table thead th div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.content .table__box table thead th div p{
+  width: calc(100% - 32px);
+}
+.content .table__box table thead th div button{
+  width: 16px;
+  height: 16px;
+  border: none;
+  text-indent: -99999px;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .table__box table thead th div button.btn_table_filter{
+  background-image: var(--table-header-filter);
+}
+.content .table__box table thead th div button.btn_table_sort{
+  background-image: var(--table-header-sort);
+}
+
+
 .content .table__box table thead th:before,
 .content .table__box table thead th:after{
   position: absolute;
@@ -278,6 +303,7 @@
   border: 1px solid var(--neutral-light);
   border-radius: 4px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .table_control .page_control select:focus{
   outline: 1.5px solid var(--field-focused-border);

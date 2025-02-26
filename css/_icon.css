@@ -177,6 +177,10 @@
   --header-logout: var(--header-logout-light);
   --header-screen: var(--header-screen-light);
 
+   /* 테이블 헤더 아이콘 */
+  --table-header-filter: var(--table-header-filter-light);
+  --table-header-sort: var(--table-header-sort-light);
+
   /* 셀렉트박스 화살표 */
   --select-arrow: var(--select-arrow-default);
 }
@@ -233,6 +237,10 @@
   --header-logout: var(--header-logout-pastel);
   --header-screen: var(--header-screen-pastel);
 
+  /* 테이블 헤더 아이콘 */
+  --table-header-filter: var(--table-header-filter-pastel);
+  --table-header-sort: var(--table-header-sort-pastel);
+
   /* 셀렉트박스 화살표 */
   --select-arrow: var(--select-arrow-default);
 }
@@ -288,6 +296,10 @@
   --header-language: var(--header-language-pastel);
   --header-logout: var(--header-logout-pastel);
   --header-screen: var(--header-screen-pastel);
+
+  /* 테이블 헤더 아이콘 */
+  --table-header-filter: var(--table-header-filter-dark);
+  --table-header-sort: var(--table-header-sort-dark);
 
   /* 셀렉트박스 화살표 */
   --select-arrow: var(--select-arrow-dark);
