@@ -73,6 +73,11 @@
   --table-slide-prev-dark: url('../img/icon/dark/table_slide_prev_d.svg');
   --table-slide-first-dark: url('../img/icon/dark/table_slide_firtst_d.svg');
   --table-slide-last-dark: url('../img/icon/dark/table_slide_last_d.svg');
+
+  /* 테이블 pdf 이미지 */
+  --table-pdf: url('../img/icon/light/table_pdf_download.svg');
+  --table-pdf-pastel: url('../img/icon/pastel/table_pdf_download_p.svg');
+  --table-pdf-dark: url('../img/icon/dark/table_pdf_download_d.svg');
 }
 
 
@@ -117,6 +122,9 @@
   --table-slide-prev: var(--table-slide-prev-default);
   --table-slide-lasst: var(--table-slide-last-default);
   --table-slide-first: var(--table-slide-first-default);
+
+  /* 테이블 pdf 이미지 */
+  --table-pdf: var(--table-pdf);
 }
 
 :root.pastel {
@@ -157,6 +165,9 @@
   --table-slide-prev: var(--table-slide-prev-default);
   --table-slide-lasst: var(--table-slide-last-default);
   --table-slide-first: var(--table-slide-first-default);
+
+  /* 테이블 pdf 이미지 */
+  --table-pdf: var(--table-pdf-pastel);
 }
 
 :root.dark {
@@ -197,4 +208,7 @@
   --table-slide-prev: var(--table-slide-prev-default);
   --table-slide-lasst: var(--table-slide-last-default);
   --table-slide-first: var(--table-slide-first-default);
+
+  /* 테이블 pdf 이미지 */
+  --table-pdf: var(--table-pdf-dark);
 }
