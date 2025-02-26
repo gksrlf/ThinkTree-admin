@@ -43,6 +43,23 @@
   --light-nav-open: url('../img/icon/light/btn_navigation_open.svg');
   --pastel-nav-close: url('../img/icon/pastel/btn_navigation_close.svg');
   --pastel-nav-open: url('../img/icon/pastel/btn_navigation_open.svg');
+
+
+  /* 필터 */
+  --filter-large-on-light: url('../img/icon/light/filter_slide_on_large.svg');
+  --filter-large-off-light: url('../img/icon/light/filter_slide_off_large.svg');
+  --filter-small-on-light: url('../img/icon/light/filter_slide_on_large.svg');
+  --filter-small-off-light: url('../img/icon/light/filter_slide_off_large.svg');
+
+  --filter-large-on-pastel: url('../img/icon/pastel/filter_slide_on_large_p.svg');
+  --filter-large-off-pastel: url('../img/icon/pastel/filter_slide_off_large_p.svg');
+  --filter-small-on-pastel: url('../img/icon/pastel/filter_slide_on_large_p.svg');
+  --filter-small-off-pastel: url('../img/icon/pastel/filter_slide_off_large_p.svg');
+
+  --filter-large-on-dark: url('../img/icon/dark/filter_slide_on_large_d.svg');
+  --filter-large-off-dark: url('../img/icon/dark/filter_slide_off_large_d.svg');
+  --filter-small-on-dark: url('../img/icon/dark/filter_slide_on_large_d.svg');
+  --filter-small-off-dark: url('../img/icon/dark/filter_slide_off_large_d.svg');
 }
 
 
@@ -75,6 +92,12 @@
   --gnb-schedule-on: var(--nav-schedule-w);
   --gnb-open-btn: var(--light-nav-open);
   --gnb-close-btn: var(--light-nav-close);
+
+  /* 필터 */
+  --filter-large-on: var(--filter-large-on-light);
+  --filter-large-off: var(--filter-large-off-light);
+  --filter-small-on: var(--filter-small-on-light);
+  --filter-small-off: var(--filter-small-off-light);
 }
 
 :root.pastel {
@@ -103,6 +126,12 @@
   --gnb-schedule-on: var(--nav-schedule-w);
   --gnb-open-btn: var(--pastel-nav-open);
   --gnb-close-btn: var(--pastel-nav-close);
+
+  /* 필터 */
+  --filter-large-on: var(--filter-large-on-pastel);
+  --filter-large-off: var(--filter-large-off-pastel);
+  --filter-small-on: var(--filter-small-on-pastel);
+  --filter-small-off: var(--filter-small-off-pastel);
 }
 
 :root.dark {
@@ -131,4 +160,10 @@
   --gnb-schedule-on: var(--nav-schedule);
   --gnb-open-btn: var(--light-nav-open);
   --gnb-close-btn: var(--light-nav-close);
+
+  /* 필터 */
+  --filter-large-on: var(--filter-large-on-dark);
+  --filter-large-off: var(--filter-large-off-dark);
+  --filter-small-on: var(--filter-small-on-dark);
+  --filter-small-off: var(--filter-small-off-dark);
 }
