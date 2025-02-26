@@ -173,8 +173,12 @@
 
 /* side_bar sub_menu */
 .lnb_bar_content ul li .sub_menu{
+  display: none;
   width: 100%;
   padding: 6px 0;
+}
+.lnb_bar_content ul li.on .sub_menu{
+  display: block;
 }
 .lnb_bar_content ul li .sub_menu li{
   margin-bottom: 10px;
