@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <title>Title</title>
+</head>
+<body>
+<div class="wrap">
+  <div class="container contents_container">
+
+    <!-- aside lnb -->
+    <aside class="lnb_bar__area">
+      <div class="lnb_bar_control__box">
+        <button>toggle button</button>
+      </div>
+      <div class="nav_logo__box">
+        <img src="../img/logo/default_head_logo.svg" />
+      </div>
+      <div class="lnb_bar__box">
+        <nav class="lnb_bar_content">
+          <ul>
+            <li class="lnb1 home">
+              <div>
+                <a href="javascript:;" class="">DashBoard</a>
+              </div>
+            </li>
+            <li class="lnb1 project on">
+              <div>
+                <p>Project</p>
+                <span class="menu_arrow"></span>
+              </div>
+              <ol class="sub_menu">
+                <li>
+                  <a href="javascript:;">SubMenu 1</a>
+                </li>
+                <li class="on">
+                  <a href="javascript:;">SubMenu 2</a>
+                </li>
+                <li>
+                  <a href="javascript:;">SubMenu 3</a>
+                </li>
+                <li>
+                  <a href="javascript:;">SubMenu 4</a>
+                </li>
+              </ol>
+            </li>
+            <li class="lnb1 overview">
+              <div>
+                <p>Overview</p>
+                <span class="menu_arrow"></span>
+              </div>
+            </li>
+            <li class="lnb1 category">
+              <div>
+                <p>List</p>
+                <span class="menu_arrow"></span>
+              </div>
+            </li>
+            <li class="lnb1 dashboard">
+              <div>
+                <p>Dashboard</p>
+                <span class="menu_arrow"></span>
+              </div>
+            </li>
+            <li class="lnb1 favorite">
+              <div>
+                <p>Favorite</p>
+                <span class="menu_arrow"></span>
+              </div>
+            </li>
+            <li class="lnb1 schedule">
+              <div>
+                <p>Schedule</p>
+                <span class="menu_arrow"></span>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="lnb_bar_user_box">
+          <div class="profile_img">
+            <img src="/img/icon/icon_default_profile.svg" alt="default_profile">
+          </div>
+          <div class="profile_info">
+            <p>UserName</p>
+            <span>(admin)</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- aside lnb fin -->
+
+    <div class="contents">
+      <!-- header -->
+      <header>
+        <div class="gnb_bar__area">
+          <div class="depth__box">
+            <ul>
+              <li class="home">HOME</li>
+              <li class="depth">View</li>
+            </ul>
+          </div>
+          <div class="control__box">
+            <div class="notify on">
+              <a href="javascript:;">notify</a>
+            </div>
+            <div class="mail">
+              <a href="javascript:;">mail</a>
+            </div>
+            <div class="language on">
+              <div>
+                <span class="icon">language</span>
+                <span class="text">KOR</span>
+              </div>
+              <ul>
+                <li><a href="javascript:;">ENG</a></li>
+                <li><a href="javascript:;">JPN</a></li>
+              </ul>
+            </div>
+            <div class="logout">
+              <a href="javascript:;">logout</a>
+            </div>
+            <div class="screen_mode">
+              <a href="javascript:;">screen_mode</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header fin -->
+
+      <!-- list content -->
+      <section class="content">
+        <div class="content_title__box">
+          <h2>뷰 페이지</h2>
+          <div class="btn__box">
+            <button class="outlined_btn">Button</button>
+            <button class="filled_btn">Button</button>
+          </div>
+        </div>
+        <div class="input_form__box">
+          <div class="input_item_box">
+            <label class="text_label w_40">Label&nbsp;<span class="require_sign">*</span>
+              <input class="require" type="text">
+            </label>
+            <label class="text_label w_60">Label
+              <input type="text">
+            </label>
+          </div>
+          <div class="input_item_box">
+            <label class="text_label w_45">Label
+              <input type="text">
+            </label>
+            <label class="text_label w_55">Label
+              <input type="text">
+            </label>
+          </div>
+          <div class="input_item_box">
+            <label class="select_label w_quarter">Label
+              <select>
+                <option>
+                  Text
+                </option>
+                <option>
+                  Text
+                </option>
+                <option>
+                Text
+              </option>
+              </select>
+            </label>
+            <label class="text_label w_quarter">Label
+              <input type="text">
+            </label>
+            <label class="text_label w_quarter">Label
+              <input type="text">
+            </label>
+            <label class="select_label w_quarter">Label
+              <select class="err">
+                <option>
+                  Text
+                </option>
+                <option>
+                  Text
+                </option>
+                <option>
+                  Text
+                </option>
+              </select>
+              <p class="err_txt">Error</p>
+            </label>
+          </div>
+          <div class="input_item_box">
+            <label class="text_label w_full">Label
+              <input class="search" type="text">
+            </label>
+            <div class="input_btn__box">
+              <button class="search_btn">검색</button>
+              <button class="delete_btn">삭제</button>
+            </div>
+          </div>
+          <div class="input_item_box">
+            <label class="date_label w_260">Label
+              <input type="date"/>
+            </label>
+          </div>
+          <div class="input_item_box">
+            <label class="password_label">Label
+              <input type="password" />
+            </label>
+          </div>
+        </div>
+      </section>
+      <!-- list content fin -->
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

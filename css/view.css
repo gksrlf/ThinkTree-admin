@@ -1,0 +1,31 @@
+@import "./_color.css";
+@import "./_input.css";
+@import "./_header.css";
+@import "./_sidebar.css";
+
+.input_form__box {
+  width: 100%;
+  background-color: var(--bg-default);
+  border: solid 1px var(--neutral-midium);
+  border-radius: 6px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.input_form__box .input_item_box {
+  display: flex;
+  gap:16px;
+}
+
+.input_item_box .select_label .err {
+  outline : 1.5px solid var(--field-error-border);
+  background-color: var(--field-error-bg);
+}
+
+.input_item_box .select_label .err_txt {
+  height: 16px;
+  background: var(--error-icon) no-repeat left;
+  color: var(--gray-70);
+  padding-left: 22px;
+  margin-top:8px;
+}

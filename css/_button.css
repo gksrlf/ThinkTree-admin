@@ -22,3 +22,25 @@ button {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+.search_btn {
+  width: 65px;
+  height: 52px;
+  font-size: 14px;
+  border: 1px solid var(--brand-primary-default);
+  color: var(--brand-primary-default);
+  background-color: transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.delete_btn {
+  width: 65px;
+  height: 52px;
+  font-size: 14px;
+  border: 1px solid var(--state-alert-error);
+  color: var(--state-alert-error);
+  background-color: transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

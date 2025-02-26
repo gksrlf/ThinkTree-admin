@@ -119,6 +119,13 @@
   /* 셀렉스박스 화살표 */
   --select-arrow-default: url('../img/icon/icon_select_arrow_default.svg');
   --select-arrow-dark: url('../img/icon/dark/icon_select_arrow_d.svg');
+
+  /* error Icon 테마 모두 공통 */
+  --error-icon: url('../img/icon/icon_error.svg');
+
+  /* input icon */
+  --input-search-default: url('../img/icon/icon_input_search_default.svg');
+  --input-search-dark: url('../img/icon/dark/icon_input_search_dark.svg')
 }
 
 
@@ -179,6 +186,9 @@
 
   /* 셀렉트박스 화살표 */
   --select-arrow: var(--select-arrow-default);
+
+  /* input search icon */
+  --input-search: var(--input-search-default);
 }
 
 :root.pastel {
@@ -235,6 +245,8 @@
 
   /* 셀렉트박스 화살표 */
   --select-arrow: var(--select-arrow-default);
+  /* input search icon */
+  --input-search: var(--input-search-default);
 }
 
 :root.dark {
@@ -291,4 +303,6 @@
 
   /* 셀렉트박스 화살표 */
   --select-arrow: var(--select-arrow-dark);
+  /* input search icon */
+  --input-search: var(--input-search-dark);
 }
