@@ -6,13 +6,11 @@
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <title>Title</title>
   <script>
-
-
-
     document.addEventListener("DOMContentLoaded", () => {
-        addHoverEventsAndClasses();
+        tableHoverEvent();
     });
 
+    // highlight 이벤트
     const toggleHighlight = (event, highlight) => {
         const table = document.getElementById("hoverTable");
         const rowIndex = event.currentTarget.parentElement.rowIndex;
@@ -27,18 +25,16 @@
         });
     };
 
-    const addHoverEventsAndClasses = () => {
+    // table hover 이벤트
+    const tableHoverEvent = () => {
         const table = document.getElementById("hoverTable");
         
-        // thead 내부 tr 제외하고 td만 이벤트 적용
+        // thead 제외 tbody td 이벤트 적용
         table.querySelectorAll("tbody td").forEach(cell => {
             cell.addEventListener("mouseenter", (e) => toggleHighlight(e, true));
             cell.addEventListener("mouseleave", (e) => toggleHighlight(e, false));
         });
     };
-
-
-
   </script>
 </head>
 <body>
@@ -191,7 +187,7 @@
             </div>
         </div>
         <div class="filter__box">
-          <div class="filter_state">filter state</div>
+          <button class="filter_state on">filter state</button>
           <p>Filter</p>
         </div>
         <div class="table__box">
