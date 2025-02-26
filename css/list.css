@@ -66,8 +66,6 @@
 .content .filter__box .filter_state.on{
   background-image: var(--filter-large-on);
 }
-
-
 .content .filter__box p{
   font-weight: 500;
   color: var(--brand-primary-dark);
@@ -119,6 +117,33 @@
 .content .table__box table thead th{
   font-weight: 600;
 }
+.content .table__box table thead th div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.content .table__box table thead th div p{
+  width: calc(100% - 32px);
+}
+.content .table__box table thead th div button{
+  width: 16px;
+  height: 16px;
+  border: none;
+  text-indent: -99999px;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content .table__box table thead th div button.btn_table_filter{
+  background-image: var(--table-header-filter);
+}
+.content .table__box table thead th div button.btn_table_sort{
+  background-image: var(--table-header-sort);
+}
+
+
 .content .table__box table thead th:before,
 .content .table__box table thead th:after{
   position: absolute;
@@ -161,10 +186,13 @@
 .content .table__box table tbody td input[type="text"],
 .content .table__box table tbody td select{
   width: 100%;
+  height: auto;
   border: 1px solid var(--field-table-border);
+  background-color: var(--field-table-bg);
   padding: 7px 10px;
   box-sizing: border-box;
   border-radius: 4px;
+  margin-top: 0;
 }
 .content .table__box table tbody td select:focus{
   outline: 1.5px solid var(--field-focused-border);
@@ -219,15 +247,71 @@
   border: 1px solid var(--neutral-midium);
   box-sizing: border-box;
 }
-.table_control .page_info{
+.table_control .page_navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table_control .page_navigation p{
   font-size: 15px;
   font-weight: 500;
   color: var(--neutral-darkest);
+  margin: 0 70px;
+}
+.table_control .page_navigation button{
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  border: none;
+  text-indent: -99999px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.table_control .page_navigation button.off{
+  opacity: 0.3;
+}
+.table_control .page_navigation .btn_first{
+  background-image: var(--table-slide-first);
+  margin-right: 20px;
+}
+.table_control .page_navigation .btn_prev{
+  background-image: var(--table-slide-prev);
+}
+.table_control .page_navigation .btn_last{
+  background-image: var(--table-slide-last);
+  margin-left: 20px;
+}
+.table_control .page_navigation .btn_next{
+  background-image: var(--table-slide-next);
 }
 .table_control .page_control{
   position: absolute;
-  right: 140px;
+  right: 20px;
   display: flex;
+  align-items: center;
   font-size: 14px;
+  font-weight: 500;
   color: var(--neutral-darker);
+}
+.table_control .page_control .page_text{
+  margin-right: 8px;
+}
+.table_control .page_control select{
+  width: 80px;
+  padding: 8px 10px;
+  border: 1px solid var(--neutral-light);
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.table_control .page_control select:focus{
+  outline: 1.5px solid var(--field-focused-border);
+}
+.line{
+  display: block;
+  width: 1px;
+  height: 10px;
+  background-color: var(--neutral-midium);
+  margin: 0 15px;
 }

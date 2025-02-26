@@ -168,7 +168,7 @@
   /* 테이블 슬라이드 */
   --table-slide-next: var(--table-slide-next-default);
   --table-slide-prev: var(--table-slide-prev-default);
-  --table-slide-lasst: var(--table-slide-last-default);
+  --table-slide-last: var(--table-slide-last-default);
   --table-slide-first: var(--table-slide-first-default);
 
   /* 테이블 pdf 이미지 */
@@ -183,6 +183,10 @@
   --header-language: var(--header-language-light);
   --header-logout: var(--header-logout-light);
   --header-screen: var(--header-screen-light);
+
+   /* 테이블 헤더 아이콘 */
+  --table-header-filter: var(--table-header-filter-light);
+  --table-header-sort: var(--table-header-sort-light);
 
   /* 셀렉트박스 화살표 */
   --select-arrow: var(--select-arrow-default);
@@ -227,7 +231,7 @@
   /* 테이블 슬라이드 */
   --table-slide-next: var(--table-slide-next-default);
   --table-slide-prev: var(--table-slide-prev-default);
-  --table-slide-lasst: var(--table-slide-last-default);
+  --table-slide-last: var(--table-slide-last-default);
   --table-slide-first: var(--table-slide-first-default);
 
   /* 테이블 pdf 이미지 */
@@ -242,6 +246,10 @@
   --header-language: var(--header-language-pastel);
   --header-logout: var(--header-logout-pastel);
   --header-screen: var(--header-screen-pastel);
+
+  /* 테이블 헤더 아이콘 */
+  --table-header-filter: var(--table-header-filter-pastel);
+  --table-header-sort: var(--table-header-sort-pastel);
 
   /* 셀렉트박스 화살표 */
   --select-arrow: var(--select-arrow-default);
@@ -285,7 +293,7 @@
   /* 테이블 슬라이드 */
   --table-slide-next: var(--table-slide-next-default);
   --table-slide-prev: var(--table-slide-prev-default);
-  --table-slide-lasst: var(--table-slide-last-default);
+  --table-slide-last: var(--table-slide-last-default);
   --table-slide-first: var(--table-slide-first-default);
 
   /* 테이블 pdf 이미지 */
@@ -300,6 +308,10 @@
   --header-language: var(--header-language-pastel);
   --header-logout: var(--header-logout-pastel);
   --header-screen: var(--header-screen-pastel);
+
+  /* 테이블 헤더 아이콘 */
+  --table-header-filter: var(--table-header-filter-dark);
+  --table-header-sort: var(--table-header-sort-dark);
 
   /* 셀렉트박스 화살표 */
   --select-arrow: var(--select-arrow-dark);

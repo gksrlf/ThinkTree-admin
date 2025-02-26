@@ -12,7 +12,7 @@
 
     // highlight 이벤트
     const toggleHighlight = (event, highlight) => {
-        const table = document.getElementById("hoverTable");
+        const table = document.getElementById("list_table");
         const rowIndex = event.currentTarget.parentElement.rowIndex;
         const cellIndex = event.currentTarget.cellIndex;
 
@@ -27,7 +27,7 @@
 
     // table hover 이벤트
     const tableHoverEvent = () => {
-        const table = document.getElementById("hoverTable");
+        const table = document.getElementById("list_table");
         
         // thead 제외 tbody td 이벤트 적용
         table.querySelectorAll("tbody td").forEach(cell => {
@@ -126,13 +126,15 @@
             </li>
           </ul>
         </nav>
-        <div class="lnb_bar_user_box">
-          <div class="profile_img">
-            <img src="/img/icon/icon_default_profile.svg" alt="default_profile">
-          </div>
-          <div class="profile_info">
-            <p>UserName</p>
-            <span>(admin)</span>
+        <div class="lnb_bar_user__box">
+          <div class="lnb_bar_user">
+            <div class="profile_img">
+              <img src="/img/icon/icon_default_profile.svg" alt="default_profile">
+            </div>
+            <div class="profile_info">
+              <p>UserName</p>
+              <span>(admin)</span>
+            </div>
           </div>
         </div>
       </div>
@@ -186,13 +188,16 @@
               <button class="filled_btn">Button</button>
             </div>
         </div>
+        <!-- filter__box -->
         <div class="filter__box">
           <button class="filter_state on">filter state</button>
           <p>Filter</p>
         </div>
+        <!-- filter__box fin -->
+        <!-- table__box -->
         <div class="table__box">
           <div class="table__inner">
-            <table id="hoverTable">
+            <table id="list_table">
               <colgroup>
                 <col style="width: 170px;">
                 <col style="width: 125px;">
@@ -207,16 +212,76 @@
               </colgroup>
               <thead>
                 <tr>
-                  <th>TDB 기업코드</th>
-                  <th>구분</th>
-                  <th>허가 번호</th>
-                  <th>상호 또는 명칭</th>
-                  <th>영업소의 소재지</th>
-                  <th>대표자명</th>
-                  <th>신청/신고 날짜</th>
-                  <th>신청/신고 구분</th>
-                  <th>서류명</th>
-                  <th>C2 주요 사업</th>
+                  <th>
+                    <div>
+                      <button class="btn_table_filter">filter</button>
+                      <p>TDB 기업코드</p>
+                      <button class="btn_table_sort">sort</button>
+                    </div>
+                  </th>
+                  <th>
+                    <div>
+                      <button class="btn_table_filter">filter</button>
+                      <p>구분</p>
+                      <button class="btn_table_sort">sort</button>
+                    </div>
+                  </th>
+                  <th>
+                    <div>
+                      <button class="btn_table_filter">filter</button>
+                      <p>허가 번호</p>
+                      <button class="btn_table_sort">sort</button>
+                    </div>
+                  </th>
+                  <th>
+                    <div>
+                      <button class="btn_table_filter">filter</button>
+                      <p>상호 또는 명칭</p>
+                      <button class="btn_table_sort">sort</button>
+                    </div>
+                  </th>
+                  <th>
+                    <div>
+                      <button class="btn_table_filter">filter</button>
+                      <p>영업소의 소재지</p>
+                      <button class="btn_table_sort">sort</button>
+                    </div>
+                  </th>
+                  <th>
+                    <div>
+                      <button class="btn_table_filter">filter</button>
+                      <p>대표자명</p>
+                      <button class="btn_table_sort">sort</button>
+                    </div>
+                  </th>
+                  <th>
+                    <div>
+                      <button class="btn_table_filter">filter</button>
+                      <p>신청/신고 날짜</p>
+                      <button class="btn_table_sort">sort</button>
+                    </div>
+                  </th>
+                  <th>
+                    <div>
+                      <button class="btn_table_filter">filter</button>
+                      <p>신청/신고 구분</p>
+                      <button class="btn_table_sort">sort</button>
+                    </div>
+                  </th>
+                  <th>
+                    <div>
+                      <button class="btn_table_filter">filter</button>
+                      <p>서류명</p>
+                      <button class="btn_table_sort">sort</button>
+                    </div>
+                  </th>
+                  <th>
+                    <div>
+                      <button class="btn_table_filter">filter</button>
+                      <p>C2 주요 사업</p>
+                      <button class="btn_table_sort">sort</button>
+                    </div>
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -290,7 +355,126 @@
                   </td>
                   <td class="text_center"><p>16101</p></td>
                 </tr>
-                                <tr>
+                <tr>
+                  <td class="text_center"><p>270062085</p></td>
+                  <td class="text_center"><p>지사</p></td>
+                  <td><p>16-000009</p></td>
+                  <td><p>신영 건설 주식회사</p></td>
+                  <td><p>나카시키와 군 다테야마 마치오</p></td>
+                  <td><p>고평 공스케</p></td>
+                  <td class="text_center"><p>2024-09-02</p></td>
+                  <td><p>사업 연도 종료 신고(법인)</p></td>
+                  <td class="pdf__box text_center"> 
+                    <div class="pdf_info">
+                      <p>FS_370020811_202405</p>
+                      <a href="javascript:;">PDF</a>
+                    </div>
+                  </td>
+                  <td class="text_center"><p>16101</p></td>
+                </tr>
+                <tr>
+                  <td class="text_center"><p>270062085</p></td>
+                  <td class="text_center"><p>지사</p></td>
+                  <td><p>16-000009</p></td>
+                  <td><p>신영 건설 주식회사</p></td>
+                  <td><p>나카시키와 군 다테야마 마치오</p></td>
+                  <td><p>고평 공스케</p></td>
+                  <td class="text_center"><p>2024-09-02</p></td>
+                  <td><p>사업 연도 종료 신고(법인)</p></td>
+                  <td class="pdf__box text_center"> 
+                    <div class="pdf_info">
+                      <p>FS_370020811_202405</p>
+                      <a href="javascript:;">PDF</a>
+                    </div>
+                  </td>
+                  <td class="text_center"><p>16101</p></td>
+                </tr>
+                <tr>
+                  <td class="text_center"><p>270062085</p></td>
+                  <td class="text_center"><p>지사</p></td>
+                  <td><p>16-000009</p></td>
+                  <td><p>신영 건설 주식회사</p></td>
+                  <td><p>나카시키와 군 다테야마 마치오</p></td>
+                  <td><p>고평 공스케</p></td>
+                  <td class="text_center"><p>2024-09-02</p></td>
+                  <td><p>사업 연도 종료 신고(법인)</p></td>
+                  <td class="pdf__box text_center"> 
+                    <div class="pdf_info">
+                      <p>FS_370020811_202405</p>
+                      <a href="javascript:;">PDF</a>
+                    </div>
+                  </td>
+                  <td class="text_center"><p>16101</p></td>
+                </tr>
+                <tr>
+                  <td class="text_center"><p>270062085</p></td>
+                  <td class="text_center"><p>지사</p></td>
+                  <td><p>16-000009</p></td>
+                  <td><p>신영 건설 주식회사</p></td>
+                  <td><p>나카시키와 군 다테야마 마치오</p></td>
+                  <td><p>고평 공스케</p></td>
+                  <td class="text_center"><p>2024-09-02</p></td>
+                  <td><p>사업 연도 종료 신고(법인)</p></td>
+                  <td class="pdf__box text_center"> 
+                    <div class="pdf_info">
+                      <p>FS_370020811_202405</p>
+                      <a href="javascript:;">PDF</a>
+                    </div>
+                  </td>
+                  <td class="text_center"><p>16101</p></td>
+                </tr>
+                <tr>
+                  <td class="text_center"><p>270062085</p></td>
+                  <td class="text_center"><p>지사</p></td>
+                  <td><p>16-000009</p></td>
+                  <td><p>신영 건설 주식회사</p></td>
+                  <td><p>나카시키와 군 다테야마 마치오</p></td>
+                  <td><p>고평 공스케</p></td>
+                  <td class="text_center"><p>2024-09-02</p></td>
+                  <td><p>사업 연도 종료 신고(법인)</p></td>
+                  <td class="pdf__box text_center"> 
+                    <div class="pdf_info">
+                      <p>FS_370020811_202405</p>
+                      <a href="javascript:;">PDF</a>
+                    </div>
+                  </td>
+                  <td class="text_center"><p>16101</p></td>
+                </tr>
+                <tr>
+                  <td class="text_center"><p>270062085</p></td>
+                  <td class="text_center"><p>지사</p></td>
+                  <td><p>16-000009</p></td>
+                  <td><p>신영 건설 주식회사</p></td>
+                  <td><p>나카시키와 군 다테야마 마치오</p></td>
+                  <td><p>고평 공스케</p></td>
+                  <td class="text_center"><p>2024-09-02</p></td>
+                  <td><p>사업 연도 종료 신고(법인)</p></td>
+                  <td class="pdf__box text_center"> 
+                    <div class="pdf_info">
+                      <p>FS_370020811_202405</p>
+                      <a href="javascript:;">PDF</a>
+                    </div>
+                  </td>
+                  <td class="text_center"><p>16101</p></td>
+                </tr>
+                <tr>
+                  <td class="text_center"><p>270062085</p></td>
+                  <td class="text_center"><p>지사</p></td>
+                  <td><p>16-000009</p></td>
+                  <td><p>신영 건설 주식회사</p></td>
+                  <td><p>나카시키와 군 다테야마 마치오</p></td>
+                  <td><p>고평 공스케</p></td>
+                  <td class="text_center"><p>2024-09-02</p></td>
+                  <td><p>사업 연도 종료 신고(법인)</p></td>
+                  <td class="pdf__box text_center"> 
+                    <div class="pdf_info">
+                      <p>FS_370020811_202405</p>
+                      <a href="javascript:;">PDF</a>
+                    </div>
+                  </td>
+                  <td class="text_center"><p>16101</p></td>
+                </tr>
+                <tr>
                   <td class="text_center"><p>270062085</p></td>
                   <td class="text_center"><p>지사</p></td>
                   <td><p>16-000009</p></td>
@@ -311,22 +495,31 @@
             </table>
           </div>
 
+          <!-- table_control -->
           <div class="table_control">
-            <div class="page_info">
-              Page 1 of 1
+            
+            <div class="page_navigation">
+              <button class="btn_first off">first</button>
+              <button class="btn_prev off">prev</button>
+              <p>Page <span>1</span> of <span>1</span></p>
+              <button class="btn_next">next</button>
+              <button class="btn_last">last</button>
             </div>
+
             <div class="page_control">
-              <p>Page Size</p>
+              <p class="page_text">Page Size</p>
               <select>
-                <option value="">100</option>
+                <option value="100">100</option>
+                <option value="90">90</option>
+                <option value="80">80</option>
               </select>
-              <span></span>
+              <span class="line"></span>
               <p>1 to 40 of 40</p>
             </div>
           </div>
-
-
+          <!-- table_control fin -->
         </div>
+        <!-- table__box fin -->
       </section>
       <!-- list content fin -->
     </div>
