@@ -12,7 +12,7 @@
 
     // highlight 이벤트
     const toggleHighlight = (event, highlight) => {
-        const table = document.getElementById("hoverTable");
+        const table = document.getElementById("list_table");
         const rowIndex = event.currentTarget.parentElement.rowIndex;
         const cellIndex = event.currentTarget.cellIndex;
 
@@ -27,7 +27,7 @@
 
     // table hover 이벤트
     const tableHoverEvent = () => {
-        const table = document.getElementById("hoverTable");
+        const table = document.getElementById("list_table");
         
         // thead 제외 tbody td 이벤트 적용
         table.querySelectorAll("tbody td").forEach(cell => {
@@ -188,13 +188,16 @@
               <button class="filled_btn">Button</button>
             </div>
         </div>
+        <!-- filter__box -->
         <div class="filter__box">
           <button class="filter_state on">filter state</button>
           <p>Filter</p>
         </div>
+        <!-- filter__box fin -->
+        <!-- table__box -->
         <div class="table__box">
           <div class="table__inner">
-            <table id="hoverTable">
+            <table id="list_table">
               <colgroup>
                 <col style="width: 170px;">
                 <col style="width: 125px;">
@@ -432,22 +435,31 @@
             </table>
           </div>
 
+          <!-- table_control -->
           <div class="table_control">
-            <div class="page_info">
-              Page 1 of 1
+            
+            <div class="page_navigation">
+              <button class="btn_first off">first</button>
+              <button class="btn_prev off">prev</button>
+              <p>Page <span>1</span> of <span>1</span></p>
+              <button class="btn_next">next</button>
+              <button class="btn_last">last</button>
             </div>
+
             <div class="page_control">
-              <p>Page Size</p>
+              <p class="page_text">Page Size</p>
               <select>
-                <option value="">100</option>
+                <option value="100">100</option>
+                <option value="90">90</option>
+                <option value="80">80</option>
               </select>
-              <span></span>
+              <span class="line"></span>
               <p>1 to 40 of 40</p>
             </div>
           </div>
-
-
+          <!-- table_control fin -->
         </div>
+        <!-- table__box fin -->
       </section>
       <!-- list content fin -->
     </div>

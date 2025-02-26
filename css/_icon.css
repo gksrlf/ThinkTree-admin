@@ -161,7 +161,7 @@
   /* 테이블 슬라이드 */
   --table-slide-next: var(--table-slide-next-default);
   --table-slide-prev: var(--table-slide-prev-default);
-  --table-slide-lasst: var(--table-slide-last-default);
+  --table-slide-last: var(--table-slide-last-default);
   --table-slide-first: var(--table-slide-first-default);
 
   /* 테이블 pdf 이미지 */
@@ -217,7 +217,7 @@
   /* 테이블 슬라이드 */
   --table-slide-next: var(--table-slide-next-default);
   --table-slide-prev: var(--table-slide-prev-default);
-  --table-slide-lasst: var(--table-slide-last-default);
+  --table-slide-last: var(--table-slide-last-default);
   --table-slide-first: var(--table-slide-first-default);
 
   /* 테이블 pdf 이미지 */
@@ -273,7 +273,7 @@
   /* 테이블 슬라이드 */
   --table-slide-next: var(--table-slide-next-default);
   --table-slide-prev: var(--table-slide-prev-default);
-  --table-slide-lasst: var(--table-slide-last-default);
+  --table-slide-last: var(--table-slide-last-default);
   --table-slide-first: var(--table-slide-first-default);
 
   /* 테이블 pdf 이미지 */
