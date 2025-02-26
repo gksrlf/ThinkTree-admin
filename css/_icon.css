@@ -125,7 +125,11 @@
 
   /* input icon */
   --input-search-default: url('../img/icon/icon_input_search_default.svg');
-  --input-search-dark: url('../img/icon/dark/icon_input_search_dark.svg')
+  --input-search-dark: url('../img/icon/dark/icon_input_search_dark.svg');
+
+  /* calendar icon */
+  --calendar-icon-default: url('../img/icon/btn_calendar_default.svg');
+  --calendar-icon-dark: url('../img/icon/dark/btn_calendar_dark.svg');
 }
 
 
@@ -193,6 +197,9 @@
 
   /* input search icon */
   --input-search: var(--input-search-default);
+
+  /*  calendar icon */
+  --calendar-icon: var(--calendar-icon-default);
 }
 
 :root.pastel {
@@ -255,6 +262,8 @@
   --select-arrow: var(--select-arrow-default);
   /* input search icon */
   --input-search: var(--input-search-default);
+  /*  calendar icon */
+  --calendar-icon: var(--calendar-icon-default);
 }
 
 :root.dark {
@@ -317,4 +326,6 @@
   --select-arrow: var(--select-arrow-dark);
   /* input search icon */
   --input-search: var(--input-search-dark);
+  /*  calendar icon */
+  --calendar-icon: var(--calendar-icon-dark);
 }
