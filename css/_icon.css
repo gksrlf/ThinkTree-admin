@@ -71,7 +71,7 @@
   /* dark모드인데 전용 테이블 슬라이드 버튼이 없음*/
   --table-slide-next-dark: url('../img/icon/dark/table_slide_next_d.svg');
   --table-slide-prev-dark: url('../img/icon/dark/table_slide_prev_d.svg');
-  --table-slide-first-dark: url('../img/icon/dark/table_slide_firtst_d.svg');
+  --table-slide-first-dark: url('../img/icon/dark/table_slide_first_d.svg');
   --table-slide-last-dark: url('../img/icon/dark/table_slide_last_d.svg');
 
   /* 테이블 pdf 이미지 */
@@ -107,6 +107,14 @@
   --header-logout-dark: url('../img/icon/dark/icon_logout_d.svg');
   --header-screen-dark: url('../img/icon/dark/btn_screen_mode_d.svg');
 
+
+  /* 테이블 헤더 아이콘 */
+  --table-header-filter-light: url('../img/icon/light/table_header_filter.svg');
+  --table-header-sort-light: url('../img/icon/light/table_btn_sort.svg');
+  --table-header-filter-pastel: url('../img/icon/pastel/table_header_filter_p.svg');
+  --table-header-sort-pastel: url('../img/icon/pastel/table_btn_sort_p.svg');
+  --table-header-filter-dark: url('../img/icon/dark/table_header_filter_d.svg');
+  --table-header-sort-dark: url('../img/icon/dark/table_btn_sort_d.svg');
 }
 
 
