@@ -30,6 +30,7 @@
   --blue-50 : #F7FAFD;
   --blue-100 : #DBEAFE;
   --blue-200 : #BFDBFE;
+  --blue-200-30 : rgba(191, 219, 254, 0.3);
   --blue-300 : #93C5FD;
   --blue-400 : #60A5FA;
   --blue-500 : #3B82F6;
@@ -45,11 +46,13 @@
   --gray-blue-500 : #D6E6F5;
   --gray-blue-700 : #9FB4DD;
   --gray-blue-900 : #5D83CA;
+  --gray-blue-900-30 : rgba(93, 131, 202, 30);
 
   /* Pink */
   --pink-50 : #FFF5F6;
   --pink-100 : #FFDDE3;
   --pink-200 : #FFC3CF;
+  --pink-200-30 : rgba(255, 195, 207, 30);
   --pink-300 : #FFA7B8;
   --pink-400 : #FE889F;
   --pink-500 : #F46B85;
@@ -152,7 +155,7 @@
   --brand-primary-light-muted : var(--gray-blue-700);
   --brand-primary-default : var(--blue-600);
   --brand-primary-midium : var(--blue-400);
-  --brand-primary-light-table-focus : var(--blue-200);
+  --brand-primary-light-table-focus : var(--blue-200-30);
   --brand-primary-light : var(--blue-200);
   --brand-primary-lighter : var(--blue-100);
   --brand-primary-lightest : var(--blue-50);
@@ -227,7 +230,7 @@
   --brand-primary-light-muted : var(--gray-pink-700);
   --brand-primary-default : var(--pink-500);
   --brand-primary-midium : var(--pink-400);
-  --brand-primary-light-table-focus : var(--pink-200);
+  --brand-primary-light-table-focus : var(--pink-200-30);
   --brand-primary-light : var(--pink-200);
   --brand-primary-lighter : var(--gray-pink-100);
   --brand-primary-lightest : var(--gray-pink-50);
@@ -302,7 +305,7 @@
   --brand-primary-light-muted : var(--gray-blue-700);
   --brand-primary-default : var(--blue-400);
   --brand-primary-midium : var(--blue-300);
-  --brand-primary-light-table-focus : var(--gray-blue-900);
+  --brand-primary-light-table-focus : var(--gray-blue-900-30);
   --brand-primary-light : var(--gray-40);
   --brand-primary-lighter : var(--gray-40);
   --brand-primary-lightest : var(--gray-30);

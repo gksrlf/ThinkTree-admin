@@ -5,6 +5,41 @@
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <title>Title</title>
+  <script>
+
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+        addHoverEventsAndClasses();
+    });
+
+    const toggleHighlight = (event, highlight) => {
+        const table = document.getElementById("hoverTable");
+        const rowIndex = event.currentTarget.parentElement.rowIndex;
+        const cellIndex = event.currentTarget.cellIndex;
+
+        table.querySelectorAll("tr").forEach((row, rIdx) => {
+            row.querySelectorAll("td, th").forEach((cell, cIdx) => {
+              if ((rIdx === rowIndex || cIdx === cellIndex)) {
+                  cell.classList.toggle("highlight", highlight);
+              }
+            });
+        });
+    };
+
+    const addHoverEventsAndClasses = () => {
+        const table = document.getElementById("hoverTable");
+        
+        // thead 내부 tr 제외하고 td만 이벤트 적용
+        table.querySelectorAll("tbody td").forEach(cell => {
+            cell.addEventListener("mouseenter", (e) => toggleHighlight(e, true));
+            cell.addEventListener("mouseleave", (e) => toggleHighlight(e, false));
+        });
+    };
+
+
+
+  </script>
 </head>
 <body>
 <div class="wrap">
@@ -22,59 +57,76 @@
         <nav class="lnb_bar_content">
           <ul>
             <li class="lnb1 home">
-              <div>
-                <a href="javascript:;" class="">DashBoard</a>
-              </div>
+              <a href="javascript:;">Home</a>
             </li>
             <li class="lnb1 project on">
               <div>
                 <p>Project</p>
                 <span class="menu_arrow"></span>
               </div>
-                <ol class="sub_menu">
-                  <li>
-                    <a href="javascript:;">SubMenu 1</a>
-                  </li>
-                  <li class="on">
-                    <a href="javascript:;">SubMenu 2</a>
-                  </li>
-                  <li>
-                    <a href="javascript:;">SubMenu 3</a>
-                  </li>
-                  <li>
-                    <a href="javascript:;">SubMenu 4</a>
-                  </li>
-                </ol>
+              <ol class="sub_menu">
+                <li>
+                  <a href="javascript:;">SubMenu 1</a>
+                </li>
+                <li class="on">
+                  <a href="javascript:;">SubMenu 2</a>
+                </li>
+                <li>
+                  <a href="javascript:;">SubMenu 3</a>
+                </li>
+                <li>
+                  <a href="javascript:;">SubMenu 4</a>
+                </li>
+              </ol>
             </li>
-            <li class="lnb1 overview">
+            <li class="lnb1 overview on">
               <div>
                 <p>Overview</p>
                 <span class="menu_arrow"></span>
               </div>
+              <ol class="sub_menu">
+                <li>
+                  <a href="javascript:;">SubMenu 1</a>
+                </li>
+                <li class="on">
+                  <a href="javascript:;">SubMenu 2</a>
+                </li>
+                <li>
+                  <a href="javascript:;">SubMenu 3</a>
+                </li>
+                <li>
+                  <a href="javascript:;">SubMenu 4</a>
+                </li>
+              </ol>
             </li>
-            <li class="lnb1 category">
+            <li class="lnb1 category on">
               <div>
                 <p>List</p>
                 <span class="menu_arrow"></span>
               </div>
+              <ol class="sub_menu">
+                <li>
+                  <a href="javascript:;">SubMenu 1</a>
+                </li>
+                <li class="on">
+                  <a href="javascript:;">SubMenu 2</a>
+                </li>
+                <li>
+                  <a href="javascript:;">SubMenu 3</a>
+                </li>
+                <li>
+                  <a href="javascript:;">SubMenu 4</a>
+                </li>
+              </ol>
             </li>
             <li class="lnb1 dashboard">
-              <div>
-                <p>Dashboard</p>
-                <span class="menu_arrow"></span>
-              </div>
+              <a href="javascript:;">DashBoard</a>
             </li>
             <li class="lnb1 favorite">
-              <div>
-                <p>Favorite</p>
-                <span class="menu_arrow"></span>
-              </div>
+              <a href="javascript:;">Favorite</a>
             </li>
             <li class="lnb1 schedule">
-              <div>
-                <p>Schedule</p>
-                <span class="menu_arrow"></span>
-              </div>
+              <a href="javascript:;">Schedule</a>
             </li>
           </ul>
         </nav>
@@ -144,7 +196,7 @@
         </div>
         <div class="table__box">
           <div class="table__inner">
-            <table>
+            <table id="hoverTable">
               <colgroup>
                 <col style="width: 170px;">
                 <col style="width: 125px;">
@@ -209,109 +261,55 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>270062085</td>
-                  <td>지사</td>
-                  <td>16-000009</td>
-                  <td>신영 건설 주식회사</td>
-                  <td>나카시키와 군 다테야마 마치오</td>
-                  <td>고평 공스케</td>
-                  <td>2024-09-02</td>
-                  <td>사업 연도 종료 신고(법인)</td>
-                  <td> 
-                    <div>FS_370020811_202405</div>
-                    <div>PDF</div>
+                  <td class="text_center"><p>270062085</p></td>
+                  <td class="text_center"><p>지사</p></td>
+                  <td><p>16-000009</p></td>
+                  <td><p>신영 건설 주식회사</p></td>
+                  <td><p>나카시키와 군 다테야마 마치오</p></td>
+                  <td><p>고평 공스케</p></td>
+                  <td class="text_center"><p>2024-09-02</p></td>
+                  <td><p>사업 연도 종료 신고(법인)</p></td>
+                  <td class="pdf__box text_center"> 
+                    <div class="pdf_info">
+                      <p>FS_370020811_202405</p>
+                      <a href="javascript:;">PDF</a>
+                    </div>
                   </td>
-                  <td>16101</td>
+                  <td class="text_center"><p>16101</p></td>
                 </tr>
                 <tr>
-                  <td>270062085</td>
-                  <td>지사</td>
-                  <td>16-000009</td>
-                  <td>신영 건설 주식회사</td>
-                  <td>나카시키와 군 다테야마 마치오</td>
-                  <td>고평 공스케</td>
-                  <td>2024-09-02</td>
-                  <td>사업 연도 종료 신고(법인)</td>
-                  <td> 
-                    <div>FS_370020811_202405</div>
-                    <div>PDF</div>
+                  <td class="text_center"><p>270062085</p></td>
+                  <td class="text_center"><p>지사</p></td>
+                  <td><p>16-000009</p></td>
+                  <td><p>신영 건설 주식회사</p></td>
+                  <td><p>나카시키와 군 다테야마 마치오</p></td>
+                  <td><p>고평 공스케</p></td>
+                  <td class="text_center"><p>2024-09-02</p></td>
+                  <td><p>사업 연도 종료 신고(법인)</p></td>
+                  <td class="pdf__box text_center"> 
+                    <div class="pdf_info">
+                      <p>FS_370020811_202405</p>
+                      <a href="javascript:;">PDF</a>
+                    </div>
                   </td>
-                  <td>16101</td>
-                </tr>
-                <tr>
-                  <td>270062085</td>
-                  <td>지사</td>
-                  <td>16-000009</td>
-                  <td>신영 건설 주식회사</td>
-                  <td>나카시키와 군 다테야마 마치오</td>
-                  <td>고평 공스케</td>
-                  <td>2024-09-02</td>
-                  <td>사업 연도 종료 신고(법인)</td>
-                  <td> 
-                    <div>FS_370020811_202405</div>
-                    <div>PDF</div>
-                  </td>
-                  <td>16101</td>
-                </tr>
-                <tr>
-                  <td>270062085</td>
-                  <td>지사</td>
-                  <td>16-000009</td>
-                  <td>신영 건설 주식회사</td>
-                  <td>나카시키와 군 다테야마 마치오</td>
-                  <td>고평 공스케</td>
-                  <td>2024-09-02</td>
-                  <td>사업 연도 종료 신고(법인)</td>
-                  <td> 
-                    <div>FS_370020811_202405</div>
-                    <div>PDF</div>
-                  </td>
-                  <td>16101</td>
+                  <td class="text_center"><p>16101</p></td>
                 </tr>
                                 <tr>
-                  <td>270062085</td>
-                  <td>지사</td>
-                  <td>16-000009</td>
-                  <td>신영 건설 주식회사</td>
-                  <td>나카시키와 군 다테야마 마치오</td>
-                  <td>고평 공스케</td>
-                  <td>2024-09-02</td>
-                  <td>사업 연도 종료 신고(법인)</td>
-                  <td> 
-                    <div>FS_370020811_202405</div>
-                    <div>PDF</div>
+                  <td class="text_center"><p>270062085</p></td>
+                  <td class="text_center"><p>지사</p></td>
+                  <td><p>16-000009</p></td>
+                  <td><p>신영 건설 주식회사</p></td>
+                  <td><p>나카시키와 군 다테야마 마치오</p></td>
+                  <td><p>고평 공스케</p></td>
+                  <td class="text_center"><p>2024-09-02</p></td>
+                  <td><p>사업 연도 종료 신고(법인)</p></td>
+                  <td class="pdf__box text_center"> 
+                    <div class="pdf_info">
+                      <p>FS_370020811_202405</p>
+                      <a href="javascript:;">PDF</a>
+                    </div>
                   </td>
-                  <td>16101</td>
-                </tr>
-                                <tr>
-                  <td>270062085</td>
-                  <td>지사</td>
-                  <td>16-000009</td>
-                  <td>신영 건설 주식회사</td>
-                  <td>나카시키와 군 다테야마 마치오</td>
-                  <td>고평 공스케</td>
-                  <td>2024-09-02</td>
-                  <td>사업 연도 종료 신고(법인)</td>
-                  <td> 
-                    <div>FS_370020811_202405</div>
-                    <div>PDF</div>
-                  </td>
-                  <td>16101</td>
-                </tr>
-                                <tr>
-                  <td>270062085</td>
-                  <td>지사</td>
-                  <td>16-000009</td>
-                  <td>신영 건설 주식회사</td>
-                  <td>나카시키와 군 다테야마 마치오</td>
-                  <td>고평 공스케</td>
-                  <td>2024-09-02</td>
-                  <td>사업 연도 종료 신고(법인)</td>
-                  <td> 
-                    <div>FS_370020811_202405</div>
-                    <div>PDF</div>
-                  </td>
-                  <td>16101</td>
+                  <td class="text_center"><p>16101</p></td>
                 </tr>
               </tbody>
             </table>

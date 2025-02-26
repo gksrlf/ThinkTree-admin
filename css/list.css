@@ -1,4 +1,5 @@
 @import "./_color.css";
+@import './_icon.css';
 @import "./_input.css";
 @import "./_header.css";
 @import "./_sidebar.css";
@@ -55,7 +56,10 @@
   text-indent: -99999px;
   width: 32px;
   height: 16px;
-  background-color: var(--brand-primary-default);
+  background-image: var(--filter-large-on);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 .content .filter__box p{
   font-weight: 500;
@@ -133,6 +137,15 @@
 }
 .content .table__box table tbody td{
   height: 50px;
+  text-align: left;
+}
+.content .table__box table tbody td.text_center{
+  text-align: center;
+}
+.content .table__box table tbody td p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .content .table__box table tbody td input[type="text"],
 .content .table__box table tbody td select{
@@ -150,6 +163,37 @@
 }
 .content .table__box table tbody td option{
   color: var(--neutral-default);
+}
+
+.content .table__box table tbody td.pdf__box .pdf_info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .table__box table tbody td.pdf__box .pdf_info p{
+  position: relative;
+  width: calc(100% - 106px);
+  padding-right: 15px;
+  margin-right: 25px;
+}
+.content .table__box table tbody td.pdf__box .pdf_info p:after{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: '';
+  width: 1px;
+  height: 10px;
+  transform: translateY(-50%);
+  background-color: var(--gray-80);
+}
+.content .table__box table tbody td.pdf__box .pdf_info a{
+  text-indent: -99999px;
+  width: 66px;
+  height: 32px;
+  background-image: var(--table-pdf);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 
 /* table_control */
@@ -175,4 +219,9 @@
   display: flex;
   font-size: 14px;
   color: var(--neutral-darker);
+}
+
+.highlight {
+  background-color:var(--brand-primary-light-table-focus);
+  cursor:default;
 }

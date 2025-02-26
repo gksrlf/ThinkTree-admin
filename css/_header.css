@@ -28,7 +28,7 @@ header .gnb_bar__area .depth__box ul .home{
 	display: block;
   width: 16px;
   height: 16px;
-  background-image: url('../img/icon/light/icon_home.svg');
+  background-image: var(--header-home);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -49,7 +49,7 @@ header .gnb_bar__area .depth__box ul li:not(:last-of-type):after{
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
-  background-image: url('../img/icon/light/icon_arrow_right.svg');
+  background-image: var(--header-arrow);
 }
 header .gnb_bar__area .depth__box ul .depth{
 	color: var(--brand-primary-default);
@@ -78,19 +78,19 @@ header .gnb_bar__area .control__box div > a{
 	background-size: contain;
 }
 header .gnb_bar__area .control__box .notify a{
-	background-image: url("../img/icon/light/btn_notify.svg");
+	background-image: var(--header-notify);
 }
 header .gnb_bar__area .control__box .notify.on a{
-	background-image: url("../img/icon/light/btn_notify_on.svg");
+	background-image: var(--header-notify-on);
 }
 header .gnb_bar__area .control__box .mail a{
-	background-image: url("../img/icon/light/btn_mail.svg");
+	background-image: var(--header-mail);
 }
 header .gnb_bar__area .control__box .logout a{
-	background-image: url("../img/icon/light/icon_logout.svg");
+	background-image: var(--header-logout);
 }
 header .gnb_bar__area .control__box .screen_mode a{
-	background-image: url("../img/icon/light/btn_screen_mode.svg");
+	background-image: var(--header-screen);
 }
 
 header .gnb_bar__area .control__box .language{
@@ -122,7 +122,7 @@ header .gnb_bar__area .control__box .language div .icon{
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-image: url("../img/icon/light/icon_language.svg");
+	background-image: var(--header-language);
 	margin-right: 7px;
 }
 header .gnb_bar__area .control__box .language div .text,
