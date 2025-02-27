@@ -2,45 +2,21 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <link rel="stylesheet" href="/node_modules/js-datepicker/dist/datepicker.min.css"><!-- datepicker -->
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
-  <title>Title</title>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        tableHoverEvent();
-    });
-
-    // highlight 이벤트
-    const toggleHighlight = (event, highlight) => {
-        const table = document.getElementById("list_table");
-        const rowIndex = event.currentTarget.parentElement.rowIndex;
-        const cellIndex = event.currentTarget.cellIndex;
-
-        table.querySelectorAll("tr").forEach((row, rIdx) => {
-            row.querySelectorAll("td, th").forEach((cell, cIdx) => {
-              if ((rIdx === rowIndex || cIdx === cellIndex)) {
-                  cell.classList.toggle("highlight", highlight);
-              }
-            });
-        });
-    };
-
-    // table hover 이벤트
-    const tableHoverEvent = () => {
-        const table = document.getElementById("list_table");
-        
-        // thead 제외 tbody td 이벤트 적용
-        table.querySelectorAll("tbody td").forEach(cell => {
-            cell.addEventListener("mouseenter", (e) => toggleHighlight(e, true));
-            cell.addEventListener("mouseleave", (e) => toggleHighlight(e, false));
-        });
-    };
-  </script>
+  <!-- datepicker -->
+  <script src="/node_modules/js-datepicker/dist/datepicker.min.js"></script>
+  <!-- list js -->
+  <script src="/js/list.js"></script>
+  
+  <title>List</title>
 </head>
 <body>
 <div class="wrap">
   <div class="container contents_container">
-
     <!-- aside lnb -->
     <aside class="lnb_bar__area">
       <div class="lnb_bar_control__box">
@@ -309,7 +285,8 @@
                     <input type="text" placeholder="Search">
                   </td>
                   <td>
-                    <input type="date" name="" id="" placeholder="" data-placeholder="YYYY-MM-DD">
+                    <!-- <input type="date" name="" id="date" value="YYYY-MM-DD" placeholder="날짜" data-placeholder="YYYY-MM-DD" required> -->
+                    <input id="datepicker" type="text" placeholder="YYYY-MM-DD">
                   </td>
                   <td>
                     <input type="text" placeholder="Search">
@@ -523,8 +500,10 @@
       </section>
       <!-- list content fin -->
     </div>
-  </div>
 
+    <!-- tablet & mobile menu bg -->
+    <div class="cover_bg"></div>
+  </div>
 </div>
 </body>
 </html>
