@@ -127,6 +127,20 @@
   --input-search-default: url('../img/icon/icon_input_search_default.svg');
   --input-search-dark: url('../img/icon/dark/icon_input_search_dark.svg');
 
+  --input-file-light: url('../img/icon/light/icon_file_input_l.svg');
+  --input-file-light-hover: url('../img/icon/light/icon_file_input_hover_l.svg');
+  --input-file-pastel: url('../img/icon/pastel/icon_input_file_p.svg');
+  --input-file-pastel-hover: url('../img/icon/pastel/icon_input_file_hover_p.svg');
+  --input-file-dark: url('../img/icon/dark/icon_input_file_d.svg');
+  --input-file-dark-hover: url('../img/icon/dark/icon_input_file_hover_d.svg');
+
+
+  /* file input label border */
+  --input-file-border-light : url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%232563EB' stroke-width='2' stroke-dasharray='7' stroke-dashoffset='37' stroke-linecap='square'/%3e%3c/svg%3e");
+  --input-file-border-pastel : url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%2346B85' stroke-width='2' stroke-dasharray='7' stroke-dashoffset='37' stroke-linecap='square'/%3e%3c/svg%3e");
+  --input-file-border-dark : url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%2360A5FA' stroke-width='2' stroke-dasharray='7' stroke-dashoffset='37' stroke-linecap='square'/%3e%3c/svg%3e");
+
+
   /* calendar icon */
   --calendar-icon-default: url('../img/icon/btn_calendar_default.svg');
   --calendar-icon-dark: url('../img/icon/dark/btn_calendar_dark.svg');
@@ -197,9 +211,14 @@
 
   /* input search icon */
   --input-search: var(--input-search-default);
+  --input-file: var(--input-file-light);
+  --input-file-hover: var(--input-file-light-hover);
 
   /*  calendar icon */
   --calendar-icon: var(--calendar-icon-default);
+
+  /* input file border */
+  --input-file-border: var(--input-file-border-light);
 }
 
 :root.pastel {
@@ -262,8 +281,14 @@
   --select-arrow: var(--select-arrow-default);
   /* input search icon */
   --input-search: var(--input-search-default);
+  --input-file: var(--input-file-pastel);
+  --input-file-hover: var(--input-file-pastel-hover);
+
   /*  calendar icon */
   --calendar-icon: var(--calendar-icon-default);
+
+  /* input file border */
+  --input-file-border: var(--input-file-border-pastel);
 }
 
 :root.dark {
@@ -326,6 +351,12 @@
   --select-arrow: var(--select-arrow-dark);
   /* input search icon */
   --input-search: var(--input-search-dark);
+  --input-file: var(--input-file-dark);
+  --input-file-hover: var(--input-file-dark-hover);
+
   /*  calendar icon */
   --calendar-icon: var(--calendar-icon-dark);
+
+  /* input file border */
+  --input-file-border: var(--input-file-border-dark);
 }

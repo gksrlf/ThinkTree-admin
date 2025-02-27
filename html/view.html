@@ -246,14 +246,40 @@
               </td>
             </tr>
             <tr>
-              <th rowspan="2">1</th>
+              <th>한 줄 전체 사용할 경우</th>
               <td colspan="3">
                 <label class="area_label">
-                  <textarea>
-
+                  <textarea maxlength="100">
                   </textarea>
+                  <span class="area_txt">0/100</span>
                 </label>
               </td>
+            </tr>
+            <tr>
+              <th>체크박스 영역</th>
+              <td colspan="3">
+                <input id="option1" type="checkbox" checked>
+                <label for="option1">Option1</label>
+                <input id="option2" type="checkbox">
+                <label for="option2">Option2</label>
+                <input id="option3" type="checkbox" checked>
+                <label for="option3">Option3</label>
+                <input id="option4" type="checkbox" checked>
+                <label for="option4">Option4</label>
+              </td>
+            </tr>
+            <tr>
+              <th rowspan="2">첨부파일<br>영역</th>
+              <td colspan="3">
+                <label class="file_label">
+                  <img class="file_label_img">
+                  <span>여기로 파일을 드래그하거나<br>클릭하여 업로드하세요.</span>
+                  <input type="file">
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">hi</td>
             </tr>
           </table>
         </div>
