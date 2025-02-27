@@ -16,7 +16,12 @@
   z-index: 999;
   width: calc(100% - 190px);
   max-height: 100dvh;
+  transition: width 0.2s ease;
 }
+.contents_container .contents.wide_mode{
+  width: calc(100% - 70px);
+}
+
 .contents_container .contents .content{
   height: calc(100% - 55px); /* header의 height 값을 뺀 높이 수치 */
   background-color: var(--bg-base);

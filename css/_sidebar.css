@@ -22,11 +22,13 @@
   background-color: var(--bg-default);
   border-right: 1px solid var(--neutral-midium);
   box-sizing: border-box;
+  transition: width 0.2s ease;
 }
 .lnb_bar__area .lnb_bar_control__box{
   position: absolute;
   top: 44px;
   left: 179px;
+  transition: left 0.2s ease;
 }
 .lnb_bar__area .lnb_bar_control__box button{
   text-indent: -99999px;
@@ -73,6 +75,7 @@
   overflow-y: auto;
 }
 .lnb_bar_content ul .lnb1 {
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -81,17 +84,11 @@
 .lnb_bar_content ul .lnb1:last-of-type{
   margin-bottom: 0;
 }
-.lnb_bar_content ul .lnb1 a,
-.lnb_bar_content ul .lnb1 p{
+.lnb_bar_content ul .lnb1 a{
+  /* position: relative; */
   font-size: 14px;
   color: var(--neutral-default);
   font-weight: 500;
-}
-.lnb_bar_content ul .lnb1 a {
-  display: block;
-}
-.lnb_bar_content ul .lnb1 > div,
-.lnb_bar_content ul .lnb1 > a{
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -102,12 +99,12 @@
   background-position: 6px center;
   box-sizing: border-box;
   border-radius: 4px;
+  transition: width 0.2s ease;
 }
-
-.lnb_bar_content ul .lnb1 > div p{
+.lnb_bar_content ul .lnb1 > a span{
   width: calc(100% - 10px);
 }
-.lnb_bar_content ul .lnb1 > div .menu_arrow{
+.lnb_bar_content ul .lnb1 > a .menu_arrow{
   display: block;
   width: 10px;
   height: 10px;
@@ -115,69 +112,56 @@
 }
 
 /* side_bar lnb1 icon */
-.lnb_bar_content ul .home > div,
 .lnb_bar_content ul .home > a{
   background-image: var(--gnb-home);
 }
-.lnb_bar_content ul .project > div{
+.lnb_bar_content ul .project > a{
   background-image: var(--gnb-diagram);
 }
-.lnb_bar_content ul .overview > div{
+.lnb_bar_content ul .overview > a{
   background-image: var(--gnb-overview);
 }
-.lnb_bar_content ul .category > div{
+.lnb_bar_content ul .category > a{
   background-image: var(--gnb-category);
 }
-.lnb_bar_content ul .dashboard > div,
 .lnb_bar_content ul .dashboard > a{
   background-image: var(--gnb-dashboard);
 }
-.lnb_bar_content ul .favorite > div,
 .lnb_bar_content ul .favorite > a{
   background-image: var(--gnb-favorite);
 }
-.lnb_bar_content ul .schedule > div,
 .lnb_bar_content ul .schedule > a{
   background-image: var(--gnb-schedule);
 }
 
 /* side_bar lnb1 on state */
-.lnb_bar_content ul .lnb1.on > div,
 .lnb_bar_content ul .lnb1.on > a{
   background-color: var(--brand-primary-default);
 }
-.lnb_bar_content ul .lnb1.on > div p,
-.lnb_bar_content ul .lnb1.on > a{
+.lnb_bar_content ul .lnb1.on > a span{
   color: var(--bg-default)
 }
-.lnb_bar_content ul .lnb1.on > div .menu_arrow{
+.lnb_bar_content ul .lnb1.on > a .menu_arrow{
   background: url("../img/icon/icon_nav_dropdown_on.svg") no-repeat center;
 }
-.lnb_bar_content ul .home.on > div,
 .lnb_bar_content ul .home.on > a{
   background-image: var(--gnb-home-on);
 }
-.lnb_bar_content ul .project.on > div,
 .lnb_bar_content ul .project.on > a{
   background-image: var(--gnb-diagram-on);
 }
-.lnb_bar_content ul .overview.on > div,
 .lnb_bar_content ul .overview.on > a{
   background-image: var(--gnb-overview-on);
 }
-.lnb_bar_content ul .category.on > div,
 .lnb_bar_content ul .category.on > a{
   background-image: var(--gnb-category-on);
 }
-.lnb_bar_content ul .dashboard.on > div,
 .lnb_bar_content ul .dashboard.on > a{
   background-image: var(--gnb-dashboard-on);
 }
-.lnb_bar_content ul .favorite.on > div,
 .lnb_bar_content ul .favorite.on > a{
   background-image: var(--gnb-favorite-on);
 }
-.lnb_bar_content ul .schedule.on > div,
 .lnb_bar_content ul .schedule.on > a{
   background-image: var(--gnb-schedule-on);
 }
@@ -272,4 +256,116 @@
 .lnb_bar_user__box .profile_info span{
   font-size: 11px;
   color: var(--gray-60);
+}
+
+/* fold */
+.lnb_bar__area.fold{
+  width: 70px;
+}
+.lnb_bar__area.fold .lnb_bar_control__box{
+  left: 59px;
+}
+.lnb_bar__area.fold .lnb_bar_control__box button{
+  background-image: var(--gnb-open-btn);
+}
+.lnb_bar__area.fold .lnb_bar_content{
+  overflow: visible;
+}
+.lnb_bar__area.fold .lnb_bar_content ul .lnb1 > a .menu_arrow,
+.lnb_bar__area.fold .lnb_bar_content ul .lnb1 > a div,
+.lnb_bar__area.fold .lnb_bar_content ul .lnb1 .sub_menu{
+  display: none;
+  position: absolute;
+  z-index: 100;
+  left: 55px;
+}
+.lnb_bar__area.fold .lnb_bar_content ul .lnb1.fold_on .sub_menu,
+.lnb_bar__area.fold .lnb_bar_content ul .lnb1.fold_on .lnb1_title{
+  display: block;
+}
+.lnb_bar__area.fold .lnb_bar_content ul .lnb1 > a{
+  width: 36px;
+  padding: 0;
+}
+
+.lnb_bar__area.fold .lnb_bar_content ul .lnb1 .sub_menu{
+  top: 40px;
+  width: 170px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--brand-primary-default);
+  box-sizing: border-box;
+  background-color: var(--bg-default);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.lnb_bar__area.fold .lnb_bar_content ul li .sub_menu li a{
+  padding: 0 15px;
+}
+.lnb_bar__area.fold .lnb_bar_content ul li .sub_menu li a::before{
+  display: none;
+}
+.lnb_bar__area.fold .lnb_bar_content ul .lnb1.fold_on .lnb1_title span{
+  display: table;
+  font-weight: 500;
+  padding: 5px 10px;
+  background-color: var(--bg-default);
+  border: 1px solid var(--brand-primary-default);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.lnb_bar__area.fold .lnb_bar_content ul .lnb1.fold_on > a span{
+  color: var(--brand-primary-default);
+}
+.lnb_bar__area.fold .lnb_bar_content ul .lnb1.fold_on .lnb1_title::before,
+.lnb_bar__area.fold .lnb_bar_content ul .lnb1.fold_on .lnb1_title::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.lnb_bar__area.fold .lnb_bar_content ul .lnb1.fold_on .lnb1_title::before{
+  z-index: 2;
+  left: -7px;
+  border-width: 5px 8px 5px 0px;
+  border-color: transparent var(--brand-primary-default) transparent transparent;
+}
+.lnb_bar__area.fold .lnb_bar_content ul .lnb1.fold_on .lnb1_title::after{
+  z-index: 3;
+  left: -5.5px;
+  border-width: 5px 8px 5px 0px;
+  border-color: transparent var(--bg-default) transparent transparent;
+}
+.lnb_bar__area.fold .lnb_bar_content ul .lnb1.fold_on .lnb1_title span{
+  position: relative;
+  z-index: 1;
+}
+.lnb_bar__area.fold .lnb_bar_user{
+  justify-content: center;
+  background-color: var(--bg-default);
+}
+.lnb_bar__area.fold .lnb_bar_user .profile_img{
+  margin-right: 0;
+}
+.lnb_bar__area.fold .profile_info{
+  display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width:1280px) {
+  .cover_bg.on{
+    display: block;
+  }
+}
+@media screen and (max-width:1024px){
+
+}
+@media screen and (max-width:640px) {
+
 }
