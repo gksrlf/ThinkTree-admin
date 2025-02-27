@@ -1,0 +1,11 @@
+<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#wisin78t8a)" stroke="#BBB" stroke-width="1.5">
+        <circle cx="11" cy="11.001" r="9.927"/>
+        <path d="M12.834 14.665 9.167 11l3.667-3.667" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <defs>
+        <clipPath id="wisin78t8a">
+            <path fill="#fff" d="M0 0h22v22H0z"/>
+        </clipPath>
+    </defs>
+</svg>

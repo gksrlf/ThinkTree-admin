@@ -144,6 +144,10 @@
   /* calendar icon */
   --calendar-icon-default: url('../img/icon/btn_calendar_default.svg');
   --calendar-icon-dark: url('../img/icon/dark/btn_calendar_dark.svg');
+
+  /* main section icon */
+  --title-back-btn-default: url('../img/icon/btn_circle_back_default.svg');
+  --title-back-btn-dark: url('../img/icon/dark/btn_circle_back_dark.svg');
 }
 
 
@@ -219,6 +223,8 @@
 
   /* input file border */
   --input-file-border: var(--input-file-border-light);
+  /* title back btn */
+  --title-back-btn: var(--title-back-btn-default);
 }
 
 :root.pastel {
@@ -289,6 +295,8 @@
 
   /* input file border */
   --input-file-border: var(--input-file-border-pastel);
+  /* title back btn */
+  --title-back-btn: var(--title-back-btn-default);
 }
 
 :root.dark {
@@ -359,4 +367,6 @@
 
   /* input file border */
   --input-file-border: var(--input-file-border-dark);
+  /* title back btn */
+  --title-back-btn: var(--title-back-btn-dark);
 }

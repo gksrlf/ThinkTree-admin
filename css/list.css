@@ -31,11 +31,7 @@
   align-items: center;
   margin-bottom: 15px;
 }
-.content .content_title__box h2{
-  font-size: 28px;
-  color: var(--neutral-default);
-  font-weight: 700;
-}
+
 .content .content_title__box .btn__box{
   display: flex;
   gap: 8px;
@@ -208,7 +204,7 @@ input[type="date"]::before{
   z-index: 2;
   width: 100%;
   content: attr(data-placeholder);
-  
+
 }
 input[type='date']:focus::before,
 input[type='date']:valid::before {
