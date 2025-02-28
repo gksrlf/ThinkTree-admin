@@ -108,6 +108,12 @@
   --header-screen-dark: url('../img/icon/dark/btn_screen_mode_d.svg');
 
 
+  /* header - mobile */
+  --header-menu-light: url('../img/icon/btn_menu_m.svg');
+  --header-menu-pastel: url('../img/icon/btn_menu_m.svg');
+  --header-menu-dark: url('../img/icon/btn_menu_m_w.svg');
+
+
   /* 테이블 헤더 아이콘 */
   --table-header-filter-light: url('../img/icon/light/table_header_filter.svg');
   --table-header-sort-light: url('../img/icon/light/table_btn_sort.svg');
@@ -206,6 +212,9 @@
   --header-logout: var(--header-logout-light);
   --header-screen: var(--header-screen-light);
 
+  /* header 모바일 아이콘 */
+  --header-mobile-menu: var(--header-menu-light);
+
    /* 테이블 헤더 아이콘 */
   --table-header-filter: var(--table-header-filter-light);
   --table-header-sort: var(--table-header-sort-light);
@@ -279,6 +288,9 @@
   --header-logout: var(--header-logout-pastel);
   --header-screen: var(--header-screen-pastel);
 
+  /* header 모바일 아이콘 */
+  --header-mobile-menu: var(--header-menu-pastel);
+
   /* 테이블 헤더 아이콘 */
   --table-header-filter: var(--table-header-filter-pastel);
   --table-header-sort: var(--table-header-sort-pastel);
@@ -350,6 +362,9 @@
   --header-language: var(--header-language-pastel);
   --header-logout: var(--header-logout-pastel);
   --header-screen: var(--header-screen-pastel);
+
+  /* header 모바일 아이콘 */
+  --header-mobile-menu: var(--header-menu-dark);
 
   /* 테이블 헤더 아이콘 */
   --table-header-filter: var(--table-header-filter-dark);

@@ -14,6 +14,8 @@
   <script src="/js/list.js"></script>
   <!-- aside js -->
   <script src="/js/aside.js"></script>
+  <!-- header js -->
+  <script src="/js/header.js"></script>
   
   <title>List</title>
 </head>
@@ -26,7 +28,7 @@
         <button>toggle button</button>
       </div>
       <div class="nav_logo__box">
-        <img src="../img/logo/default_head_logo.svg" />
+        <img src="../img/logo/default_head_logo.svg" alt="logo" />
       </div>
       <div class="lnb_bar__box">
         <nav class="lnb_bar_content">
@@ -38,7 +40,8 @@
                 </div>
               </a>
             </li>
-            <li class="lnb1 project on fold_on">
+            <!-- <li class="lnb1 project on fold_on"> -->
+            <li class="lnb1 project on">
               <a href="javascript:;">
                 <div class="lnb1_title">
                   <span>Project</span>
@@ -159,7 +162,7 @@
             <div class="mail">
               <a href="javascript:;">mail</a>
             </div>
-            <div class="language on">
+            <div class="language">
               <div>
                 <span class="icon">language</span>
                 <span class="text">KOR</span>
@@ -177,17 +180,27 @@
             </div>
           </div>
         </div>
+        <div class="gnb_bar_mobile__area">
+          <button class="mobile_menu_btn"></button>
+          <h1><img src="../img/logo/default_head_logo.svg" alt="logo" /></h1>
+        </div>
       </header>
       <!-- header fin -->
 
       <!-- list content -->
       <section class="content">
         <div class="content_title__box">
-            <h2 class="title_item__box">리스트 페이지</h2>
-            <div class="btn__box">
-              <button class="outlined_btn">Button</button>
-              <button class="filled_btn">Button</button>
-            </div>
+          <div class="mobile_depth__box">
+            <ul>
+              <li class="home">HOME</li>
+              <li class="depth">List</li>
+            </ul>
+          </div>
+          <h2 class="title_item__box">리스트 페이지</h2>
+          <div class="btn__box">
+            <button class="outlined_btn">Button</button>
+            <button class="filled_btn">Button</button>
+          </div>
         </div>
         <!-- filter__box -->
         <div class="filter__box">
@@ -500,14 +513,6 @@
           <!-- table_control -->
           <div class="table_control">
             
-            <div class="page_navigation">
-              <button class="btn_first off">first</button>
-              <button class="btn_prev off">prev</button>
-              <p>Page <span>1</span> of <span>1</span></p>
-              <button class="btn_next">next</button>
-              <button class="btn_last">last</button>
-            </div>
-
             <div class="page_control">
               <p class="page_text">Page Size</p>
               <select>
@@ -518,6 +523,15 @@
               <span class="line"></span>
               <p>1 to 40 of 40</p>
             </div>
+            
+            <div class="page_navigation">
+              <button class="btn_first off">first</button>
+              <button class="btn_prev off">prev</button>
+              <p>Page <span>1</span> of <span>1</span></p>
+              <button class="btn_next">next</button>
+              <button class="btn_last">last</button>
+            </div>
+            
           </div>
           <!-- table_control fin -->
         </div>

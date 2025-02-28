@@ -9,6 +9,7 @@ header{
   box-sizing: border-box;
 	background-color: var(--bg-default);
 }
+/* gnb_bar__area - PC & tablet */
 header .gnb_bar__area{
 	display: flex;
 	align-items: center;
@@ -166,4 +167,48 @@ header .gnb_bar__area .control__box .screen_mode{
 	height: 100%;
 	border-left: 1px solid var(--neutral-midium);
 	box-sizing: border-box;
+}
+
+/* gnb_bar_mobile__area */
+header .gnb_bar_mobile__area{
+  position: relative;
+	display: none;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+header .gnb_bar_mobile__area .mobile_menu_btn{
+  position: absolute;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  background-image: var(--header-mobile-menu);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/************ Responsive *************/
+/* tablet */
+@media screen and (max-width:1280px) {
+
+}
+@media screen and (max-width:1024px){
+
+}
+/* mobile */
+@media screen and (max-width:640px) {
+  /* gnb_bar__area - PC */
+  header .gnb_bar__area{
+    display: none;
+  }
+  /* gnb_bar_mobile__area */
+  header .gnb_bar_mobile__area{
+  	display: flex;
+  }
 }

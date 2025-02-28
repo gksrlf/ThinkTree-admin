@@ -150,7 +150,6 @@
 }
 
 
-
 /* 캘린더 영역 */
 .content .table__box table tbody td input[type="date"]{
   position: relative;
@@ -202,6 +201,7 @@
   -moz-appearance:none; /*for firefox*/
   appearance:none;
   background: var(--select-arrow) no-repeat 95% 50%/12px auto;
+  background-color: var(--bg-default);
   cursor: pointer;
 }
 .content .table__box table tbody td select:focus{
@@ -330,6 +330,7 @@
   margin: 0 15px;
 }
 
+
 /************ Responsive *************/
 /* tablet */
 @media screen and (max-width:1280px) {
@@ -339,9 +340,28 @@
   }
 }
 @media screen and (max-width:1024px){
-
+  .content .table__inner{
+    height: calc(100% - 90px);
+  }
+  .table_control{
+    height: 90px;
+    padding-left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .table_control .page_control{
+    position: relative;
+    right: 0;
+  }
 }
 /* mobile */
 @media screen and (max-width:640px) {
-
+  .content .table__box{
+    height: calc(100% - 165px);
+  }
+  .table_control .page_navigation p{
+    margin: 0 30px;
+  }
 }

@@ -34,6 +34,7 @@
   box-sizing: border-box;
 }
 
+
 /* content_title__box */
 .content .content_title__box{
   display: flex;
@@ -41,6 +42,46 @@
   align-items: center;
   margin-bottom: 15px;
 }
+/* mobile_depth__box - mobile_depth__box */
+.content .content_title__box .mobile_depth__box{
+  display: none;
+}
+.content .content_title__box .mobile_depth__box ul{
+	display: flex;
+}
+.content .content_title__box .mobile_depth__box ul .home{
+	display: none;
+	display: block;
+  width: 16px;
+  height: 16px;
+  background-image: var(--header-home);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+	text-indent: -999999px;
+}
+.content .content_title__box .mobile_depth__box ul li:not(:last-of-type){
+	position: relative;
+	margin-right: 20px;
+}
+.content .content_title__box .mobile_depth__box ul li:not(:last-of-type):after{
+  content: '';
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	right: -12px;
+	top: 50%;
+	transform: translateY(-50%);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+  background-image: var(--header-arrow);
+}
+.content .content_title__box .mobile_depth__box ul .depth{
+	color: var(--brand-primary-default);
+	font-weight: 500;
+}
+/* mobile_depth__box - btn__box */
 .content .content_title__box .btn__box{
   display: flex;
   gap: 8px;
@@ -65,9 +106,11 @@
   font-weight: 700;
 }
 
+
 /************ Responsive *************/
 /* tablet */
 @media screen and (max-width:1280px) {
+  /* contents_container */
   .contents_container .contents{
     width: calc(100% - 70px);
     padding-left: 70px;
@@ -78,5 +121,37 @@
 }
 /* mobile */
 @media screen and (max-width:640px) {
+  /* contents_container */
+  .contents_container .contents{
+    width: 100%;
+    padding-left: 0;
+  }
+  .contents_container .contents.wide_mode{
+    width: 100%;
+  }
+  .contents_container .contents .content{
+    padding: 15px;
+  }
 
+  /* content_title__box */
+  .content .content_title__box{
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .content .content_title__box .mobile_depth__box{
+    display: block;
+    margin-bottom: 15px;
+  }
+  .content .content_title__box .title_item__box{
+    margin-bottom: 25px;
+  }
+  .content .content_title__box .btn__box{
+    width: 100%;
+    gap: 5px;
+  }
+  .content .content_title__box .btn__box button{
+    width: 50%;
+    height: 30px;
+  }
 }
