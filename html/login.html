@@ -2,10 +2,11 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
-  <title>Document</title>
+  <title>Login</title>
 </head>
 <body>
 <div class="wrap">
@@ -20,8 +21,13 @@
           <h2 class="title_txt">Login</h2>
         </div>
         <div class="form_input">
-          <input type="text" class="login_text_input" placeholder="ID"/>
-          <input type="password" class="login_text_input" placeholder="Password"/>
+          <div class="login__box">
+            <input type="text" class="login_text_input" placeholder="ID"/>
+          </div>
+          <div class="password__box">
+            <input type="password" class="login_text_input" placeholder="Password"/>
+            <button></button>
+          </div>
         </div>
         <div class="form_check">
           <input id="idCheck" type="checkbox" />

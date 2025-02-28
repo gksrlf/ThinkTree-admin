@@ -17,11 +17,11 @@ const asideToggleEvent = () => {
 		if (lnbBar.classList.contains("fold")) {
 			lnbBar.classList.remove("fold");
 			contents.classList.remove("wide_mode")
-			cover.classList.remove("on")
+			cover.classList.add("on")
 		} else { 
 			lnbBar.classList.add("fold");
 			contents.classList.add("wide_mode");
-      cover.classList.add("on");
+      cover.classList.remove("on");
 		}
   });
 };
@@ -38,10 +38,10 @@ const handleResize = () => {
 	if (shouldFold) {
 		lnbBar.classList.add("fold");
 		contents.classList.add("wide_mode");
-		cover.classList.add("on");
+		cover.classList.remove("on");
 	} else { 
 		lnbBar.classList.remove("fold");
     contents.classList.remove("wide_mode");
-    cover.classList.remove("on");
+    cover.classList.add("on");
 	}
 };
