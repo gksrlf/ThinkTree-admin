@@ -8,7 +8,7 @@ const picker = datepicker("#datepicker", {
   minYear: 1900, // 최소 연도
   maxYear: new Date().getFullYear() + 10, // 현재 연도 + 10년까지 가능
   onShow: (instance) => {
-    // 🔽 연도 선택 드롭다운 추가
+    // 연도 선택 드롭다운 추가
     const yearSelect = document.createElement("select");
     yearSelect.classList.add("datepicker-year-select");
 
@@ -25,7 +25,7 @@ const picker = datepicker("#datepicker", {
 
     yearSelect.value = instance.currentYear; // 현재 연도 선택
 
-    // 🔄 연도 변경 이벤트
+    // 연도 변경 이벤트
     yearSelect.addEventListener("change", (event) => {
       instance.setDate(new Date(event.target.value, instance.currentMonth, 1));
     });

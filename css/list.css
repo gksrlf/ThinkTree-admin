@@ -1,51 +1,3 @@
-@import "./_color.css";
-@import './_icon.css';
-@import "./_input.css";
-@import "./_header.css";
-@import "./_sidebar.css";
-
-/* contents_container */
-.contents_container{
-  position: relative;
-  z-index: 1100;
-  display: flex;
-  flex-wrap: wrap;
-}
-.contents_container .contents{
-  position: relative;
-  z-index: 999;
-  width: calc(100% - 190px);
-  max-height: 100dvh;
-  transition: width 0.2s ease;
-}
-.contents_container .contents.wide_mode{
-  width: calc(100% - 70px);
-}
-
-.contents_container .contents .content{
-  height: calc(100% - 55px); /* header의 height 값을 뺀 높이 수치 */
-  background-color: var(--bg-base);
-  padding: 25px;
-  box-sizing: border-box;
-}
-
-/* content_title__box */
-.content .content_title__box{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.content .content_title__box .btn__box{
-  display: flex;
-  gap: 8px;
-}
-.content .content_title__box .btn__box button{
-  width: 90px;
-  height: 40px;
-  font-weight: 500;
-}
 /* filter__box */
 .content .filter__box{
   display: flex;
@@ -379,7 +331,13 @@
 }
 
 
+/************ Responsive *************/
+/* tablet */
 @media screen and (max-width:1280px) {
+  .contents_container .contents{
+    width: calc(100% - 70px);
+    padding-left: 70px;
+  }
   .table_control{
     padding-left: 20px;
     justify-content: flex-start;
@@ -388,6 +346,7 @@
 @media screen and (max-width:1024px){
 
 }
+/* mobile */
 @media screen and (max-width:640px) {
 
 }

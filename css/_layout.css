@@ -10,18 +10,57 @@
   min-height: 100dvh;
 }
 
-.title_back_btn {
+/* contents_container */
+.contents_container{
+  position: relative;
+  z-index: 1100;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contents_container .contents{
+  position: relative;
+  z-index: 999;
+  width: calc(100% - 190px);
+  max-height: 100dvh;
+  transition: width 0.2s ease;
+}
+.contents_container .contents.wide_mode{
+  width: calc(100% - 70px);
+}
+.contents_container .contents .content{
+  height: calc(100% - 55px); /* header의 height 값을 뺀 높이 수치 */
+  background-color: var(--bg-base);
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+/* content_title__box */
+.content .content_title__box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.content .content_title__box .btn__box{
+  display: flex;
+  gap: 8px;
+}
+.content .content_title__box .btn__box button{
+  width: 90px;
+  height: 40px;
+  font-weight: 500;
+}
+.content .content_title__box .title_back_btn {
   display: flex;
   width: 24px;
   height: 28px;
   background: var(--title-back-btn) no-repeat center;
   margin-right: 10px;
+  cursor: pointer;
 }
-
 .content .content_title__box .title_item__box{
   display: flex;
   font-size: 28px;
   color: var(--neutral-default);
   font-weight: 700;
-  cursor: pointer;
 }

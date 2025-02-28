@@ -1,23 +1,4 @@
-@import "./_color.css";
-@import "./_input.css";
-@import "./_header.css";
-@import "./_sidebar.css";
-
-.contents_container .contents {
-  position: relative;
-  z-index: 999;
-  width: calc(100% - 190px);
-  height: 100%;
-}
-
-.contents_container .contents .content {
-  height: 100%;
-  background-color: var(--bg-base);
-  padding: 25px;
-  box-sizing: border-box;
-  overflow-y: auto;
-}
-
+/* input_form__box */
 .input_form__box {
   width: 100%;
   background-color: var(--bg-default);
