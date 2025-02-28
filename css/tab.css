@@ -1,0 +1,18 @@
+.content .content__box {
+    overflow: hidden;
+    height: 100%;
+    max-height: calc(100% - 55px);
+}
+
+/************ Responsive *************/
+/* tablet */
+@media screen and (max-width:1280px) {
+
+}
+@media screen and (max-width:1024px){
+
+}
+/* mobile */
+@media screen and (max-width:640px) {
+
+}
