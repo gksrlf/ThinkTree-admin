@@ -341,7 +341,7 @@
 }
 @media screen and (max-width:1024px){
   .content .table__inner{
-    height: calc(100% - 90px);
+    max-height: calc(100% - 90px);
   }
   .table_control{
     height: 90px;
