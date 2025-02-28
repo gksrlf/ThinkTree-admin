@@ -108,12 +108,6 @@
   --header-screen-dark: url('../img/icon/dark/btn_screen_mode_d.svg');
 
 
-  /* header - mobile */
-  --header-menu-light: url('../img/icon/btn_menu_m.svg');
-  --header-menu-pastel: url('../img/icon/btn_menu_m.svg');
-  --header-menu-dark: url('../img/icon/btn_menu_m_w.svg');
-
-
   /* 테이블 헤더 아이콘 */
   --table-header-filter-light: url('../img/icon/light/table_header_filter.svg');
   --table-header-sort-light: url('../img/icon/light/table_btn_sort.svg');
@@ -154,6 +148,17 @@
   /* main section icon */
   --title-back-btn-default: url('../img/icon/btn_circle_back_default.svg');
   --title-back-btn-dark: url('../img/icon/dark/btn_circle_back_dark.svg');
+
+
+  /* header - mobile */
+  --header-menu-light: url('../img/icon/btn_menu_m.svg');
+  --header-menu-pastel: url('../img/icon/btn_menu_m.svg');
+  --header-menu-dark: url('../img/icon/btn_menu_m_w.svg');
+
+  /* 네비게이션 - mobile */
+  --nav-close-btn-light: url('../img/icon/btn_close.svg');
+  --nav-close-btn-pastel: url('../img/icon/btn_close.svg');
+  --nav-close-btn-dark: url('../img/icon/btn_close_w.svg');
 }
 
 
@@ -212,9 +217,6 @@
   --header-logout: var(--header-logout-light);
   --header-screen: var(--header-screen-light);
 
-  /* header 모바일 아이콘 */
-  --header-mobile-menu: var(--header-menu-light);
-
    /* 테이블 헤더 아이콘 */
   --table-header-filter: var(--table-header-filter-light);
   --table-header-sort: var(--table-header-sort-light);
@@ -234,6 +236,12 @@
   --input-file-border: var(--input-file-border-light);
   /* title back btn */
   --title-back-btn: var(--title-back-btn-default);
+
+  /* header 모바일 아이콘 */
+  --header-mobile-menu: var(--header-menu-light);
+
+  /* 네비게이션 모바일 아이콘 */
+  --nav-mobile-close: var(--nav-close-btn-light);
 }
 
 :root.pastel {
@@ -288,9 +296,6 @@
   --header-logout: var(--header-logout-pastel);
   --header-screen: var(--header-screen-pastel);
 
-  /* header 모바일 아이콘 */
-  --header-mobile-menu: var(--header-menu-pastel);
-
   /* 테이블 헤더 아이콘 */
   --table-header-filter: var(--table-header-filter-pastel);
   --table-header-sort: var(--table-header-sort-pastel);
@@ -309,6 +314,12 @@
   --input-file-border: var(--input-file-border-pastel);
   /* title back btn */
   --title-back-btn: var(--title-back-btn-default);
+
+  /* header 모바일 아이콘 */
+  --header-mobile-menu: var(--header-menu-pastel);
+
+  /* 네비게이션 모바일 아이콘 */
+  --nav-mobile-close: var(--nav-close-btn-pastel);
 }
 
 :root.dark {
@@ -365,6 +376,8 @@
 
   /* header 모바일 아이콘 */
   --header-mobile-menu: var(--header-menu-dark);
+  /* 네비게이션 모바일 아이콘 */
+  --nav-mobile-close: var(--nav-close-btn-dark);
 
   /* 테이블 헤더 아이콘 */
   --table-header-filter: var(--table-header-filter-dark);

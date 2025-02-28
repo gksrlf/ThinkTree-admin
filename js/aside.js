@@ -33,15 +33,20 @@ const handleResize = () => {
  
   if (!lnbBar) return;
 
-	const shouldFold = window.innerWidth <= 1280;
+	const mobile = window.innerWidth <= 640;
+	const tablet = window.innerWidth <= 1280;
 	
-	if (shouldFold) {
+	if (mobile) {
+    lnbBar.classList.remove("fold");
+    contents.classList.remove("wide_mode");
+    cover.classList.remove("on");
+	} else if (tablet) { 
 		lnbBar.classList.add("fold");
-		contents.classList.add("wide_mode");
-		cover.classList.remove("on");
-	} else { 
-		lnbBar.classList.remove("fold");
+    contents.classList.add("wide_mode");
+    cover.classList.remove("on");
+	}else {
+    lnbBar.classList.remove("fold");
     contents.classList.remove("wide_mode");
     cover.classList.add("on");
-	}
+  }
 };

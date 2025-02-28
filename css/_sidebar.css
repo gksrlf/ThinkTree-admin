@@ -48,6 +48,7 @@
 }
 
 .lnb_bar__area .nav_logo__box {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +86,6 @@
   margin-bottom: 0;
 }
 .lnb_bar_content ul .lnb1 a{
-  /* position: relative; */
   font-size: 14px;
   color: var(--neutral-default);
   font-weight: 500;
@@ -353,8 +353,153 @@
   display: none;
 }
 
+/* control__box - mobile */
+.nav_control__box{
+	display: none;
+  width: 100%;
+  justify-content: space-between;
+	align-items: center;
+}
+.nav_control__box .community_box{
+  display: flex;
+}
+.nav_control__box .community_box div{
+	margin-right: 20px;
+}
+.nav_control__box .community_box div > a{
+	display: block;
+	width: 24px;
+	height: 24px;
+	text-indent: -999999px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.nav_control__box .notify a{
+	background-image: var(--header-notify);
+}
+.nav_control__box .notify.on a{
+	background-image: var(--header-notify-on);
+}
+.nav_control__box .mail a{
+	background-image: var(--header-mail);
+}
+.nav_control__box .language{
+	position: relative;
+	width: 85px;
+	height: auto;
+	border: 1px solid var(--neutral-light);
+	border-radius: 30px;
+	box-sizing: border-box;
+}
+.nav_control__box .language div{
+	position: relative;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	border-radius: 30px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.nav_control__box .language.on div{
+	border-radius: 15px 15px 0 0;
+}
+.nav_control__box .language div .icon{
+	width: 14px;
+	height: 14px;
+	text-indent: -999999px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: var(--header-language);
+	margin-right: 7px;
+}
+.nav_control__box .language div .text,
+.nav_control__box .language ul li a{
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--neutral-default);
+}
+.nav_control__box .language.on ul{
+	display: block;
+}
+.nav_control__box .language ul{
+	display: none;
+	position: absolute;
+  z-index: 1;
+  top: 15px;
+  left: -1px;
+  width: 100.5%;
+  border: 1px solid var(--neutral-light);
+  border-top: 0;
+  border-radius: 0 0 15px 15px;
+  background-color: var(--bg-default);
+  padding-top: 15px;
+	overflow: hidden;
+}
+.nav_control__box .language ul li a{
+	display: flex;
+	align-items: center;
+	height: 30px;
+	padding-left: 39px;
+	cursor: pointer;
+}
+.nav_control__box .language ul li a:hover{
+	color: var(--brand-primary-default);
+}
 
+/* btn_nav_close - mobile */
+.lnb_bar__area .btn_nav_close{
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-indent: -99999px;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: var(--nav-mobile-close);
+}
 
+/* user_menu - mobile */
+.user_menu{
+  margin-bottom: 20px;
+}
+.user_menu li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.user_menu li:last-of-type{
+  margin-bottom: 0;
+}
+.user_menu li a{
+  font-size: 14px;
+  color: var(--neutral-default);
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+  padding: 0 12px 0 40px;
+  background-repeat: no-repeat;
+  background-position: 6px center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: width 0.2s ease;
+}
+.user_menu li > a span{
+  width: calc(100% - 10px);
+}
 
 
 /************ Responsive *************/
@@ -365,6 +510,10 @@
   }
   .lnb_bar__area{
     position: fixed;
+    width: 320px;
+  }
+  .lnb_bar__area .lnb_bar_control__box{
+    left: 309px;
   }
 }
 @media screen and (max-width:1024px){
@@ -372,5 +521,37 @@
 }
 /* mobile */
 @media screen and (max-width:640px) {
-
+  .lnb_bar__area{
+    width: 260px;
+  }
+  .lnb_bar__area .lnb_bar_control__box{
+    display: none;
+  }
+  .lnb_bar__area .nav_logo__box{
+    height: 115px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .nav_control__box{
+    display: flex;
+  }
+  .lnb_bar__area .btn_nav_close{
+    display: block;
+  }
+  .lnb_bar__area .lnb_bar__box{
+    height: calc(100% - 115px);
+    background-color: var(--neutral-lightest);
+    padding: 10px 0 0 0;
+  }
+  .lnb_bar_content{
+    background-color: var(--bg-default);
+    padding: 15px 10px;
+    margin-bottom: 10px;
+  }
+  .lnb_bar_user__box{
+    padding: 15px 10px;
+    background-color: var(--bg-default);
+  }
 }
