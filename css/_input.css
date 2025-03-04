@@ -56,10 +56,6 @@ input[type="text"] {
   border: solid 1px var(--field-inactive-border);
   background-color: var(--field-inactive-bg);
   width: 100%;
-  /* height: 52px;
-  margin-top: 10px;
-  box-sizing: border-box;
-  padding-left: 20px; */
 }
 
 .input_item_box .text_label {
@@ -67,7 +63,6 @@ input[type="text"] {
   font-size: 16px;
   font-weight: 500;
   color:var(--neutral-default);
-  padding-bottom: 10px;
 }
 
 .require_sign {
@@ -95,8 +90,7 @@ input[type="text"].require {
   box-sizing: border-box;
   border-radius: 4px;
   box-sizing: border-box;
-  height: 52px;
-  margin-top: 10px;
+  height: 50px;
   -webkit-appearance:none; /* for chrome */
   -moz-appearance:none; /*for firefox*/
   appearance:none;
@@ -128,7 +122,6 @@ input[type="text"].require {
   font-size: 16px;
   font-weight: 500;
   color:var(--neutral-default);
-  padding-bottom: 10px;
 }
 
 input[type="date"] {
@@ -149,6 +142,22 @@ input[type="date"] {
 
 }
 
+/* password */
+.password__box{
+  position: relative;
+}
+.password__box button{
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  transform: translateY(-50%);
+  background-color: transparent;
+  background-image: url("../img/icon/icon_login_pw_eye.svg");
+}
+
 input[type="password"] {
   font-family: "Pretendard";
   font-size: 16px;
@@ -160,15 +169,14 @@ input[type="password"] {
   border: solid 1px var(--field-inactive-border);
   background-color: var(--field-inactive-bg);
 }
-
 input[type="password"]:focus {
   outline: 1.5px solid var(--field-focused-border);
 }
 
+/* search_btn */
 .input_btn__box {
   display: flex;
   align-items: end;
-  margin-bottom: 10px;
   gap: 8px;
 }
 
@@ -177,9 +185,21 @@ input[type="password"]:focus {
   height: 100%;
 }
 
+/* textarea */
+.input_form__box .input_item_box.textarea_box{
+  display: flex; 
+  flex-direction: column;
+  gap: 10px;
+}
+.textarea_box .length_text{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  color: var(--neutral-dark);
+}
 textarea {
   width: 100%;
-  height: 138px;
+  height: 140px;
   font-family: "Pretendard";
   font-size: 16px;
   color:var(--neutral-default);
@@ -187,13 +207,12 @@ textarea {
   border: 1px solid var(--field-inactive-border);
   box-sizing: border-box;
   resize: none;
-  padding: 8px 20px;
+  padding: 10px 20px;
+  border-radius: 4px;
 }
-
 textarea:focus {
   outline: 1.5px solid var(--field-focused-border);
 }
-
 .area_txt {
   display: block;
   width: 100%;
@@ -203,10 +222,10 @@ textarea:focus {
   font-size: 12px;
 }
 
+/* file */
 input[type="file"] {
   display: none;
 }
-
 .file_label {
   width:100%;
   height: 170px;
@@ -218,18 +237,15 @@ input[type="file"] {
   justify-content: center;
   align-items: center;
 }
-
 .file_label:hover {
   background-color: var(--field-inactive-bg);
 }
-
 .file_label_img {
   width: 50px;
   height: 50px;
   background: var(--input-file) no-repeat center;
   border: none;
 }
-
 .file_label:hover .file_label_img {
   background: var(--input-file-hover) no-repeat center;
 }
