@@ -469,6 +469,7 @@
 
 /* user_menu - mobile */
 .user_menu{
+  display: none;
   margin-bottom: 20px;
 }
 .user_menu li {
@@ -497,8 +498,28 @@
   border-radius: 4px;
   transition: width 0.2s ease;
 }
+.user_menu .setting a{
+  background-image: var(--gnb-setting);
+}
+.user_menu .logout a{
+  background-image: var(--header-logout);
+}
 .user_menu li > a span{
   width: calc(100% - 10px);
+}
+
+/* user_menu on state */
+.user_menu li.on a{
+  background-color: var(--brand-primary-default);
+}
+.user_menu li.on a span{
+  color: var(--bg-default)
+}
+.user_menu .setting.on a{
+  background-image: var(--gnb-setting-on);
+}
+.user_menu .logout.on a{
+  background-image: var(--gnb-logout-on);
 }
 
 
@@ -523,6 +544,62 @@
 @media screen and (max-width:640px) {
   .lnb_bar__area{
     width: 260px;
+    left: 0;
+    transition: left 0.3s ease;
+  }
+  .lnb_bar__area.fold{
+    width: 260px;
+    left: -260px;
+  }
+  .lnb_bar__area.fold .lnb_bar_content ul .lnb1 > a{
+    width: 100%;
+    padding: 0 12px 0 40px;
+  }
+  .lnb_bar__area.fold .lnb_bar_content ul .lnb1 > a .menu_arrow,
+  .lnb_bar__area.fold .lnb_bar_content ul .lnb1 > a div,
+  .lnb_bar__area.fold .lnb_bar_content ul .lnb1 .sub_menu{
+    display: block;
+    position: relative;
+    left: 0;
+  }
+  .lnb_bar__area.fold .lnb_bar_content ul .lnb1 .sub_menu{
+    display: none;
+    top: 0;
+    width: 100%;
+    padding: 6px 0;
+    border-radius: 0;
+    border: none;
+    box-sizing: border-box;
+    background-color: var(--bg-default);
+    box-shadow: none;
+  }
+  .lnb_bar__area.fold .lnb_bar_content ul .lnb1.on .sub_menu{
+    display: block;
+  }
+  .lnb_bar__area.fold .lnb_bar_content ul .lnb1.fold_on .lnb1_title span{
+    display: block;
+    font-weight: 500;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+  }
+  .lnb_bar__area.fold .lnb_bar_content ul .lnb1.fold_on > a span{
+    color: var(--bg-default);
+  }
+  .lnb_bar__area.fold .lnb_bar_content ul .lnb1.fold_on .lnb1_title::after,
+  .lnb_bar__area.fold .lnb_bar_content ul .lnb1.fold_on .lnb1_title::before{
+    display: none;
+  }
+  .lnb_bar__area.fold .lnb_bar_user{
+    background-color: var(--neutral-lightest);
+  }
+  .lnb_bar__area.fold .profile_info{
+    display: block;
+  }
+  .lnb_bar__area.fold .lnb_bar_user .profile_img{
+    margin-right: 6px;
   }
   .lnb_bar__area .lnb_bar_control__box{
     display: none;
@@ -553,5 +630,8 @@
   .lnb_bar_user__box{
     padding: 15px 10px;
     background-color: var(--bg-default);
+  }
+  .user_menu{
+    display: block;
   }
 }
