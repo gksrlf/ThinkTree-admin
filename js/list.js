@@ -4,40 +4,24 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const initDatePicker = () => {
-const picker = datepicker("#datepicker", {
-  minYear: 1900, // 최소 연도
-  maxYear: new Date().getFullYear() + 10, // 현재 연도 + 10년까지 가능
-  onShow: (instance) => {
-    // 연도 선택 드롭다운 추가
-    const yearSelect = document.createElement("select");
-    yearSelect.classList.add("datepicker-year-select");
+  const picker = datepicker("#datepicker", {
+    // 사용자 정의.
+    formatter: (input, date, instance) => {
+      // 이렇게 하면 날짜가 `1/1/2019`로 표시됩니다.
+      input.value = date.toDateString();
+    },
+    startDay: 1, // 달력 주는 월요일부터 시작합니다.
+    customDays: ["일", "월", "화", "수", "목", "금", "토"],
+    customMonths: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+    overlayPlaceholder: "4자리 연도 입력",
 
-    for (
-      let year = instance.opts.maxYear;
-      year >= instance.opts.minYear;
-      year--
-    ) {
-      const option = document.createElement("option");
-      option.value = year;
-      option.textContent = year;
-      yearSelect.appendChild(option);
-    }
-
-    yearSelect.value = instance.currentYear; // 현재 연도 선택
-
-    // 연도 변경 이벤트
-    yearSelect.addEventListener("change", (event) => {
-      instance.setDate(new Date(event.target.value, instance.currentMonth, 1));
-    });
-
-    // 기존의 연도 입력 필드를 숨기고 커스텀 드롭다운 추가
-    const yearInput = instance.calendar.querySelector(".qs-year");
-    if (yearInput) {
-      yearInput.style.display = "none";
-      yearInput.parentElement.appendChild(yearSelect);
-    }
-  },
-});
+    alwaysShow: false, // 달력을 숨기지 않음.
+    dateSelected: new Date(), // 오늘이 선택됨.
+    minDate: new Date(1900, 0, 1), // 1900년 1월 1일
+    maxDate: new Date(2099, 0, 1), // 2099년 1월 1일
+    startDate: new Date(), // 이번 달.
+    showAllDates: true, // 현재 월을 제외한 선행 및 후행 날짜의 숫자가 표시됨.
+  });
 };
 
 // highlight 이벤트

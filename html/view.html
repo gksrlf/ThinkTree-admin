@@ -16,13 +16,34 @@
 <body>
 <div class="wrap">
   <div class="container contents_container">
- <!-- aside lnb -->
+    <!-- aside lnb -->
     <aside class="lnb_bar__area">
       <div class="lnb_bar_control__box">
         <button>toggle button</button>
       </div>
       <div class="nav_logo__box">
         <img src="../img/logo/default_head_logo.svg" alt="logo" />
+        <button class="btn_nav_close">close</button>
+        <div class="nav_control__box">
+          <div class="community_box">
+            <div class="notify on">
+              <a href="javascript:;">notify</a>
+            </div>
+            <div class="mail">
+              <a href="javascript:;">mail</a>
+            </div>
+          </div>
+          <div class="language">
+            <div>
+              <span class="icon">language</span>
+              <span class="text">KOR</span>
+            </div>
+            <ul>
+              <li><a href="javascript:;">ENG</a></li>
+              <li><a href="javascript:;">JPN</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="lnb_bar__box">
         <nav class="lnb_bar_content">
@@ -34,8 +55,7 @@
                 </div>
               </a>
             </li>
-            <!-- <li class="lnb1 project on fold_on"> -->
-            <li class="lnb1 project on">
+            <li class="lnb1 project on fold_on">
               <a href="javascript:;">
                 <div class="lnb1_title">
                   <span>Project</span>
@@ -125,6 +145,22 @@
           </ul>
         </nav>
         <div class="lnb_bar_user__box">
+          <ul class="user_menu">
+            <li class="setting on">
+              <a href="javascript:;">
+                <div class="lnb1_title">
+                  <span>Setting</span>
+                </div>
+              </a>
+            </li>
+            <li class="logout">
+              <a href="javascript:;">
+                <div class="lnb1_title">
+                  <span>Logout</span>
+                </div>
+              </a>
+            </li>
+          </ul>
           <div class="lnb_bar_user">
             <div class="profile_img">
               <img src="/img/icon/icon_default_profile.svg" alt="default_profile">
@@ -201,23 +237,28 @@
         </div>
         <div class="input_form__box">
           <div class="input_item_box">
-            <label class="text_label w_40">Label&nbsp;<span class="require_sign">*</span>
-              <input class="require" type="text">
+            <label class="text_label w_40">
+              <span class="input_title">Label&nbsp;<span class="require_sign">*</span></span>
+              <input class="require" type="text" placeholder="Placeholder">
             </label>
-            <label class="text_label w_60">Label
-              <input type="text">
-            </label>
-          </div>
-          <div class="input_item_box">
-            <label class="text_label w_45">Label
-              <input type="text">
-            </label>
-            <label class="text_label w_55">Label
-              <input type="text">
+            <label class="text_label w_60">
+              <span class="input_title">Label</span>
+              <input type="text" placeholder="Placeholder">
             </label>
           </div>
           <div class="input_item_box">
-            <label class="select_label w_quarter">Label
+            <label class="text_label w_45">
+              <span class="input_title">Label</span>
+              <input type="text" placeholder="Placeholder">
+            </label>
+            <label class="text_label w_55">
+              <span class="input_title">Label</span>
+              <input type="text" placeholder="Placeholder">
+            </label>
+          </div>
+          <div class="input_item_box">
+            <label class="select_label w_quarter">
+              <span class="input_title">Label</span>
               <select>
                 <option>
                   Text
@@ -230,13 +271,16 @@
               </option>
               </select>
             </label>
-            <label class="text_label w_quarter">Label
-              <input type="text">
+            <label class="text_label w_quarter">
+              <span class="input_title">Label</span>
+              <input type="text" placeholder="Placeholder">
             </label>
-            <label class="text_label w_quarter">Label
-              <input type="text">
+            <label class="text_label w_quarter">
+              <span class="input_title">Label</span>
+              <input type="text" placeholder="Placeholder">
             </label>
-            <label class="select_label w_quarter">Label
+            <label class="select_label w_quarter">
+              <span class="input_title">Label</span>
               <select class="err">
                 <option>
                   Text
@@ -251,8 +295,9 @@
               <p class="err_txt">Error</p>
             </label>
           </div>
-          <div class="input_item_box">
-            <label class="text_label w_full">Label
+          <div class="input_item_box search_box">
+            <label class="text_label w_full">
+              <span class="input_title">Label</span>
               <input class="search" type="text">
             </label>
             <div class="input_btn__box">
@@ -260,14 +305,30 @@
               <button class="delete_btn">삭제</button>
             </div>
           </div>
+          <div class="input_item_box textarea_box">
+            <label>
+              <span class="input_title">Label</span>
+              <textarea placeholder="Placeholder" maxlength="100"></textarea>
+            </label>
+            <div class="length_text">
+              <p>
+                <span>0</span>/<span>100</span>
+              </p>
+            </div>
+          </div>
           <div class="input_item_box">
-            <label class="date_label w_260">Label
+            <label class="date_label w_260">
+              <span class="input_title">Label</span>
               <input type="date"/>
             </label>
           </div>
           <div class="input_item_box">
-            <label class="password_label w_full pb_10">Label
-              <input type="password" />
+            <label class="password_label w_full">
+              <span class="input_title">Label</span>
+              <div class="password__box">
+                <input type="password" placeholder="Password"/>
+                <button></button>
+              </div>
             </label>
           </div>
         </div>
@@ -310,8 +371,7 @@
               <th>한 줄 전체 사용할 경우</th>
               <td colspan="3">
                 <label class="area_label">
-                  <textarea maxlength="100">
-                  </textarea>
+                  <textarea maxlength="100"></textarea>
                   <span class="area_txt">0/100</span>
                 </label>
               </td>
