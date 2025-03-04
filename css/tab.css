@@ -1,3 +1,4 @@
+/* table__inner */
 .content .content__box {
     overflow: hidden;
     height: 100%;
@@ -6,48 +7,67 @@
 
 .content__box .content__item {
   width: 100%;
+  height: 100%;
 }
 
+/* tab_header */
 .content__box .content__item .tab_header {
+  position: relative;
+  z-index: 2;
   display: flex;
   gap: 6px;
+  transform: translateY(0.75px);
 }
 .content__box .content__item .tab_header li {
-
-}
-.content__box .content__item .tab_header li span {
-  width: 134px;
-  height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--button-tab-default-inactive-bg);
-  color: var(--button-tab-default-inactive-text);
+  width: 135px;
+  height: 45px;
   border-radius: 4px 4px 0 0;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.content__box .content__item .tab_header .active {
+  border-bottom: 1px solid var(--neutral-midium);
   box-sizing: border-box;
+  background-color: var(--button-tab-default-inactive-bg);
+}
+.content__box .content__item .tab_header li.active{
   border: 1px solid var(--neutral-midium);
   background-color: var(--bg-default);
-  color: var(--neutral-darkest);
   border-bottom: none;
 }
-
-.tab_item {
-  display: none;
+.content__box .content__item .tab_header li button{
+  width: 100%;
   height: 100%;
-  background-color: var(--bg-default);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--button-tab-default-inactive-text);
+  background-color: transparent;
+  border: none;
+}
+.content__box .content__item .tab_header li.active button{
   color: var(--neutral-darkest);
+}
+
+/* tab_item__box */
+.tab_item__box{
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+.tab_item__box .tab_item {
+  display: none;
+  max-height: calc(100% - 45px);
+  background-color: var(--bg-default);
+  font-size: 14px;
+  color: var(--neutral-darkest);
+  line-height: 1.2;
   border: 1px solid var(--neutral-midium);
   padding: 30px;
   border-radius: 0 4px 4px 4px;
   box-sizing: border-box;
+  overflow-y: auto;
 }
 
-.tab_active {
+.tab_item__box .tab_active {
   display: block;
 }
 
@@ -59,9 +79,24 @@
 
 }
 @media screen and (max-width:1024px){
-
+  .content__box .content__item .tab_header li{
+    width: 120px;
+    height: 40px;
+  }
+  .content__box .content__item .tab_header li button{
+    font-size: 14px;
+  }
 }
 /* mobile */
 @media screen and (max-width:640px) {
-
+  .content__box .content__item .tab_header li{
+    width: 25%;
+  }
+  .content .content__box{
+    max-height: calc(100% - 134px);
+  }
+  .tab_item__box .tab_item{
+    height: calc(100% - 40px);
+    padding: 20px;
+  }
 }
