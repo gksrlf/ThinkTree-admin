@@ -96,6 +96,64 @@
   border-right: none;
   padding-right: 0;
 }
+.title_form_table input[type='text']{
+  height: 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.title_form_table td ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.title_form_table td ul .file_list{
+  position: relative;
+  height: 40px;
+}
+.title_form_table td ul .file_list:before{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: var(--input-file-icon);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.title_form_table td ul .file_list a{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 2;
+  font-size: 14px;
+  color: var(--neutral-default);
+  border: 1px solid var(--neutral-light);
+  padding: 0 50px 0 35px;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.title_form_table td ul .file_list button{
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  background-image: var(--input-file-delete);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 
 /************ Responsive *************/
 /* tablet */

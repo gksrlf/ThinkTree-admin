@@ -236,6 +236,9 @@ input[type="file"] {
   border-radius: 10px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.5;
 }
 .file_label:hover {
   background-color: var(--field-inactive-bg);
@@ -245,6 +248,7 @@ input[type="file"] {
   height: 50px;
   background: var(--input-file) no-repeat center;
   border: none;
+  margin-bottom: 15px;
 }
 .file_label:hover .file_label_img {
   background: var(--input-file-hover) no-repeat center;

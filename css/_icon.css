@@ -135,6 +135,14 @@
   --input-file-dark: url('../img/icon/dark/icon_input_file_d.svg');
   --input-file-dark-hover: url('../img/icon/dark/icon_input_file_hover_d.svg');
 
+  /* form file icon */
+  --input-file-icon-light: url('../img/icon/light/icon_file_l.svg');
+  --input-file-icon-pastel: url('../img/icon/pastel/icon_file_p.svg');
+  --input-file-icon-dark: url('../img/icon/dark/icon_file_d.svg');
+
+  /* form file delete btn */
+  --input-file-delete-default: url('../img/icon/btn_file_delete_w.svg');
+  --input-file-delete-dark: url('../img/icon/btn_file_delete.svg');
 
   /* file input label border */
   --input-file-border-light : url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%232563EB' stroke-width='2' stroke-dasharray='7' stroke-dashoffset='37' stroke-linecap='square'/%3e%3c/svg%3e");
@@ -149,7 +157,6 @@
   /* main section icon */
   --title-back-btn-default: url('../img/icon/btn_circle_back_default.svg');
   --title-back-btn-dark: url('../img/icon/dark/btn_circle_back_dark.svg');
-
 
   /* header - mobile */
   --header-menu-light: url('../img/icon/btn_menu_m.svg');
@@ -240,6 +247,12 @@
   /* title back btn */
   --title-back-btn: var(--title-back-btn-default);
 
+  /* form file icon */
+  --input-file-icon: var(--input-file-icon-light);
+
+  /* form file delete btn */
+  --input-file-delete: var(--input-file-delete-default);
+
   /* header 모바일 아이콘 */
   --header-mobile-menu: var(--header-menu-light);
 
@@ -320,6 +333,12 @@
   /* title back btn */
   --title-back-btn: var(--title-back-btn-default);
 
+  /* form file icon */
+  --input-file-icon: var(--input-file-icon-pastel);
+
+  /* form file delete btn */
+  --input-file-delete: var(--input-file-delete-default);
+
   /* header 모바일 아이콘 */
   --header-mobile-menu: var(--header-menu-pastel);
 
@@ -399,6 +418,12 @@
 
   /*  calendar icon */
   --calendar-icon: var(--calendar-icon-dark);
+
+  /* form file icon */
+  --input-file-icon: var(--input-file-icon-dark);
+
+  /* form file delete btn */
+  --input-file-delete: var(--input-file-delete-dark);
 
   /* input file border */
   --input-file-border: var(--input-file-border-dark);
