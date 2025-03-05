@@ -220,20 +220,40 @@
 }
 /* snb와 aside(lnb)가 모두 fold 되었을 때 저장/취소 버튼 영역 넓이 */
 .contents_container .contents.wide_mode .content.content_wide .save__box{
-  width: 100%;
+  width: calc(100% - 70px);
+  left: 70px;
 }
-
 
 
 /************ Responsive *************/
 /* tablet */
 @media screen and (max-width:1280px) {
-
+  .save__box,
+  .save__box.wide_mode,
+  .contents_container .contents .content.content_wide .save__box,
+  .contents_container .contents.wide_mode .content.content_wide .save__box{
+    width: calc(100% - 55px);
+  }
+  .save__box{
+    left: 0;
+  }
+  .contents_container .contents .content.content_wide .save__box{
+    left: 70px;
+  }
 }
 @media screen and (max-width:1024px){
 
 }
 /* mobile */
 @media screen and (max-width:640px) {
-
+  .save__box,
+  .save__box.wide_mode,
+  .contents_container .contents .content.content_wide .save__box,
+  .contents_container .contents.wide_mode .content.content_wide .save__box{
+    width: 100%;
+  }
+  .contents_container .contents .content.content_wide .save__box,
+  .contents_container .contents.wide_mode .content.content_wide .save__box{
+    left: 0;
+  }
 }

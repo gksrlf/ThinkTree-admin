@@ -41,7 +41,14 @@ const asideToggleEvent = () => {
 	mobileCloseBtn.addEventListener("click", () => { 
 		lnbBar.classList.add("fold");
     lnbCover.classList.remove("on");
-	});	
+  });
+
+  lnbCover.addEventListener("click", () => { 
+    lnbBar.classList.add("fold");
+    lnbCover.classList.remove("on");
+    contents.classList.add("wide_mode");
+    saveBox?.classList.add("wide_mode");
+  })
 };
 
 const handleResize = () => {
@@ -58,17 +65,17 @@ const handleResize = () => {
   if (mobile) {
     lnbBar.classList.add("fold");
     contents.classList.remove("wide_mode");
-    saveBox?.classList.add("wide_mode");
+    // saveBox?.classList.add("wide_mode");
     lnbCover.classList.remove("on");
   } else if (tablet) {
     lnbBar.classList.add("fold");
     contents.classList.add("wide_mode");
-    saveBox?.classList.add("wide_mode");
+    // saveBox?.classList.add("wide_mode");
     lnbCover.classList.remove("on");
   } else {
     lnbBar.classList.remove("fold");
     contents.classList.remove("wide_mode");
-    saveBox?.classList.add("wide_mode");
+    saveBox?.classList.remove("wide_mode");
     lnbCover.classList.add("on");
   }
 };
