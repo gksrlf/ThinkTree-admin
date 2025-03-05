@@ -194,8 +194,8 @@
   --button-disabled-outlined-bg : var(--gray-99);
   --button-tab-default-inactive-text : var(--gray-blue-900);
   --button-tab-default-inactive-bg : var(--blue-100);
-  --button-tab-top-inactive-bg : var(--blue-700);
-  --button-tab-top-active-bg : var(--gray-blue-900);
+  --button-tab-top-inactive-bg : var(--gray-blue-900);
+  --button-tab-top-active-bg : var(--blue-700);
   --button-disabled-outlined-border :var(--gray-90);
   --login-bg : var(--gray-80);
   --button-disabled-filled-bg : var(--gray-80);
@@ -269,8 +269,8 @@
   --button-disabled-outlined-bg : var(--gray-99);
   --button-tab-default-inactive-text : var(--gray-pink-900);
   --button-tab-default-inactive-bg : var(--blue-100);
-  --button-tab-top-inactive-bg : var(--blue-700);
-  --button-tab-top-active-bg : var(--gray-blue-900);
+  --button-tab-top-inactive-bg : var(--gray-pink-700);
+  --button-tab-top-active-bg : var(--gray-pink-900);
   --button-disabled-outlined-border :var(--gray-90);
   --login-bg : var(--pink-50);
   --button-disabled-filled-bg : var(--gray-15);

@@ -1,0 +1,148 @@
+.calendar {
+  height: 100%;
+}
+
+
+/* full calendar css */
+/* 왼쪽 today 아이콘 start */
+.fc .fc-header-toolbar .fc-today-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-default);
+  border: 1px solid var(--brand-primary-dark-muted);
+  color: var(--brand-primary-dark-muted);
+  border-radius: 500px;
+  width: 65px;
+  height: 32px;
+  font-size:14px;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.fc .fc-header-toolbar .fc-today-button:disabled {
+  border: 1px solid var(--field-login-disabled-border);
+  color: var(--field-login-disabled-border);
+}
+
+.fc .fc-header-toolbar .fc-today-button:hover {
+  color: var(--bg-default);
+  background-color: var(--brand-primary-dark-muted);
+  border:none;
+}
+/* 왼쪽 today 아이콘 fin */
+/* 중앙 prev title next start */
+.fc .fc-header-toolbar .fc-prev-button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: var(--calender-header-left-arrow) no-repeat center;
+}
+
+.fc .fc-header-toolbar .fc-next-button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: var(--calendar-header-right-arrow) no-repeat center;
+}
+
+.fc .fc-header-toolbar .fc-prev-button .fc-icon-chevron-left {
+  display: none;
+}
+
+.fc .fc-header-toolbar .fc-next-button .fc-icon-chevron-right {
+  display: none;
+}
+
+.fc .fc-header-toolbar .fc-toolbar-title {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 12px;
+  color: var(--neutral-default);
+}
+/* 중앙 prev title next fin */
+/* 오른쪽 month week day list start */
+.fc .fc-header-toolbar .fc-button-group .fc-dayGridMonth-button {
+  background: var(--button-tab-top-inactive-bg);
+  color: var(--common-100);
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
+
+.fc .fc-header-toolbar .fc-button-group .fc-timeGridWeek-button {
+  background: var(--button-tab-top-inactive-bg);
+  color: var(--common-100);
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
+.fc .fc-header-toolbar .fc-button-group .fc-timeGridDay-button {
+  background: var(--button-tab-top-inactive-bg);
+  color: var(--common-100);
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
+.fc .fc-header-toolbar .fc-button-group .fc-listWeek-button {
+  background: var(--button-tab-top-inactive-bg);
+  color: var(--common-100);
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
+
+.fc .fc-header-toolbar .fc-button-group .fc-button-active {
+  background: var(--button-tab-top-active-bg);
+}
+/* 오른쪽 month week day list  fin*/
+
+/* calendar start */
+.fc-dayGridMonth-view th  {
+  background-color: var(--schedule-day-bg);
+  color: var(--schedule-day-text);
+  height: 38px;
+}
+.fc-view-harness .fc-dayGridMonth-view .fc-scrollgrid {
+  border-radius: 6px;
+  overflow: hidden;
+}
+.fc-dayGridMonth-view thead th {
+  vertical-align: middle;
+}
+
+.fc-view-harness .fc-dayGridMonth-view .fc-scrollgrid tbody {
+  background-color: var(--schedule-date-bg);
+  color: var(--neutral-default);
+}
+
+.fc-daygrid-event-harness {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.fc-event-title-container {
+  height: 26px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--schedule-bar-text);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  border: 2px solid var(--schedule-today-focus-line);
+  background-color: var(--schedule-date-today-bg);
+  box-sizing: border-box;
+}
+
+.fc .fc-highlight {
+  border: 2px solid var(--schedule-date-focus-line);
+  background-color: var(--schedule-date-focus-bg);
+  box-sizing: border-box;
+}
+/* calendar fin */

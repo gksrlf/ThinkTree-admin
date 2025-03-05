@@ -160,6 +160,12 @@
   --nav-close-btn-light: url('../img/icon/btn_close.svg');
   --nav-close-btn-pastel: url('../img/icon/btn_close.svg');
   --nav-close-btn-dark: url('../img/icon/btn_close_w.svg');
+
+  /* calendar  */
+  --calendar-header-left-arrow-default: url('../img/icon/btn_calendar_leftarrow_default.svg');
+  --calendar-header-right-arrow-default: url('../img/icon/btn_calendar_rightarrow_default.svg');
+  --calendar-header-left-arrow-dark: url('../img/icon/dark/btn_calendar_leftarrow_d.svg');
+  --calendar-header-right-arrow-dark: url('../img/icon/dark/btn_calendar_rightarrow_d.svg');
 }
 
 
@@ -245,6 +251,10 @@
 
   /* 네비게이션 모바일 아이콘 */
   --nav-mobile-close: var(--nav-close-btn-light);
+
+  /* calendar */
+  --calender-header-left-arrow: var(--calendar-header-left-arrow-default);
+  --calendar-header-right-arrow: var(--calendar-header-right-arrow-default);
 }
 
 :root.pastel {
@@ -325,6 +335,10 @@
 
   /* 네비게이션 모바일 아이콘 */
   --nav-mobile-close: var(--nav-close-btn-pastel);
+
+  /* calendar */
+  --calender-header-left-arrow: var(--calendar-header-left-arrow-default);
+  --calendar-header-right-arrow: var(--calendar-header-right-arrow-default);
 }
 
 :root.dark {
@@ -404,4 +418,8 @@
   --input-file-border: var(--input-file-border-dark);
   /* title back btn */
   --title-back-btn: var(--title-back-btn-dark);
+
+  /* calendar */
+  --calender-header-left-arrow: var(--calendar-header-left-arrow-dark);
+  --calendar-header-right-arrow: var(--calendar-header-right-arrow-dark);
 }
