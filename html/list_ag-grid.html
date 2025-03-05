@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <link rel="stylesheet" href="/node_modules/js-datepicker/dist/datepicker.min.css"><!-- datepicker -->
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/list_ag-grid.css">
+  <!-- datepicker -->
+  <script src="/node_modules/js-datepicker/dist/datepicker.min.js"></script>
+  <!-- ag-grid -->
+  <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+
+  <!-- aside js -->
+  <script src="/js/aside.js"></script>
+  <!-- header js -->
+  <script src="/js/header.js"></script>
+
+  <title>List</title>
+</head>
+<body>
+<div class="wrap">
+  <div class="container contents_container">
+    <!-- aside lnb -->
+    <aside class="lnb_bar__area">
+      <div class="lnb_bar_control__box">
+        <button>toggle button</button>
+      </div>
+      <div class="nav_logo__box">
+        <img src="../img/logo/default_head_logo.svg" alt="logo" />
+        <button class="btn_nav_close">close</button>
+        <div class="nav_control__box">
+          <div class="community_box">
+            <div class="notify on">
+              <a href="javascript:;">notify</a>
+            </div>
+            <div class="mail">
+              <a href="javascript:;">mail</a>
+            </div>
+          </div>
+          <div class="language">
+            <div>
+              <span class="icon">language</span>
+              <span class="text">KOR</span>
+            </div>
+            <ul>
+              <li><a href="javascript:;">ENG</a></li>
+              <li><a href="javascript:;">JPN</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="lnb_bar__box">
+        <nav class="lnb_bar_content">
+          <ul>
+            <li class="lnb1 home">
+              <a href="javascript:;">
+                <div class="lnb1_title">
+                  <span>Home</span>
+                </div>
+              </a>
+            </li>
+            <li class="lnb1 project on fold_on">
+              <a href="javascript:;">
+                <div class="lnb1_title">
+                  <span>Project</span>
+                </div>
+                <span class="menu_arrow"></span>
+              </a>
+              <ol class="sub_menu">
+                <li>
+                  <a href="javascript:;">SubMenu 1</a>
+                </li>
+                <li class="on">
+                  <a href="javascript:;">SubMenu 2</a>
+                </li>
+                <li>
+                  <a href="javascript:;">SubMenu 3</a>
+                </li>
+                <li>
+                  <a href="javascript:;">SubMenu 4</a>
+                </li>
+              </ol>
+            </li>
+            <li class="lnb1 overview">
+              <a href="javascript:;">
+                <div class="lnb1_title">
+                  <span>Overview</span>
+                </div>
+                <span class="menu_arrow"></span>
+              </a>
+              <ol class="sub_menu">
+                <li>
+                  <a href="javascript:;">SubMenu 1</a>
+                </li>
+                <li class="on">
+                  <a href="javascript:;">SubMenu 2</a>
+                </li>
+                <li>
+                  <a href="javascript:;">SubMenu 3</a>
+                </li>
+                <li>
+                  <a href="javascript:;">SubMenu 4</a>
+                </li>
+              </ol>
+            </li>
+            <li class="lnb1 category">
+              <a href="javascript:;">
+                <div class="lnb1_title">
+                  <span>List</span>
+                </div>
+                <span class="menu_arrow"></span>
+              </a>
+              <ol class="sub_menu">
+                <li>
+                  <a href="javascript:;">SubMenu 1</a>
+                </li>
+                <li class="on">
+                  <a href="javascript:;">SubMenu 2</a>
+                </li>
+                <li>
+                  <a href="javascript:;">SubMenu 3</a>
+                </li>
+                <li>
+                  <a href="javascript:;">SubMenu 4</a>
+                </li>
+              </ol>
+            </li>
+            <li class="lnb1 dashboard">
+              <a href="javascript:;">
+                <div class="lnb1_title">
+                  <span>DashBoard</span>
+                </div>
+              </a>
+            </li>
+            <li class="lnb1 favorite">
+              <a href="javascript:;">
+                <div class="lnb1_title">
+                  <span>Favorite</span>
+                </div>
+              </a>
+            </li>
+            <li class="lnb1 schedule">
+              <a href="javascript:;">
+                <div class="lnb1_title">
+                  <span>Schedule</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="lnb_bar_user__box">
+          <ul class="user_menu">
+            <li class="setting on">
+              <a href="javascript:;">
+                <div class="lnb1_title">
+                  <span>Setting</span>
+                </div>
+              </a>
+            </li>
+            <li class="logout">
+              <a href="javascript:;">
+                <div class="lnb1_title">
+                  <span>Logout</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="lnb_bar_user">
+            <div class="profile_img">
+              <img src="/img/icon/icon_default_profile.svg" alt="default_profile">
+            </div>
+            <div class="profile_info">
+              <p>UserName</p>
+              <span>(admin)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- aside lnb fin -->
+
+    <div class="contents">
+      <!-- header -->
+      <header>
+        <div class="gnb_bar__area">
+          <div class="depth__box">
+            <ul>
+              <li class="home">HOME</li>
+              <li class="depth">List</li>
+            </ul>
+          </div>
+          <div class="control__box">
+            <div class="notify on">
+              <a href="javascript:;">notify</a>
+            </div>
+            <div class="mail">
+              <a href="javascript:;">mail</a>
+            </div>
+            <div class="language">
+              <div>
+                <span class="icon">language</span>
+                <span class="text">KOR</span>
+              </div>
+              <ul>
+                <li><a href="javascript:;">ENG</a></li>
+                <li><a href="javascript:;">JPN</a></li>
+              </ul>
+            </div>
+            <div class="logout">
+              <a href="javascript:;">logout</a>
+            </div>
+            <div class="screen_mode">
+              <a href="javascript:;">screen_mode</a>
+            </div>
+          </div>
+        </div>
+        <div class="gnb_bar_mobile__area">
+          <button class="mobile_menu_btn"></button>
+          <h1><img src="../img/logo/default_head_logo.svg" alt="logo" /></h1>
+        </div>
+      </header>
+      <!-- header fin -->
+
+      <!-- list content -->
+      <section class="content">
+        <div class="content_title__box">
+          <div class="mobile_depth__box">
+            <ul>
+              <li class="home">HOME</li>
+              <li class="depth">List</li>
+            </ul>
+          </div>
+          <h2 class="title_item__box">리스트 페이지</h2>
+          <div class="btn__box">
+            <button class="outlined_btn">Button</button>
+            <button class="filled_btn">Button</button>
+          </div>
+        </div>
+        <!-- filter__box -->
+        <div class="ag_grid_content" id="myGrid">
+          <div class="filter__box">
+            <button class="filter_state on" id="filter">filter state</button>
+            <p>Filter</p>
+          </div>
+        </div>
+        <!-- filter__box fin -->
+
+      </section>
+      <!-- list content fin -->
+    </div>
+    <!-- tablet & mobile menu bg -->
+    <div class="cover_bg"></div>
+  </div>
+</div>
+</body>
+<!-- list js -->
+<script src="/js/ag_grid.js"></script>
+</html>

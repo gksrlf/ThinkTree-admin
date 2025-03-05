@@ -222,6 +222,9 @@
   --schedule-bullet-color4 : var(--pastel-yellow-100);
   --schedule-bullet-color5 : var(--pastel-orange-50);
   --schedule-bullet-color6 : var(--pastel-skyblue-100);
+
+  --list-ag-grid-hover : var(--blue-700);
+  --list-ag-grid-icon-color: var(--gray-blue-700);
 }
 
 :root.pastel {
@@ -297,6 +300,9 @@
   --schedule-bullet-color4 : var(--pastel-yellow-100);
   --schedule-bullet-color5 : var(--pastel-orange-50);
   --schedule-bullet-color6 : var(--pastel-skyblue-100);
+
+  --list-ag-grid-hover : var(--pink-700);
+  --list-ag-grid-icon-color: var(--gray-pink-700);
 }
 
 :root.dark {
@@ -372,5 +378,8 @@
   --schedule-bullet-color4 : var(--muted-yellow);
   --schedule-bullet-color5 : var(--muted-brown);
   --schedule-bullet-color6 : var(--muted-blue);
+
+  --list-ag-grid-hover : var(--blue-900);
+  --list-ag-grid-icon-color: var(--gray-blue-700);
 }
 
