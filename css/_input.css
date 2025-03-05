@@ -137,11 +137,9 @@ input[type="date"] {
   background-color: var(--field-inactive-bg);
   width: 100%;
   height: 52px;
-  margin-top: 10px;
   box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
-
 }
 
 /* password */

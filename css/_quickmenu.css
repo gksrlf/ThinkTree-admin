@@ -1,0 +1,11 @@
+.snb_bar__area{
+    position: fixed;
+    z-index: 1200;
+    right: 0;
+    top: 55px;
+    width: 55px;
+    height: calc(100% - 55px);
+    background-color: var(--bg-default);
+    border-left: 1px solid var(--neutral-midium);
+    box-sizing: border-box;
+}
