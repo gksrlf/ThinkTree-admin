@@ -1,6 +1,11 @@
 .contents_container .contents .content{
   width: calc(100% - 55px);
   padding: 0;
+  transition: width 0.2s ease;
+}
+/* snb가 fold 되어 있을 때 content 넓이 조정정 */
+.contents_container .contents .content.content_wide{
+  width: 100%;
 }
 
 /* view wrap */
@@ -209,6 +214,15 @@
   font-size: 14px;
   font-weight: 500;
 }
+/* snb가 fold 되었을 때 저장/취소 버튼 영역 넓이 */
+.contents_container .contents .content.content_wide .save__box{
+  width: calc(100% - 190px);
+}
+/* snb와 aside(lnb)가 모두 fold 되었을 때 저장/취소 버튼 영역 넓이 */
+.contents_container .contents.wide_mode .content.content_wide .save__box{
+  width: 100%;
+}
+
 
 
 /************ Responsive *************/

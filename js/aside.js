@@ -14,7 +14,9 @@ const asideToggleEvent = () => {
   const saveBox = document.querySelector(".save__box"); // 뷰페이지 하단 save box
 
 	
-  if (!lnbBar) return; // 요소가 없으면 실행하지 않음
+  // 요소가 없으면 실행하지 않음
+  if (!lnbBar) return;
+  if (!asidebutton) return;
 
 	// 클릭 이벤트 추가 (클래스 토글)	
   asidebutton.addEventListener("click", () => {
@@ -43,26 +45,30 @@ const asideToggleEvent = () => {
 };
 
 const handleResize = () => {
-	const lnbBar = document.querySelector(".lnb_bar__area");
-	const contents = document.querySelector(".contents_container .contents");
+  const lnbBar = document.querySelector(".lnb_bar__area");
+  const contents = document.querySelector(".contents_container .contents");
   const lnbCover = document.querySelector(".lnb_cover");
- 
+  const saveBox = document.querySelector(".save__box"); // 뷰페이지 하단 save box
+
   if (!lnbBar) return;
 
-	const mobile = window.innerWidth <= 640;
-	const tablet = window.innerWidth <= 1280;
-	
-	if (mobile) {
-		lnbBar.classList.add("fold");
+  const mobile = window.innerWidth <= 640;
+  const tablet = window.innerWidth <= 1280;
+
+  if (mobile) {
+    lnbBar.classList.add("fold");
     contents.classList.remove("wide_mode");
+    saveBox?.classList.add("wide_mode");
     lnbCover.classList.remove("on");
-	} else if (tablet) { 
-		lnbBar.classList.add("fold");
+  } else if (tablet) {
+    lnbBar.classList.add("fold");
     contents.classList.add("wide_mode");
+    saveBox?.classList.add("wide_mode");
     lnbCover.classList.remove("on");
-	}else {
+  } else {
     lnbBar.classList.remove("fold");
     contents.classList.remove("wide_mode");
+    saveBox?.classList.add("wide_mode");
     lnbCover.classList.add("on");
   }
 };

@@ -6,6 +6,7 @@
   --light-s-nav-card: url('../img/icon/light/icon_small_nav_card.svg');
   --light-s-nav-backpack: url('../img/icon/light/icon_small_nav_backpack.svg');
   --light-s-nav-back: url('../img/icon/light/icon_small_nav_back.svg');
+  --light-s-nav-open: url('../img/icon/light/btn_qickmenu_close_l.svg');
 
   --pastel-s-nav-smile: url('../img/icon/pastel/icon_small_nav_smile_p.svg');
   --pastel-s-nav-favorite: url('../img/icon/pastel/icon_small_nav_favorite_p.svg');
@@ -13,6 +14,7 @@
   --pastel-s-nav-card: url('../img/icon/pastel/icon_small_nav_card_p.svg');
   --pastel-s-nav-backpack: url('../img/icon/pastel/icon_small_nav_backpack_p.svg');
   --pastel-s-nav-back: url('../img/icon/pastel/icon_small_nav_back_p.svg');
+  --pastel-s-nav-open: url('../img/icon/pastel/btn_qickmenu_close_p.svg');
 
   --dark-s-nav-smile: url('../img/icon/dark/icon_small_nav_smile_d.svg');
   --dark-s-nav-favorite: url('../img/icon/dark/icon_small_nav_favorite_d.svg');
@@ -20,6 +22,7 @@
   --dark-s-nav-card: url('../img/icon/dark/icon_small_nav_card_d.svg');
   --dark-s-nav-backpack: url('../img/icon/dark/icon_small_nav_backpack_d.svg');
   --dark-s-nav-back: url('../img/icon/dark/icon_small_nav_back_d.svg');
+  --dark-s-nav-open: url('../img/icon/dark/btn_qickmenu_close_d.svg');
 
   /* 확대 네비게이션 */
   --nav-home: url('../img/icon/icon_nav_home.svg');
@@ -180,6 +183,7 @@
   --s-nav-card: var(--light-s-nav-card);
   --s-nav-backpack: var(--light-s-nav-backpack);
   --s-nav-back: var(--light-s-nav-back);
+  --s-nav-open: var(--light-s-nav-open);
 
   /*네비게이션*/
   --gnb-home: var(--nav-home);
@@ -267,6 +271,7 @@
   --s-nav-card: var(--pastel-s-nav-card);
   --s-nav-backpack: var(--pastel-s-nav-backpack);
   --s-nav-back: var(--pastel-s-nav-back);
+  --s-nav-open: var(--pastel-nav-open);
 
   /*네비게이션*/
   --gnb-home: var(--nav-home);
@@ -353,6 +358,7 @@
   --s-nav-card: var(--dark-s-nav-card);
   --s-nav-backpack: var(--dark-s-nav-backpack);
   --s-nav-back: var(--dark-s-nav-back);
+  --s-nav-open: var(--dark-s-nav-open);
 
   /*네비게이션*/
   --gnb-home: var(--nav-home-w);
