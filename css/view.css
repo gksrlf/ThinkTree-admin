@@ -2,6 +2,10 @@
 .contents_container .contents .content{
   overflow-y: auto;
 }
+/* 필수 요소 */
+.require_sign{
+  margin-left: 5px;
+}
 /* input_form__box */
 .input_form__box {
   display: flex;
@@ -68,7 +72,7 @@
 
 .title_form_table th {
   width: 194px;
-  font-weight: 400;
+  font-weight: 500;
   border-bottom: 1px solid var(--neutral-midium);
   box-sizing: border-box;
   vertical-align: middle;
@@ -101,16 +105,31 @@
   padding: 0 20px;
   box-sizing: border-box;
 }
-.title_form_table td ul{
+
+.title_form_table td ul.check_list,
+.title_form_table td ul.file_list{
   display: flex;
   flex-wrap: wrap;
+}
+
+/* title_form_table check_list */
+.title_form_table td ul.check_list{
+  gap: 15px;
+}
+.title_form_table td ul.check_list li{
+  display: flex;
+  align-items: center;
+}
+
+/* title_form_table file_list */
+.title_form_table td ul.file_list{
   gap: 10px;
 }
-.title_form_table td ul .file_list{
+.title_form_table td ul.file_list li{
   position: relative;
   height: 40px;
 }
-.title_form_table td ul .file_list:before{
+.title_form_table td ul.file_list li:before{
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -124,7 +143,7 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-.title_form_table td ul .file_list a{
+.title_form_table td ul.file_list li a{
   position: relative;
   display: flex;
   justify-content: center;
@@ -138,7 +157,7 @@
   box-sizing: border-box;
   border-radius: 6px;
 }
-.title_form_table td ul .file_list button{
+.title_form_table td ul.file_list li button{
   position: absolute;
   z-index: 3;
   top: 50%;
