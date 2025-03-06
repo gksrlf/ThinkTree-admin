@@ -146,6 +146,10 @@
   --state-alert-error : #ef4444;
   --state-disabled-text : #888888;
   --state-disabled-icon : #cccccc;
+
+  /* Modal background color */
+  --modal-bg-default : #636363;
+  --modal-bg-dark : #0B0B0B;
 }
 
 :root,
@@ -225,6 +229,7 @@
 
   --list-ag-grid-hover : var(--blue-700);
   --list-ag-grid-icon-color: var(--gray-blue-700);
+  --modal-bg : var(--modal-bg-default);
 }
 
 :root.pastel {
@@ -303,6 +308,8 @@
 
   --list-ag-grid-hover : var(--pink-700);
   --list-ag-grid-icon-color: var(--gray-pink-700);
+
+  --modal-bg : var(--modal-bg-default);
 }
 
 :root.dark {
@@ -381,5 +388,7 @@
 
   --list-ag-grid-hover : var(--blue-900);
   --list-ag-grid-icon-color: var(--gray-blue-700);
+
+  --modal-bg : var(--modal-bg-dark);
 }
 
