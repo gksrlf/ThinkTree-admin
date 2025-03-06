@@ -62,7 +62,18 @@
   background: var(--error-icon) no-repeat left;
   color: var(--gray-70);
   padding-left: 22px;
-  margin-top:8px;
+  margin-top: 8px;
+}
+.date_label{
+  width: 100%;
+}
+.date_label .date_box{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.date_box input[type='date']{
+  max-width: 260px;
 }
 
 .title_form__box {
@@ -91,6 +102,8 @@
   box-sizing: border-box;
   vertical-align: middle;
   text-align: left;
+  line-height: 1.2;
+  word-break: keep-all;
 }
 
 .title_form_table td {
@@ -242,14 +255,22 @@
   }
 }
 @media screen and (max-width:1024px){
-
+  .input_form__box,
+  .title_form__box{
+    padding: 20px 15px;
+  }
+  .title_form_table th{
+    width: 80px;
+  }
+  .title_form_table td{
+    padding: 15px;
+  }
 }
 /* mobile */
 @media screen and (max-width:640px) {
   .contents_container .contents .content{
     width: 100%;
   }
-
   .save__box,
   .save__box.wide_mode,
   .contents_container .contents .content.content_wide .save__box,
@@ -259,5 +280,53 @@
   .contents_container .contents .content.content_wide .save__box,
   .contents_container .contents.wide_mode .content.content_wide .save__box{
     left: 0;
+  }
+  .title_form_table,
+  .title_form_table tbody{
+    display: block;
+  }
+  .title_form_table tr{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+  }
+  .title_form_table tr:not(:last-of-type){
+    border-bottom: 1px solid var(--neutral-midium);
+  }
+
+  .title_form_table th{
+    border: none;
+    width: 100%;
+  }
+  .title_form_table th br{display: none;}
+  .title_form_table td{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    border: none;
+  }
+  .title_form_table td:not(:last-of-type){
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--neutral-midium);
+  }
+
+  .title_form_table input[type='text']{
+    height: 45px;
+    padding: 0 10px;
+  }
+
+  .title_form_table td ul.file_list li{
+    width: 100%;
+  }
+  .title_form_table td ul.file_list li a{
+    justify-content: flex-start;
+  }
+  .title_form_table td ul.file_list li a span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    width: 100%;
   }
 }

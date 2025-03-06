@@ -58,7 +58,7 @@
                 </div>
               </a>
             </li>
-            <li class="lnb1 project on fold_on">
+            <li class="lnb1 project">
               <a href="javascript:;">
                 <div class="lnb1_title">
                   <span>Project</span>
@@ -326,9 +326,13 @@
               </div>
             </div>
             <div class="input_item_box">
-              <label class="date_label w_260">
+              <label class="date_label">
                 <span class="input_title">Label</span>
-                <input type="date"/>
+                <div class="date_box">
+                  <input type="date"/>
+                  <span>~</span>
+                  <input type="date"/>
+                </div>
               </label>
             </div>
             <div class="input_item_box">
@@ -409,7 +413,7 @@
                 </td>
               </tr>
               <tr>
-                <th rowspan="2">첨부파일<br>영역</th>
+                <th rowspan="2">첨부파일 <br>영역</th>
                 <td colspan="3">
                   <label class="file_label">
                     <div class="file_label_img"></div>
@@ -418,11 +422,13 @@
                   </label>
                 </td>
               </tr>
-              <tr>
+              <tr class="file">
                 <td colspan="3">
                   <ul class="file_list">
                     <li>
-                      <a href="javascript:;">abcdefg1234567.jpg</a>
+                      <a href="javascript:;">
+                        <span>abcdefg1234567.jpgabcdefg1234567.jpg</span>
+                      </a>
                       <button></button>
                     </li>
                     <li>

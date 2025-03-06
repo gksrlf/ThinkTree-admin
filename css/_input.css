@@ -253,3 +253,20 @@ input[type="file"] {
 .file_label:hover .file_label_img {
   background: var(--input-file-hover) no-repeat center;
 }
+
+
+
+/************ Responsive *************/
+/* tablet */
+@media screen and (max-width:1280px) {
+
+}
+@media screen and (max-width:1024px){
+
+}
+/* mobile */
+@media screen and (max-width:640px) {
+  textarea{
+    padding: 10px;
+  }
+}
