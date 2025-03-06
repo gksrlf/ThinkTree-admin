@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  handleResize();
-	window.addEventListener("resize", handleResize);
+  lnbHandleResize();
+	window.addEventListener("resize", lnbHandleResize);
 	asideToggleEvent();
 });
 
@@ -21,11 +21,13 @@ const asideToggleEvent = () => {
     if (lnbBar.classList.contains("fold")) {
       lnbBar.classList.remove("fold");
       lnbCover.classList.add("on");
+      lnbCover.classList.remove("off");
       contents.classList.remove("wide_mode");
       saveBox?.classList.remove("wide_mode");
     } else {
       lnbBar.classList.add("fold");
       lnbCover.classList.remove("on");
+      lnbCover.classList.add("off");
       contents.classList.add("wide_mode");
       saveBox?.classList.add("wide_mode");
     }
@@ -36,6 +38,7 @@ const asideToggleEvent = () => {
 		lnbBar.classList.remove("fold");
     lnbBar.classList.add("open");
     lnbCover.classList.add("on");
+    lnbCover.classList.remove("off");
 	});
 
   // 모바일 lnb 메뉴 닫기
@@ -43,12 +46,14 @@ const asideToggleEvent = () => {
     lnbBar.classList.add("fold");
     lnbBar.classList.remove("open");
     lnbCover.classList.remove("on");
+    lnbCover.classList.add("off");
   });
 
   // 백그라운드 눌렀을때 lnb 메뉴 닫기
   lnbCover.addEventListener("click", () => { 
     lnbBar.classList.add("fold");
     lnbCover.classList.remove("on");
+    lnbCover.classList.add("off");
     contents.classList.add("wide_mode");
     saveBox?.classList.add("wide_mode");
     lnbBar.classList.remove("open");
@@ -56,7 +61,7 @@ const asideToggleEvent = () => {
 };
 
 // 리사이즈 이벤트
-const handleResize = () => {
+const lnbHandleResize = () => {
   const lnbBar = document.querySelector(".lnb_bar__area");
   const contents = document.querySelector(".contents_container .contents");
   const lnbCover = document.querySelector(".lnb_cover");

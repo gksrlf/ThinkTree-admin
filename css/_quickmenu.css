@@ -148,7 +148,8 @@
   height: 100%;
   background-color: var(--gray-5);
   opacity: 0.6;
-  display: none; 
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 /* snb_bar__area fold */
@@ -166,25 +167,90 @@
 }
 /* mobile */
 @media screen and (max-width:640px) {
-
-.snb_bar__area{
-  height: 0;
-  top: 0;
-  width: 50%;
-  background-color: transparent;
-  padding: 0 0 120px;
-  justify-content: flex-end;
-  align-items: flex-end;
-  border: none;
-}
-
-.snb_open__box{
-  right: 0;
-  bottom: 120px;
-}
+  .snb_bar__area{
+    height: 100%;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    background-color: transparent;
+    padding: 0 0 120px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: none;
+    transition: right 0.3s ease;
+  }
+  .snb_bar__area.fold{
+    right: -300px;
+  }
+  .snb_bar__area.on{
+    right: 0;
+  }
+  .snb_open__box{
+    right: 0;
+    bottom: 120px;
+    background-image: var(--s-nav-mobile-open);
+  }
+  .snb_open__box.hide{
+    right: -55px;
+  }
+  .snb_bar__area .snb_bar__box{
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+  }
+  .snb_bar__area .snb_bar__box li{
+    width: 100%;
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+  }
+  .snb_bar__area .snb_bar__box li a{
+    width: 100%;
+    position: relative;
+    gap: 10px;
+    flex-direction: row-reverse;
+  }
+  .snb_bar__area .snb_bar__box li a .icon{
+    background-color: transparent;
+  }
+  .snb_bar__area .snb_bar__box li a span{
+    position: relative;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    right: 0;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+    border-radius: 0;
+    color: var(--common-100);
+  }
+  .snb_bar__area .snb_bar__box li a:hover span{
+    padding: 0;
+    width: 100%;
+    border-width: 0;
+  }
+  .snb_bar__area .snb_close__box{
+    margin-bottom: 0;
+  }
+  .snb_bar__area .snb_close__box button{
+    width: 50px;
+    height: 48px;
+    background-image: var(--s-nav-mobile-close);
+  }
 
   /* snb cover bg */
-  .snb_cover.on{
-    display: block;
+  /* Fade In */
+  .snb_cover.on {
+    opacity: 0.6;
+    visibility: visible;
+  }
+
+  /* Fade Out */
+  .snb_cover.off {
+    opacity: 0;
+    visibility: hidden;
   }
 }

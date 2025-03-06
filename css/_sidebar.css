@@ -528,7 +528,8 @@
   height: 100%;
   background-color: var(--gray-5);
   opacity: 0.6;
-  display: none; 
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 /* open */
@@ -613,10 +614,16 @@
     left: 55px;
   }
 
-
   /* lnb cover bg */
-  .lnb_cover.on{
-    display: block;
+  /* Fade In */
+  .lnb_cover.on {
+    opacity: 0.6;
+    visibility: visible;
+  }
+  /* Fade Out */
+  .lnb_cover.off {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 @media screen and (max-width:1024px){

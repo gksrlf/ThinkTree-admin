@@ -7,6 +7,8 @@
   --light-s-nav-backpack: url('../img/icon/light/icon_small_nav_backpack.svg');
   --light-s-nav-back: url('../img/icon/light/icon_small_nav_back.svg');
   --light-s-nav-open: url('../img/icon/light/btn_qickmenu_close_l.svg');
+  --light-s-nav-mobile-open: url('../img/icon/light/m_btn_quickmenu_open_l.svg');
+  --light-s-nav-mobile-close: url('../img/icon/light/m_btn_quickmenu_close_l.svg');
 
   --pastel-s-nav-smile: url('../img/icon/pastel/icon_small_nav_smile_p.svg');
   --pastel-s-nav-favorite: url('../img/icon/pastel/icon_small_nav_favorite_p.svg');
@@ -15,6 +17,8 @@
   --pastel-s-nav-backpack: url('../img/icon/pastel/icon_small_nav_backpack_p.svg');
   --pastel-s-nav-back: url('../img/icon/pastel/icon_small_nav_back_p.svg');
   --pastel-s-nav-open: url('../img/icon/pastel/btn_qickmenu_close_p.svg');
+  --pastel-s-nav-mobile-open: url('../img/icon/pastel/m_btn_quickmenu_open_p.svg');
+  --pastel-s-nav-mobile-close: url('../img/icon/pastel/m_btn_quickmenu_close_p.svg');
 
   --dark-s-nav-smile: url('../img/icon/dark/icon_small_nav_smile_d.svg');
   --dark-s-nav-favorite: url('../img/icon/dark/icon_small_nav_favorite_d.svg');
@@ -23,6 +27,8 @@
   --dark-s-nav-backpack: url('../img/icon/dark/icon_small_nav_backpack_d.svg');
   --dark-s-nav-back: url('../img/icon/dark/icon_small_nav_back_d.svg');
   --dark-s-nav-open: url('../img/icon/dark/btn_qickmenu_close_d.svg');
+  --dark-s-nav-mobile-open: url('../img/icon/dark/m_btn_quickmenu_open_d.svg');
+  --dark-s-nav-mobile-close: url('../img/icon/dark/m_btn_quickmenu_close_d.svg');
 
   /* 확대 네비게이션 */
   --nav-home: url('../img/icon/icon_nav_home.svg');
@@ -190,6 +196,8 @@
   --s-nav-backpack: var(--light-s-nav-backpack);
   --s-nav-back: var(--light-s-nav-back);
   --s-nav-open: var(--light-s-nav-open);
+  --s-nav-mobile-open: var(--light-s-nav-mobile-open);
+  --s-nav-mobile-close: var(--light-s-nav-mobile-close);
 
   /*네비게이션*/
   --gnb-home: var(--nav-home);
@@ -282,6 +290,8 @@
   --s-nav-backpack: var(--pastel-s-nav-backpack);
   --s-nav-back: var(--pastel-s-nav-back);
   --s-nav-open: var(--pastel-nav-open);
+  --s-nav-mobile-open: var(--pastel-s-nav-mobile-open);
+  --s-nav-mobile-close: var(--pastel-s-nav-mobile-close);
 
   /*네비게이션*/
   --gnb-home: var(--nav-home);
@@ -373,6 +383,8 @@
   --s-nav-backpack: var(--dark-s-nav-backpack);
   --s-nav-back: var(--dark-s-nav-back);
   --s-nav-open: var(--dark-s-nav-open);
+  --s-nav-mobile-open: var(--dark-s-nav-mobile-open);
+  --s-nav-mobile-close: var(--dark-s-nav-mobile-close);
 
   /*네비게이션*/
   --gnb-home: var(--nav-home-w);
