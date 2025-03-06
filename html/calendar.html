@@ -35,14 +35,34 @@
 <body>
 <div class="wrap">
   <div class="container contents_container">
-
-    <!-- aside lnb -->
+<!-- aside lnb -->
     <aside class="lnb_bar__area">
       <div class="lnb_bar_control__box">
         <button>toggle button</button>
       </div>
       <div class="nav_logo__box">
         <img src="../img/logo/default_head_logo.svg" alt="logo" />
+        <button class="btn_nav_close">close</button>
+        <div class="nav_control__box">
+          <div class="community_box">
+            <div class="notify on">
+              <a href="javascript:;">notify</a>
+            </div>
+            <div class="mail">
+              <a href="javascript:;">mail</a>
+            </div>
+          </div>
+          <div class="language">
+            <div>
+              <span class="icon">language</span>
+              <span class="text">KOR</span>
+            </div>
+            <ul>
+              <li><a href="javascript:;">ENG</a></li>
+              <li><a href="javascript:;">JPN</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="lnb_bar__box">
         <nav class="lnb_bar_content">
@@ -54,8 +74,7 @@
                 </div>
               </a>
             </li>
-            <!-- <li class="lnb1 project on fold_on"> -->
-            <li class="lnb1 project on">
+            <li class="lnb1 project on fold_on">
               <a href="javascript:;">
                 <div class="lnb1_title">
                   <span>Project</span>
@@ -145,18 +164,38 @@
           </ul>
         </nav>
         <div class="lnb_bar_user__box">
-          <div class="lnb_bar_user">
-            <div class="profile_img">
-              <img src="/img/icon/icon_default_profile.svg" alt="default_profile">
-            </div>
-            <div class="profile_info">
-              <p>UserName</p>
-              <span>(admin)</span>
+          <ul class="user_menu">
+            <li class="setting on">
+              <a href="javascript:;">
+                <div class="lnb1_title">
+                  <span>Setting</span>
+                </div>
+              </a>
+            </li>
+            <li class="logout">
+              <a href="javascript:;">
+                <div class="lnb1_title">
+                  <span>Logout</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="lnb_bar_user__inner">
+            <div class="lnb_bar_user">
+              <div class="profile_img">
+                <img src="/img/icon/icon_default_profile.svg" alt="default_profile">
+              </div>
+              <div class="profile_info">
+                <p>UserName</p>
+                <span>(admin)</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </aside>
+    <!-- tablet & mobile menu bg -->
+    <div class="lnb_cover"></div>
     <!-- aside lnb fin -->
 
     <div class="contents">
@@ -218,9 +257,6 @@
       </section>
       <!-- tab content fin -->
     </div>
-
-    <!-- tablet & mobile menu bg -->
-    <div class="cover_bg"></div>
   </div>
 
 </div>
