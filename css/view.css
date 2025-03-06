@@ -246,6 +246,10 @@
 }
 /* mobile */
 @media screen and (max-width:640px) {
+  .contents_container .contents .content{
+    width: 100%;
+  }
+
   .save__box,
   .save__box.wide_mode,
   .contents_container .contents .content.content_wide .save__box,

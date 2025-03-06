@@ -138,9 +138,6 @@
   right: 0;
 }
 
-
-
-
 /* snb cover bg */
 .snb_cover{
   position: fixed;
@@ -169,6 +166,23 @@
 }
 /* mobile */
 @media screen and (max-width:640px) {
+
+.snb_bar__area{
+  height: 0;
+  top: 0;
+  width: 50%;
+  background-color: transparent;
+  padding: 0 0 120px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border: none;
+}
+
+.snb_open__box{
+  right: 0;
+  bottom: 120px;
+}
+
   /* snb cover bg */
   .snb_cover.on{
     display: block;

@@ -602,6 +602,7 @@
   }
   .lnb_bar__area.open .lnb_bar_content{
     overflow-y: auto;
+    overflow-x: hidden;
   }
   .lnb_bar__area .lnb_bar_content ul .lnb1 > a .menu_arrow,
   .lnb_bar__area .lnb_bar_content ul .lnb1 > a div,
