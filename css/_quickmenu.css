@@ -76,7 +76,7 @@
 .snb_bar__area .snb_bar__box li a span{
   position: absolute;
   z-index: 1;
-  top: 0;
+  top: 0.4px;
   right: 15px;
   display: flex;
   align-items: center;
@@ -85,18 +85,21 @@
   font-weight: 500;
   color: var(--neutral-default);
   background-color: var(--brand-primary-lightest);
-  border: 1px solid var(--brand-primary-light);
   border-right: none;
   border-radius: 15px 0 0 15px;
   box-sizing: border-box;
   white-space: nowrap;
   overflow: hidden;
   width: 0;
-  transition: all 0.25s ease;
+  border-width: 0;
+  border-style: solid;
+  border-color: var(--brand-primary-light);
+  transition: width 0.25s ease, padding 0.25s ease;
 }
 .snb_bar__area .snb_bar__box li a:hover span{
   padding: 0 20px 0 15px;
   width: auto;
+  border-width: 1px;
 }
 
 /* snb_control__box */

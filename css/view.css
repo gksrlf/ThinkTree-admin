@@ -220,8 +220,8 @@
 }
 /* snb와 aside(lnb)가 모두 fold 되었을 때 저장/취소 버튼 영역 넓이 */
 .contents_container .contents.wide_mode .content.content_wide .save__box{
-  width: calc(100% - 70px);
-  left: 70px;
+  width: calc(100% - 58px);
+  left: 58px;
 }
 
 
@@ -238,7 +238,7 @@
     left: 0;
   }
   .contents_container .contents .content.content_wide .save__box{
-    left: 70px;
+    left: 58px;
   }
 }
 @media screen and (max-width:1024px){
