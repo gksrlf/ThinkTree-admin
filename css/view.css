@@ -1,6 +1,24 @@
-
 .contents_container .contents .content{
+  width: calc(100% - 55px);
+  padding: 0;
+  transition: width 0.2s ease;
+}
+/* snb가 fold 되어 있을 때 content 넓이 조정정 */
+.contents_container .contents .content.content_wide{
+  width: 100%;
+}
+
+/* view wrap */
+.view__wrap{
+  max-height: calc(100% - 100px);
   overflow-y: auto;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+/* th 필수 요소 표시 */
+.require_sign{
+  margin-left: 5px;
 }
 /* input_form__box */
 .input_form__box {
@@ -68,7 +86,7 @@
 
 .title_form_table th {
   width: 194px;
-  font-weight: 400;
+  font-weight: 500;
   border-bottom: 1px solid var(--neutral-midium);
   box-sizing: border-box;
   vertical-align: middle;
@@ -96,16 +114,146 @@
   border-right: none;
   padding-right: 0;
 }
+.title_form_table input[type='text']{
+  height: 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.title_form_table td ul.check_list,
+.title_form_table td ul.file_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* title_form_table check_list */
+.title_form_table td ul.check_list{
+  gap: 15px;
+}
+.title_form_table td ul.check_list li{
+  display: flex;
+  align-items: center;
+}
+
+/* title_form_table file_list */
+.title_form_table td ul.file_list{
+  gap: 10px;
+}
+.title_form_table td ul.file_list li{
+  position: relative;
+  height: 40px;
+}
+.title_form_table td ul.file_list li:before{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: var(--input-file-icon);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.title_form_table td ul.file_list li a{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 2;
+  font-size: 14px;
+  color: var(--neutral-default);
+  border: 1px solid var(--neutral-light);
+  padding: 0 50px 0 35px;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.title_form_table td ul.file_list li button{
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  background-image: var(--input-file-delete);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* save__box */
+.save__box{
+  position: fixed;
+  bottom: 0;
+  left: 190px;
+  z-index: 1100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: calc(100% - 245px);
+  height: 100px;
+  background-color: var(--bg-default);
+  -webkit-box-shadow: 0 -4px 14px 0 rgba(0,0,0,0.06);
+  box-shadow: 0 -4px 14px 0 rgba(0,0,0,0.06);
+  transition: left 0.2s ease, width 0.2s ease;
+}
+.save__box.wide_mode{
+  left: 0;
+  width: 100%;
+}
+.save__box button{
+  width: 105px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* snb가 fold 되었을 때 저장/취소 버튼 영역 넓이 */
+.contents_container .contents .content.content_wide .save__box{
+  width: calc(100% - 190px);
+}
+/* snb와 aside(lnb)가 모두 fold 되었을 때 저장/취소 버튼 영역 넓이 */
+.contents_container .contents.wide_mode .content.content_wide .save__box{
+  width: calc(100% - 70px);
+  left: 70px;
+}
+
 
 /************ Responsive *************/
 /* tablet */
 @media screen and (max-width:1280px) {
-
+  .save__box,
+  .save__box.wide_mode,
+  .contents_container .contents .content.content_wide .save__box,
+  .contents_container .contents.wide_mode .content.content_wide .save__box{
+    width: calc(100% - 55px);
+  }
+  .save__box{
+    left: 0;
+  }
+  .contents_container .contents .content.content_wide .save__box{
+    left: 70px;
+  }
 }
 @media screen and (max-width:1024px){
 
 }
 /* mobile */
 @media screen and (max-width:640px) {
-
+  .save__box,
+  .save__box.wide_mode,
+  .contents_container .contents .content.content_wide .save__box,
+  .contents_container .contents.wide_mode .content.content_wide .save__box{
+    width: 100%;
+  }
+  .contents_container .contents .content.content_wide .save__box,
+  .contents_container .contents.wide_mode .content.content_wide .save__box{
+    left: 0;
+  }
 }

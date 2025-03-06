@@ -7,9 +7,12 @@
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <link rel="stylesheet" type="text/css" href="/css/view.css">
+  <link rel="stylesheet" type="text/css" href="/css/_quickmenu.css">
   <title>View</title>
   <!-- aside js -->
   <script src="/js/aside.js"></script>
+    <!-- aside js -->
+  <script src="/js/quickmenu.js"></script>
   <!-- header js -->
   <script src="/js/header.js"></script>
 </head>
@@ -173,6 +176,8 @@
         </div>
       </div>
     </aside>
+    <!-- tablet & mobile menu bg -->
+    <div class="lnb_cover"></div>
     <!-- aside lnb fin -->
 
     <div class="contents">
@@ -182,7 +187,7 @@
           <div class="depth__box">
             <ul>
               <li class="home">HOME</li>
-              <li class="depth">List</li>
+              <li class="depth">View</li>
             </ul>
           </div>
           <div class="control__box">
@@ -219,198 +224,279 @@
 
       <!-- View content -->
       <section class="content">
-        <div class="content_title__box">
-          <div class="mobile_depth__box">
-            <ul>
-              <li class="home">HOME</li>
-              <li class="depth">View</li>
-            </ul>
-          </div>
-          <h2 class="title_item__box">
-            <span class="title_back_btn"></span>
-            뷰 페이지
-          </h2>
-          <div class="btn__box">
-            <button class="outlined_btn">Button</button>
-            <button class="filled_btn">Button</button>
-          </div>
-        </div>
-        <div class="input_form__box">
-          <div class="input_item_box">
-            <label class="text_label w_40">
-              <span class="input_title">Label&nbsp;<span class="require_sign">*</span></span>
-              <input class="require" type="text" placeholder="Placeholder">
-            </label>
-            <label class="text_label w_60">
-              <span class="input_title">Label</span>
-              <input type="text" placeholder="Placeholder">
-            </label>
-          </div>
-          <div class="input_item_box">
-            <label class="text_label w_45">
-              <span class="input_title">Label</span>
-              <input type="text" placeholder="Placeholder">
-            </label>
-            <label class="text_label w_55">
-              <span class="input_title">Label</span>
-              <input type="text" placeholder="Placeholder">
-            </label>
-          </div>
-          <div class="input_item_box">
-            <label class="select_label w_quarter">
-              <span class="input_title">Label</span>
-              <select>
-                <option>
-                  Text
-                </option>
-                <option>
-                  Text
-                </option>
-                <option>
-                Text
-              </option>
-              </select>
-            </label>
-            <label class="text_label w_quarter">
-              <span class="input_title">Label</span>
-              <input type="text" placeholder="Placeholder">
-            </label>
-            <label class="text_label w_quarter">
-              <span class="input_title">Label</span>
-              <input type="text" placeholder="Placeholder">
-            </label>
-            <label class="select_label w_quarter">
-              <span class="input_title">Label</span>
-              <select class="err">
-                <option>
-                  Text
-                </option>
-                <option>
-                  Text
-                </option>
-                <option>
-                  Text
-                </option>
-              </select>
-              <p class="err_txt">Error</p>
-            </label>
-          </div>
-          <div class="input_item_box search_box">
-            <label class="text_label w_full">
-              <span class="input_title">Label</span>
-              <input class="search" type="text">
-            </label>
-            <div class="input_btn__box">
-              <button class="search_btn">검색</button>
-              <button class="delete_btn">삭제</button>
+        <div class="view__wrap">
+          <div class="content_title__box">
+            <div class="mobile_depth__box">
+              <ul>
+                <li class="home">HOME</li>
+                <li class="depth">View</li>
+              </ul>
+            </div>
+            <h2 class="title_item__box">
+              <span class="title_back_btn"></span>
+              뷰 페이지
+            </h2>
+            <div class="btn__box">
+              <button class="outlined_btn">Button</button>
+              <button class="filled_btn">Button</button>
             </div>
           </div>
-          <div class="input_item_box textarea_box">
-            <label>
-              <span class="input_title">Label</span>
-              <textarea placeholder="Placeholder" maxlength="100"></textarea>
-            </label>
-            <div class="length_text">
-              <p>
-                <span>0</span>/<span>100</span>
-              </p>
+          <!-- input form -->
+          <div class="input_form__box">
+            <div class="input_item_box">
+              <label class="text_label w_40">
+                <span class="input_title">Label<span class="require_sign">*</span></span>
+                <input class="require" type="text" placeholder="Placeholder">
+              </label>
+              <label class="text_label w_60">
+                <span class="input_title">Label</span>
+                <input type="text" placeholder="Placeholder">
+              </label>
             </div>
-          </div>
-          <div class="input_item_box">
-            <label class="date_label w_260">
-              <span class="input_title">Label</span>
-              <input type="date"/>
-            </label>
-          </div>
-          <div class="input_item_box">
-            <label class="password_label w_full">
-              <span class="input_title">Label</span>
-              <div class="password__box">
-                <input type="password" placeholder="Password"/>
-                <button></button>
+            <div class="input_item_box">
+              <label class="text_label w_45">
+                <span class="input_title">Label</span>
+                <input type="text" placeholder="Placeholder">
+              </label>
+              <label class="text_label w_55">
+                <span class="input_title">Label</span>
+                <input type="text" placeholder="Placeholder">
+              </label>
+            </div>
+            <div class="input_item_box">
+              <label class="select_label w_quarter">
+                <span class="input_title">Label</span>
+                <select>
+                  <option>
+                    Text
+                  </option>
+                  <option>
+                    Text
+                  </option>
+                  <option>
+                  Text
+                </option>
+                </select>
+              </label>
+              <label class="text_label w_quarter">
+                <span class="input_title">Label</span>
+                <input type="text" placeholder="Placeholder">
+              </label>
+              <label class="text_label w_quarter">
+                <span class="input_title">Label</span>
+                <input type="text" placeholder="Placeholder">
+              </label>
+              <label class="select_label w_quarter">
+                <span class="input_title">Label</span>
+                <select class="err">
+                  <option>
+                    Text
+                  </option>
+                  <option>
+                    Text
+                  </option>
+                  <option>
+                    Text
+                  </option>
+                </select>
+                <p class="err_txt">Error</p>
+              </label>
+            </div>
+            <div class="input_item_box search_box">
+              <label class="text_label w_full">
+                <span class="input_title">Label</span>
+                <input class="search" type="text">
+              </label>
+              <div class="input_btn__box">
+                <button class="search_btn">검색</button>
+                <button class="delete_btn">삭제</button>
               </div>
-            </label>
+            </div>
+            <div class="input_item_box textarea_box">
+              <label>
+                <span class="input_title">Label</span>
+                <textarea maxlength="100"></textarea>
+              </label>
+              <div class="length_text">
+                <p>
+                  <span>0</span>/<span>100</span>
+                </p>
+              </div>
+            </div>
+            <div class="input_item_box">
+              <label class="date_label w_260">
+                <span class="input_title">Label</span>
+                <input type="date"/>
+              </label>
+            </div>
+            <div class="input_item_box">
+              <label class="password_label w_full">
+                <span class="input_title">Label</span>
+                <div class="password__box">
+                  <input type="password" placeholder="Password"/>
+                  <button></button>
+                </div>
+              </label>
+            </div>
           </div>
-        </div>
-
-        <!-- title content start -->
-        <div class="title_form__box">
-          <div class="title_form_tile_box">
-            <h2 class="title_form__title">타이틀 영역</h2>
+          <!-- input form fin -->
+          <!-- title content start -->
+          <div class="title_form__box">
+            <div class="title_form_tile_box">
+              <h2 class="title_form__title">타이틀 영역</h2>
+            </div>
+            <table class="title_form_table">
+              <tr>
+                <th>제목 영역<span class="require_sign">*</span></th>
+                <td>
+                  <label class="text_label">
+                    <input class="require" type="text">
+                  </label>
+                </td>
+                <th class="pl-15">Title<span class="require_sign">*</span></th>
+                <td>
+                  <label class="text_label">
+                    <input class="require" type="text">
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th>제목 영역 Title</th>
+                <td>
+                  <label class="text_label">
+                    <input type="text">
+                  </label>
+                </td>
+                <th class="pl-15">길이가 다른 제목</th>
+                <td>
+                  <label class="text_label">
+                    <input type="text">
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th>한 줄 전체 사용할 경우</th>
+                <td colspan="3">
+                  <label class="area_label">
+                    <textarea maxlength="100"></textarea>
+                    <span class="area_txt">0/100</span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th>체크박스 영역</th>
+                <td colspan="3">
+                  <ul class="check_list">
+                    <li>
+                      <input id="option1" type="checkbox" checked>
+                      <label for="option1">Option1</label>
+                    </li>
+                    <li>
+                      <input id="option2" type="checkbox">
+                      <label for="option2">Option2</label>    
+                    </li>
+                    <li>
+                      <input id="option3" type="checkbox" checked>
+                      <label for="option3">Option3</label>
+                    </li>
+                    <li>
+                      <input id="option4" type="checkbox" checked>
+                      <label for="option4">Option4</label>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th rowspan="2">첨부파일<br>영역</th>
+                <td colspan="3">
+                  <label class="file_label">
+                    <div class="file_label_img"></div>
+                    <p>여기로 파일을 드래그하거나 <br>클릭하여 업로드하세요.</p>
+                    <input type="file">
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <ul class="file_list">
+                    <li>
+                      <a href="javascript:;">abcdefg1234567.jpg</a>
+                      <button></button>
+                    </li>
+                    <li>
+                      <a href="javascript:;">1234567.jpg</a>
+                      <button></button>
+                    </li>
+                    <li>
+                      <a href="javascript:;">TEXT.jpg</a>
+                      <button></button>
+                    </li>
+                    <li>
+                      <a href="javascript:;">파일명TEXT.jpg</a>
+                      <button></button>
+                    </li>
+                    <li>
+                      <a href="javascript:;">abcdefg1234567.jpg</a>
+                      <button></button>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
           </div>
-          <table class="title_form_table">
-            <tr>
-              <th>제목 영역&ensp;<span class="require_sign">*</span></th>
-              <td>
-                <label class="text_label">
-                  <input class="require" type="text">
-                </label>
-              </td>
-              <th class="pl-15">Title&ensp;<span class="require_sign">*</span></th>
-              <td>
-                <label class="text_label">
-                  <input class="require" type="text">
-                </label>
-              </td>
-            </tr>
-            <tr>
-              <th>제목 영역 Title</th>
-              <td>
-                <label class="text_label">
-                  <input type="text">
-                </label>
-              </td>
-              <th class="pl-15">길이가 다른 제목</th>
-              <td>
-                <label class="text_label">
-                  <input type="text">
-                </label>
-              </td>
-            </tr>
-            <tr>
-              <th>한 줄 전체 사용할 경우</th>
-              <td colspan="3">
-                <label class="area_label">
-                  <textarea maxlength="100"></textarea>
-                  <span class="area_txt">0/100</span>
-                </label>
-              </td>
-            </tr>
-            <tr>
-              <th>체크박스 영역</th>
-              <td colspan="3">
-                <input id="option1" type="checkbox" checked>
-                <label for="option1">Option1</label>
-                <input id="option2" type="checkbox">
-                <label for="option2">Option2</label>
-                <input id="option3" type="checkbox" checked>
-                <label for="option3">Option3</label>
-                <input id="option4" type="checkbox" checked>
-                <label for="option4">Option4</label>
-              </td>
-            </tr>
-            <tr>
-              <th rowspan="2">첨부파일<br>영역</th>
-              <td colspan="3">
-                <label class="file_label">
-                  <img class="file_label_img">
-                  <span>여기로 파일을 드래그하거나<br>클릭하여 업로드하세요.</span>
-                  <input type="file">
-                </label>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="3">hi</td>
-            </tr>
-          </table>
+          <!-- title content fin   -->
         </div>
-        <!-- title content fin   -->
+         <div class="save__box">
+            <button class="filled_btn">저장</button>
+            <button class="outlined_btn">취소</button>
+         </div>
       </section>
       <!-- View content fin -->
     </div>
 
+    <!-- side lnb -->
+    <div class="snb_bar__area">
+      <ul class="snb_bar__box">
+        <li class="messenger">
+          <a href="javascript:;">
+            <div class="icon"></div>
+            <span>messenger Menu</span>
+          </a>
+        </li>
+        <li class="bookmark">
+          <a href="javascript:;">
+            <div class="icon"></div>
+            <span>bookmark Menu</span>
+          </a>
+        </li>
+        <li class="archive">
+          <a href="javascript:;">
+            <div class="icon"></div>
+            <span>archive Menu</span>
+          </a>
+        </li>
+        <li class="backpack">
+          <a href="javascript:;">
+            <div class="icon"></div>
+            <span>backpack Menu</span>
+          </a>
+        </li>
+        <li class="card">
+          <a href="javascript:;">
+            <div class="icon"></div>
+            <span>card Menu</span>
+          </a>
+        </li>
+      </ul>
+      <div class="snb_close__box">
+        <button>quick menu open</button>
+      </div>
+    </div>
+    <button class="snb_open__box">quick menu close</button>
     <!-- tablet & mobile menu bg -->
-    <div class="cover_bg"></div>
+    <div class="snb_cover"></div>
+    <!-- side lnb fin -->
+
   </div>
 </div>
 </body>

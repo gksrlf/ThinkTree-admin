@@ -45,6 +45,8 @@
   font-size: 14px;
   background-color: var(--bg-default);
   color: var(--neutral-default);
+  border-collapse: separate;
+  border-spacing: 0;
 }
 /* highlight effect */
 .content .table__box table .highlight {
@@ -52,6 +54,10 @@
   cursor:default;
 }
 .content .table__box table thead{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
   height: 50px;
   text-align: left;
   background-color: var(--brand-primary-lightest);
