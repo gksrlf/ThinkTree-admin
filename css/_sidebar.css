@@ -573,10 +573,10 @@
 @media screen and (max-width:1280px) {
   .lnb_bar__area{
     position: fixed;
-    width: 70px;
+    width: 58px;
   }
   .lnb_bar__area .lnb_bar_control__box{
-    left: 59px;
+    left: 47px;
   }
 
   .lnb_bar__area .lnb_bar_user{
