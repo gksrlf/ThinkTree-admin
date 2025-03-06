@@ -130,10 +130,10 @@ const init = () => {
       {
         headerName: '',
         field: "download",
-        cellRenderer: function() {
+        cellRenderer: () => {
           return '<button class="align-middle bg-black icon-filetype-pdf"></button>';
         },
-        maxWidth: 70,
+        maxWidth: 100,
         filter: false,
         cellStyle: {
           textAlign: 'center'
@@ -166,8 +166,6 @@ const init = () => {
   let companyCodeSuffix = 1;
   let licenseNumberSuffix = 1;
   let documentNameSuffix = 1;
-
-  const updatedRowData = [];
 
   for (let i = 0; i < repeatCount; i++) {
     rowData.forEach(item => {
