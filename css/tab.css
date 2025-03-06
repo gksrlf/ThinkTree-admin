@@ -73,6 +73,111 @@
 
 
 
+/* modal */
+.modal{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1300;
+}
+.modal_body{
+  z-index: 2;
+  position:absolute;
+  top:50%;
+  width: 1033px;
+  height: 877px;
+  padding:40px;
+  text-align: center;
+  background-color: rgb(255,255,255);
+  border-radius:10px;
+  box-shadow:0 2px 3px 0 rgba(34,36,38,0.15);
+  transform:translateY(-50%);
+}
+
+.modal_bg {
+  width: 100%;
+  height: 100%;
+  background-color: var(--modal-bg);
+  opacity: 0.3;
+}
+
+.modal_title {
+  display: flex;
+  width: 100%;
+  height: 44px;
+  padding-bottom: 20px;
+  color: var(--neutral-default);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.modal_content {
+  width: 100%;
+  height: calc(100% - 44px);
+}
+
+.modal_content_table {
+  width: 100%;
+}
+
+.modal_content_table thead {
+  background-color: var(--neutral-lightest);
+  border-top: 2px solid var(--neutral-default);
+  border-bottom: 1px solid var(--neutral-dark);
+  box-sizing: border-box;
+  height: 52px;
+  text-align: left;
+}
+
+.modal_content_table thead tr th {
+  vertical-align: middle;
+}
+
+.modal_content_table tbody td {
+  border : 1px solid var(--neutral-midium);
+  box-sizing: border-box;
+  vertical-align: middle;
+  padding: 20px;
+
+}
+
+.modal_content_table tbody th {
+  text-align: left;
+  vertical-align: middle;
+  border : 1px solid var(--neutral-midium);
+  box-sizing: border-box;
+  border-left: 0 none;
+}
+
+.modal_content_table tbody tr {
+  height: 93px;
+  border-left: 0 none;
+  border-right: 0 none;
+}
+
+.modal_content_table tbody tr {
+  border-right: 0 none;
+}
+
+.modal_content_table tbody td input[type="text"] {
+  width: 100%;
+  height: 52px;
+}
+
+.modal_btn_box {
+  width: 100%;
+  height: 42px;
+}
+
+.modal_btn_box button {
+  width: 125px;
+  height: 100%;
+}
+
 /************ Responsive *************/
 /* tablet */
 @media screen and (max-width:1280px) {
