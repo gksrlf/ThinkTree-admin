@@ -315,24 +315,34 @@
       <table class="modal_content_table">
         <thead>
         <tr>
-          <th colspan="6">작성자 관리자 작성일자 </th>
+          <th colspan="6">
+            <div class="modal_table_header">
+              <div>
+                <p class="font_bold">작성자</p><span class="line"></span>관리자
+              </div>
+              <div>
+                <p class="font_bold">작성일자</p><span class="line"></span>2025-01-25
+              </div>
+            </div>
+          </th>
         </tr>
         </thead>
         <tbody>
           <tr>
-            <th>제목 </th>
+            <th>제목&nbsp;<span class="require_sign">*</span></th>
             <td colspan="3">
-                <input type="text"/>
+                <input class="require" type="text"/>
             </td>
             <th>고정</th>
             <td>
-              <span>
-                zz
-              </span>
+              <div class="filter__box">
+                <button class="filter_state on">filter state</button>
+                <p>Filter</p>
+              </div>
             </td>
           </tr>
         <tr>
-          <th>내용</th>
+          <th>내용&nbsp;<span class="require_sign">*</span></th>
           <td colspan="5">
             <textarea>
 
@@ -353,13 +363,13 @@
             </td>
           </tr>
         <tr>
-          <th>게시일</th>
+          <th>게시일&nbsp;<span class="require_sign">*</span></th>
           <td>
-            <input type="date" />
+            <input type="date" class="require"/>
           </td>
           <th>종료일</th>
           <td>
-            <input type="date" />
+            <input type="date" class="require"/>
           </td>
           <th>노출여부</th>
           <td>

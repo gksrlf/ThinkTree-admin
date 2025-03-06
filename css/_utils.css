@@ -4,6 +4,14 @@
   justify-content: center;
 }
 
+.line {
+  display: block;
+  width: 1px;
+  height: 10px;
+  background-color: var(--neutral-midium);
+  margin: 0 15px;
+}
+
 .w_40 {
   width: 365px;
 }

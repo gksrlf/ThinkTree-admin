@@ -122,6 +122,8 @@
 
 .modal_content_table {
   width: 100%;
+  font-family: "Pretendard";
+  color: var(--neutral-default);
 }
 
 .modal_content_table thead {
@@ -131,6 +133,28 @@
   box-sizing: border-box;
   height: 52px;
   text-align: left;
+}
+
+
+.modal_table_header {
+  width: 100%;
+  display: flex;
+  padding-left: 10px;
+}
+
+.modal_table_header div {
+  display: flex;
+  color: var(--neutral-default);
+  font-family: "Pretendard";
+  font-weight: 300;
+}
+
+.modal_table_header div:last-child {
+  padding-left: 20px;
+}
+
+.font_bold {
+  font-weight: 700;
 }
 
 .modal_content_table thead tr th {
@@ -151,6 +175,7 @@
   border : 1px solid var(--neutral-midium);
   box-sizing: border-box;
   border-left: 0 none;
+  padding-left: 10px;
 }
 
 .modal_content_table tbody tr {
@@ -159,7 +184,7 @@
   border-right: 0 none;
 }
 
-.modal_content_table tbody tr {
+.modal_content_table tbody tr td:last-of-type {
   border-right: 0 none;
 }
 
@@ -176,6 +201,31 @@
 .modal_btn_box button {
   width: 125px;
   height: 100%;
+}
+
+.content .filter__box{
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+.filter__box .filter_state{
+  display: block;
+  text-indent: -99999px;
+  width: 32px;
+  height: 16px;
+  background-image: var(--filter-large-off);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  border: none;
+  background-color: transparent;
+}
+.filter__box .filter_state.on{
+  background-image: var(--filter-large-on);
+}
+.filter__box p{
+  font-weight: 500;
+  color: var(--brand-primary-dark);
 }
 
 /************ Responsive *************/

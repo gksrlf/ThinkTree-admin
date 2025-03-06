@@ -83,6 +83,10 @@ input[type="text"].require {
   background-color: var(--field-required-bg);
 }
 
+input[type="date"].require {
+  border: solid 1px var(--field-required-border);
+  background-color: var(--field-required-bg);
+}
 
 .input_item_box .select_label select {
   font-family: "Pretendard";
@@ -187,7 +191,7 @@ input[type="password"]:focus {
 
 /* textarea */
 .input_form__box .input_item_box.textarea_box{
-  display: flex; 
+  display: flex;
   flex-direction: column;
   gap: 10px;
 }
