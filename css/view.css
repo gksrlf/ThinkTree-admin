@@ -51,10 +51,6 @@
   gap:16px;
 }
 
-.input_form__box .search_box{
-
-}
-
 .input_item_box .select_label .err {
   border : 1px solid var(--field-error-border);
   background-color: var(--field-error-bg);
