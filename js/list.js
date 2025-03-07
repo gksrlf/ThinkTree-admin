@@ -5,22 +5,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const initDatePicker = () => {
   const picker = datepicker("#datepicker", {
-    // 사용자 정의.
     formatter: (input, date, instance) => {
-      // 이렇게 하면 날짜가 `1/1/2019`로 표시됩니다.
-      input.value = date.toDateString();
+      // 날짜 형태 변환
+      const year = date.getFullYear();
+      const month = (date.getMonth() + 1).toString().padStart(2, "0");
+      const day = date.getDate().toString().padStart(2, "0");
+      const parseDate = year + "-" + month + "-" + day;
+
+      input.value = parseDate;
     },
-    startDay: 1, // 달력 주는 월요일부터 시작합니다.
+    startDay: 1, // 달력 주는 월요일부터 시작
     customDays: ["일", "월", "화", "수", "목", "금", "토"],
     customMonths: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
-    overlayPlaceholder: "4자리 연도 입력",
-
-    alwaysShow: false, // 달력을 숨기지 않음.
-    dateSelected: new Date(), // 오늘이 선택됨.
-    minDate: new Date(1900, 0, 1), // 1900년 1월 1일
-    maxDate: new Date(2099, 0, 1), // 2099년 1월 1일
-    startDate: new Date(), // 이번 달.
-    showAllDates: true, // 현재 월을 제외한 선행 및 후행 날짜의 숫자가 표시됨.
+    overlayPlaceholder: "4자리 연도 입력", // 년도 검색란 텍스트
+    overlayButton: "검색", // 년도 검색 버튼 텍스트
+    minDate: new Date(1900, 0, 1), // 최소 1900년 1월 1일
+    maxDate: new Date(2099, 11, 31), // 최대 2099년 12월 31일
+    startDate: new Date(), // 시작 하는 달 (이번 달)
+    showAllDates: true, // 현재 달을 제외한 선행 및 후행 달의 날짜 표시
   });
 };
 

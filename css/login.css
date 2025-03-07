@@ -1,7 +1,3 @@
-@import "./_color.css";
-@import "./_input.css";
-@import "./_button.css";
-
 .login_container {
   padding: 50px 0;
   background-image: url('../img/bg/login_bg_default.svg');
