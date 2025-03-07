@@ -79,6 +79,14 @@ input[type="text"].require {
   background-color: var(--field-required-bg);
 }
 
+input[type="email"]:focus {
+  outline: 1.5px solid var(--field-focused-border);
+}
+input[type="email"].require {
+  border: solid 1px var(--field-required-border);
+  background-color: var(--field-required-bg);
+}
+
 input[type="date"].require {
   border: solid 1px var(--field-required-border);
   background-color: var(--field-required-bg);

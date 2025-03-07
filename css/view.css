@@ -71,7 +71,7 @@
   align-items: center;
   gap: 10px;
 }
-.date_box input[type='date']{
+.date_box .datepicker{
   max-width: 260px;
 }
 
@@ -325,7 +325,7 @@
     width: 50%;
   }
   .date_box{flex-wrap: wrap;}
-  .date_box input[type='date']{
+  .date_box .datepicker{
     width: calc(100% - 25px);
     max-width: none;
     padding: 0 10px;
