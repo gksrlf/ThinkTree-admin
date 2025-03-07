@@ -332,8 +332,90 @@ td ul.file_list li button{
 .file_label {
   height: 126px;
 }
+/* modal */
+
+/* popup */
+.pop {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1300;
+}
+
+.pop_body {
+  z-index: 2;
+  position:absolute;
+  top:50%;
+  width: 300px;
+  height: 187px;
+  text-align: center;
+  background-color: rgb(255,255,255);
+  border-radius:10px;
+  box-shadow:0 2px 3px 0 rgba(34,36,38,0.15);
+  transform:translateY(-50%);
+}
+
+.pop_bg {
+  width: 100%;
+  height: 100%;
+  background-color: var(--modal-bg);
+  opacity: 0.3;
+}
+
+.pop_img_box {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-radius: 99%;
+
+  translate: 0% -50%;
+}
+
+.pop_success {
+  background: var(--icon-pop-success) var(--state-alert-success) no-repeat center;
+}
+
+.pop_warning {
+  background: var(--icon-pop-warning) var(--state-alert-warning) no-repeat center;
+}
+
+.pop_error {
+  background: var(--icon-pop-error) var(--state-alert-error) no-repeat center;
+}
+
+.pop_text_box {
+  font-family: "Pretendard";
+  margin-bottom: 24px;
+}
+
+.pop_text_box .pop_title {
+  color: var(--brand-primary-dark);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.pop_text_box .pop_sub_title {
+  color: var(--neutral-darker);
+  font-size: 16px;
+}
+.pop_btn_box {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pop_btn_box button {
+  width: 104px;
+  height: 42px;
+}
 
 
+/* popup */
 /************ Responsive *************/
 /* tablet */
 @media screen and (max-width:1280px) {

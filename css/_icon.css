@@ -185,6 +185,10 @@
 
   --modal-close-btn-default: url('../img/icon/btn_modal_close_w.svg');
   --modal-close-btn-dark: url('../img/icon/btn_modal_close.svg');
+  /* pop up */
+  --icon-pop-success: url('../img/icon/icon_pop_success.svg');
+  --icon-pop-warning: url('../img/icon/icon_pop_warning.svg');
+  --icon-pop-error: url('../img/icon/icon_pop_error.svg');
 }
 
 
