@@ -242,10 +242,15 @@ input[type="file"] {
   align-items: center;
   cursor: pointer;
   text-align: center;
-  line-height: 1.5;
 }
 .file_label:hover {
   background-color: var(--field-inactive-bg);
+}
+.file_label p{
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--neutral-default);
+  line-height: 1.5;
 }
 .file_label_img {
   width: 50px;
@@ -272,5 +277,8 @@ input[type="file"] {
 @media screen and (max-width:640px) {
   textarea{
     padding: 10px;
+  }
+  .file_label p{
+    font-size: 14px;
   }
 }
