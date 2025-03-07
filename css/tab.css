@@ -76,7 +76,7 @@
 /* modal */
 .modal{
   position: fixed;
-  display: flex;
+  display: none;
   justify-content: center;
   top: 0;
   left: 0;
@@ -122,8 +122,10 @@
 
 .modal_content_table {
   width: 100%;
+  height: 704px;
   font-family: "Pretendard";
   color: var(--neutral-default);
+  margin-bottom: 30px;
 }
 
 .modal_content_table thead {
@@ -170,6 +172,7 @@
 }
 
 .modal_content_table tbody th {
+  width: 121px;
   text-align: left;
   vertical-align: middle;
   border : 1px solid var(--neutral-midium);
@@ -227,11 +230,81 @@
   font-weight: 500;
   color: var(--brand-primary-dark);
 }
+.length_text {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  color: var(--neutral-dark);
+  margin-top: 10px;
+}
 
+ul.file_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* title_form_table file_list */
+td ul.file_list{
+  gap: 10px;
+}
+td ul.file_list li{
+  position: relative;
+  height: 40px;
+}
+td ul.file_list li:before{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: var(--input-file-icon);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+td ul.file_list li a{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 2;
+  font-size: 14px;
+  color: var(--neutral-default);
+  border: 1px solid var(--neutral-light);
+  padding: 0 50px 0 35px;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+td ul.file_list li button{
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  background-image: var(--input-file-delete);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.file_label {
+  height: 126px;
+}
 /************ Responsive *************/
 /* tablet */
 @media screen and (max-width:1280px) {
-
+  .modal_body {
+    width: 800px;
+    height: 877px;
+  }
 }
 @media screen and (max-width:1024px){
   .content__box .content__item .tab_header li{
@@ -253,5 +326,15 @@
   .tab_item__box .tab_item{
     height: calc(100% - 40px);
     padding: 20px;
+  }
+
+  .modal_body {
+    width: 300px;
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+
+  .modal_body .modal_content_table {
+    table-layout:fixed; word-break:break-all;
   }
 }
