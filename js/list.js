@@ -1,8 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-  tableHoverEvent();
-  initDatePicker();
-});
-
 const initDatePicker = () => {
   const picker = datepicker("#datepicker", {
     formatter: (input, date, instance) => {
@@ -51,3 +46,12 @@ const tableHoverEvent = () => {
     cell.addEventListener("mouseleave", (e) => toggleHighlight(e, false));
   });
 };
+
+(() => {
+
+})()
+
+document.addEventListener("DOMContentLoaded", () => {
+  tableHoverEvent();
+  initDatePicker();
+});

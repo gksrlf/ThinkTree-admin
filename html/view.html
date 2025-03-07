@@ -4,17 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <link rel="stylesheet" href="/node_modules/js-datepicker/dist/datepicker.min.css"><!-- datepicker -->
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <link rel="stylesheet" type="text/css" href="/css/view.css">
   <link rel="stylesheet" type="text/css" href="/css/_quickmenu.css">
-  <title>View</title>
+  <!-- datepicker -->
+  <script src="/node_modules/js-datepicker/dist/datepicker.min.js"></script>
+  <!-- view js -->
+  <script src="/js/view.js"></script>
   <!-- aside js -->
   <script src="/js/aside.js"></script>
-    <!-- aside js -->
+  <!-- aside js -->
   <script src="/js/quickmenu.js"></script>
   <!-- header js -->
   <script src="/js/header.js"></script>
+  
+  <title>View</title>
 </head>
 <body>
 <div class="wrap">
@@ -329,9 +335,9 @@
               <label class="date_label">
                 <span class="input_title">Label</span>
                 <div class="date_box">
-                  <input type="date"/>
+                  <input id="start_datepicker" class="datepicker" type="text" placeholder="YYYY-MM-DD" readonly>
                   <span>~</span>
-                  <input type="date"/>
+                  <input id="end_datepicker" class="datepicker" type="text" placeholder="YYYY-MM-DD" readonly>
                 </div>
               </label>
             </div>
