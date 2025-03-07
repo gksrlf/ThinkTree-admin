@@ -3,7 +3,7 @@ const init = () => {
 
   document.querySelector('#titlePop').addEventListener('click', () => {
     const modal = document.querySelector('.modal')
-    modal.style.display = 'flex'
+    modal.style.display = 'block'
   })
 }
 

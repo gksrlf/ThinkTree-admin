@@ -182,6 +182,9 @@
   --calendar-header-right-arrow-default: url('../img/icon/btn_calendar_rightarrow_default.svg');
   --calendar-header-left-arrow-dark: url('../img/icon/dark/btn_calendar_leftarrow_d.svg');
   --calendar-header-right-arrow-dark: url('../img/icon/dark/btn_calendar_rightarrow_d.svg');
+
+  --modal-close-btn-default: url('../img/icon/btn_modal_close_w.svg');
+  --modal-close-btn-dark: url('../img/icon/btn_modal_close.svg');
 }
 
 
@@ -280,6 +283,10 @@
   /* calendar */
   --calender-header-left-arrow: var(--calendar-header-left-arrow-default);
   --calendar-header-right-arrow: var(--calendar-header-right-arrow-default);
+
+  /* modal close */
+  --modal-close-btn-w: var(--modal-close-btn-default);
+  --modal-close-btn-d: var(--modal-close-btn-dark);
 }
 
 :root.pastel {
@@ -373,6 +380,10 @@
   /* calendar */
   --calender-header-left-arrow: var(--calendar-header-left-arrow-default);
   --calendar-header-right-arrow: var(--calendar-header-right-arrow-default);
+
+  /* modal close */
+  --modal-close-btn-w: var(--modal-close-btn-default);
+  --modal-close-btn-d: var(--modal-close-btn-dark);
 }
 
 :root.dark {
@@ -465,4 +476,8 @@
   /* calendar */
   --calender-header-left-arrow: var(--calendar-header-left-arrow-dark);
   --calendar-header-right-arrow: var(--calendar-header-right-arrow-dark);
+
+  /* modal close */
+  --modal-close-btn-w: var(--modal-close-btn-default);
+  --modal-close-btn-d: var(--modal-close-btn-dark);
 }

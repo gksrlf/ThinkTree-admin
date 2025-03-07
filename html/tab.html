@@ -310,108 +310,113 @@
   </div>
 </div>
 <div class="modal">
-  <div class="modal_body">
-    <p class="modal_title">타이틀 영역</p>
-    <div class="modal_content">
-      <table class="modal_content_table">
-        <thead>
-        <tr>
-          <th colspan="6">
-            <div class="modal_table_header">
-              <div>
-                <p class="font_bold">작성자</p><span class="line"></span>관리자
-              </div>
-              <div>
-                <p class="font_bold">작성일자</p><span class="line"></span>2025-01-25
-              </div>
-            </div>
-          </th>
-        </tr>
-        </thead>
-        <tbody>
+  <div class="modal__wrap">
+    <div class="modal__box">
+      <button class="btn_modal_close">clsoe</button>
+      <div class="modal_body">
+      <p class="modal_title">타이틀 영역</p>
+      <div class="modal_content">
+        <table class="modal_content_table">
+          <thead>
           <tr>
-            <th>제목&nbsp;<span class="require_sign">*</span></th>
-            <td colspan="3">
-                <input class="require" type="text"/>
+            <th colspan="6">
+              <div class="modal_table_header">
+                <div>
+                  <p class="font_bold">작성자</p><span class="line"></span>관리자
+                </div>
+                <div>
+                  <p class="font_bold">작성일자</p><span class="line"></span>2025-01-25
+                </div>
+              </div>
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>제목&nbsp;<span class="require_sign">*</span></th>
+              <td colspan="3">
+                  <input class="require" type="text"/>
+              </td>
+              <th>고정</th>
+              <td>
+                <div class="filter__box">
+                  <button class="filter_state on">filter state</button>
+                </div>
+              </td>
+            </tr>
+          <tr>
+            <th>내용&nbsp;<span class="require_sign">*</span></th>
+            <td colspan="5">
+              <textarea maxlength="100"></textarea>
+              <div class="length_text">
+                <p>
+                  <span>0</span>/<span>100</span>
+                </p>
+              </div>
             </td>
-            <th>고정</th>
+          </tr>
+          <tr>
+            <th rowspan="2">
+              첨부파일
+            </th>
+            <td colspan="5">
+              <label class="file_label">
+                <div class="file_label_img"></div>
+                <p>여기로 파일을 드래그하거나 <br>클릭하여 업로드하세요.</p>
+                <input type="file">
+              </label>
+            </td>
+          </tr>
+            <tr>
+              <td colspan="5">
+                <ul class="file_list">
+                  <li>
+                    <a href="javascript:;">
+                      <span>abcdefg1234567.jpgabcdefg1234567.jpg</span>
+                    </a>
+                    <button></button>
+                  </li>
+                  <li>
+                    <a href="javascript:;">1234567.jpg</a>
+                    <button></button>
+                  </li>
+                  <li>
+                    <a href="javascript:;">TEXT.jpg</a>
+                    <button></button>
+                  </li>
+                  <li>
+                    <a href="javascript:;">파일명TEXT.jpg</a>
+                    <button></button>
+                  </li>
+                  <li>
+                    <a href="javascript:;">abcdefg1234567.jpg</a>
+                    <button></button>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          <tr>
+            <th>게시일&nbsp;<span class="require_sign">*</span></th>
+            <td>
+              <input type="date" class="require"/>
+            </td>
+            <th>종료일</th>
+            <td>
+              <input type="date" class="require"/>
+            </td>
+            <th>노출여부&nbsp;<span class="require_sign">*</span></th>
             <td>
               <div class="filter__box">
-                <button class="filter_state on">filter state</button>
+                <button class="filter_state ">filter state</button>
               </div>
             </td>
           </tr>
-        <tr>
-          <th>내용&nbsp;<span class="require_sign">*</span></th>
-          <td colspan="5">
-            <textarea maxlength="100"></textarea>
-            <div class="length_text">
-              <p>
-                <span>0</span>/<span>100</span>
-              </p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <th rowspan="2">
-            첨부파일
-          </th>
-          <td colspan="5">
-            <label class="file_label">
-              <div class="file_label_img"></div>
-              <p>여기로 파일을 드래그하거나 <br>클릭하여 업로드하세요.</p>
-              <input type="file">
-            </label>
-          </td>
-        </tr>
-          <tr>
-            <td colspan="5">
-              <ul class="file_list">
-                <li>
-                  <a href="javascript:;">
-                    <span>abcdefg1234567.jpgabcdefg1234567.jpg</span>
-                  </a>
-                  <button></button>
-                </li>
-                <li>
-                  <a href="javascript:;">1234567.jpg</a>
-                  <button></button>
-                </li>
-                <li>
-                  <a href="javascript:;">TEXT.jpg</a>
-                  <button></button>
-                </li>
-                <li>
-                  <a href="javascript:;">파일명TEXT.jpg</a>
-                  <button></button>
-                </li>
-                <li>
-                  <a href="javascript:;">abcdefg1234567.jpg</a>
-                  <button></button>
-                </li>
-              </ul>
-            </td>
-          </tr>
-        <tr>
-          <th>게시일&nbsp;<span class="require_sign">*</span></th>
-          <td>
-            <input type="date" class="require"/>
-          </td>
-          <th>종료일</th>
-          <td>
-            <input type="date" class="require"/>
-          </td>
-          <th>노출여부&nbsp;<span class="require_sign">*</span></th>
-          <td>
-            <div class="filter__box">
-              <button class="filter_state ">filter state</button>
-            </div>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-      <div class="modal_btn_box">
-        <button class="filled_btn">등록하기</button>
+          </tbody>
+        </table>
+        <div class="modal_btn_box">
+          <button class="filled_btn">등록하기</button>
+        </div>
+      </div>
       </div>
     </div>
   </div>

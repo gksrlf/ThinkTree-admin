@@ -148,8 +148,8 @@
   --state-disabled-icon : #cccccc;
 
   /* Modal background color */
-  --modal-bg-default : #636363;
-  --modal-bg-dark : #0B0B0B;
+  --modal-bg-default : #000;
+  --modal-bg-dark : #000;
 }
 
 :root,
