@@ -298,6 +298,8 @@ td ul.file_list li button{
 .file_label {
   height: 126px;
 }
+
+
 /************ Responsive *************/
 /* tablet */
 @media screen and (max-width:1280px) {
