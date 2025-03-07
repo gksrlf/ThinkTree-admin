@@ -235,7 +235,7 @@
             탭 페이지
           </h2>
           <div class="btn__box">
-            <button class="filled_btn">SmallPopUp</button>
+            <button class="filled_btn" id="popup">SmallPopUp</button>
             <button class="filled_btn" id="titlePop">TitlePopUp</button>
             <button class="outlined_btn">Button</button>
             <button class="filled_btn">Button</button>
@@ -309,6 +309,7 @@
 
   </div>
 </div>
+<!-- modal start -->
 <div class="modal">
   <div class="modal_body">
     <p class="modal_title">타이틀 영역</p>
@@ -417,6 +418,28 @@
   </div>
   <div class="modal_bg"></div>
 </div>
+<!-- modal -->
+
+<!-- popup Confrim -->
+<div class="pop">
+  <div class="pop_body">
+    <!-- pop_success : 성공   -->
+    <!-- pop_warning : 경고   -->
+    <!-- pop_error : 실패   -->
+    <div class="pop_img_box pop_success">
+    </div>
+    <div class="pop_text_box">
+      <p class="pop_title">Popup Title</p>
+      <p class="pop_sub_title">Lolem ipsum</p>
+    </div>
+    <div class="pop_btn_box">
+      <button type="button" class="filled_btn">Text</button>
+      <button type="button" class="outlined_btn" id="close">Cancel</button>
+    </div>
+  </div>
+  <div class="pop_bg"></div>
+</div>
+<!-- popup -->
 </body>
 <script src="/js/tab.js"></script>
 </html>

@@ -182,6 +182,11 @@
   --calendar-header-right-arrow-default: url('../img/icon/btn_calendar_rightarrow_default.svg');
   --calendar-header-left-arrow-dark: url('../img/icon/dark/btn_calendar_leftarrow_d.svg');
   --calendar-header-right-arrow-dark: url('../img/icon/dark/btn_calendar_rightarrow_d.svg');
+
+  /* pop up */
+  --icon-pop-success: url('../img/icon/icon_pop_success.svg');
+  --icon-pop-warning: url('../img/icon/icon_pop_warning.svg');
+  --icon-pop-error: url('../img/icon/icon_pop_error.svg');
 }
 
 
