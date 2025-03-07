@@ -1,9 +1,10 @@
-@import "_layout.css";
-@import "_color.css";
-@import '_icon.css';
-@import "_input.css";
-@import "_header.css";
-@import "_sidebar.css";
-@import "login.css";
-@import "_utils.css";
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import "_layout.css"; /* 공통 레이아웃 */
+@import "_color.css"; /* 컬러 */
+@import '_icon.css'; /* 이미지 */
+@import "_input.css"; /* input */
+@import "_button.css"; /* button */
+@import "_header.css"; /* header */
+@import "_sidebar.css"; /* lnb side bar */
+@import "_utils.css"; /* width 등의 utils */
+@import "login.css"; /* 로그인 페이지 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"); /* pretendard 폰트 */

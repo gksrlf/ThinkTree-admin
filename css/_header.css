@@ -1,6 +1,3 @@
-@import './_color.css';
-@import './_icon.css';
-
 header{
 	position: relative;
 	z-index: 1000;

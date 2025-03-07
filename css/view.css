@@ -38,6 +38,9 @@
   padding: 0 20px;
   box-sizing: border-box;
 }
+.input_form__box input[type='password']{
+  padding-right: 50px;
+}
 .input_form__box .input_title{
   display: inline-block;
   margin-bottom: 10px;
@@ -46,10 +49,6 @@
 .input_form__box .input_item_box {
   display: flex;
   gap:16px;
-}
-
-.input_form__box .search_box{
-
 }
 
 .input_item_box .select_label .err {
@@ -212,6 +211,7 @@
   gap: 10px;
   width: calc(100% - 245px);
   height: 100px;
+  box-sizing: border-box;
   background-color: var(--bg-default);
   -webkit-box-shadow: 0 -4px 14px 0 rgba(0,0,0,0.06);
   box-shadow: 0 -4px 14px 0 rgba(0,0,0,0.06);
@@ -281,6 +281,57 @@
   .contents_container .contents.wide_mode .content.content_wide .save__box{
     left: 0;
   }
+  
+  /* view__wrap */
+  .view__wrap{
+    max-height: calc(100% - 75px);
+    padding: 15px;
+  }
+
+  /* input_form__box */
+  .input_form__box{
+    gap: 20px;
+  }
+  .input_form__box .input_item_box{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .input_form__box input[type='text'],
+  .input_form__box input[type='password'],
+  .input_item_box .select_label select{
+    height: 45px;
+    padding: 0 10px;
+  }
+  .input_form__box input[type='password']{
+    padding-right: 40px;
+  }
+  .password__box button{
+    right: 10px;
+  }
+  .input_item_box .text_label .search{
+    padding-left: 45px;
+    background-position: center left 10px;
+  }
+  .input_form__box .search_box{
+    gap: 10px;
+  }
+  .input_btn__box{
+    width: 100%;
+    gap: 8px;
+  }
+  .input_btn__box .search_btn,
+  .input_btn__box .delete_btn{
+    height: 45px;
+    width: 50%;
+  }
+  .date_box{flex-wrap: wrap;}
+  .date_box input[type='date']{
+    width: calc(100% - 25px);
+    max-width: none;
+    padding: 0 10px;
+  }
+
+  /* title_form__box */
   .title_form_table,
   .title_form_table tbody{
     display: block;
@@ -291,10 +342,12 @@
     gap: 15px;
     padding: 15px 0;
   }
+  .title_form_table tr:last-of-type{
+    padding-bottom: 0;
+  }
   .title_form_table tr:not(:last-of-type){
     border-bottom: 1px solid var(--neutral-midium);
   }
-
   .title_form_table th{
     border: none;
     width: 100%;
@@ -310,12 +363,10 @@
     padding-bottom: 20px;
     border-bottom: 1px solid var(--neutral-midium);
   }
-
   .title_form_table input[type='text']{
     height: 45px;
     padding: 0 10px;
   }
-
   .title_form_table td ul.file_list li{
     width: 100%;
   }
@@ -328,5 +379,15 @@
     white-space: nowrap;
     display: block;
     width: 100%;
+    line-height: 1.2;
+  }
+
+  /* save__box */
+  .save__box{
+    height: 75px;
+    border-top: 1px solid var(--neutral-midium);
+  }
+  .save__box button{
+    height: 45px;
   }
 }
