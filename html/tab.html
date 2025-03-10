@@ -342,36 +342,52 @@
               <td colspan="3">
                   <input class="require" type="text"/>
               </td>
-              <th>고정</th>
-              <td>
+              <th class="half_area">고정</th>
+              <td class="half_area">
                 <div class="filter__box">
                   <button class="filter_state on">filter state</button>
                 </div>
               </td>
             </tr>
-          <tr>
-            <th>내용 <span class="require_sign">*</span></th>
-            <td colspan="5">
-              <textarea maxlength="100"></textarea>
-              <div class="length_text">
-                <p>
-                  <span>0</span>/<span>100</span>
-                </p>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th rowspan="2">
-              첨부파일
-            </th>
-            <td colspan="5">
-              <label class="file_label">
-                <div class="file_label_img"></div>
-                <p>여기로 파일을 드래그하거나 클릭하여 업로드하세요.</p>
-                <input type="file">
-              </label>
-            </td>
-          </tr>
+            <tr>
+              <th>게시일 <span class="require_sign">*</span></th>
+              <td>
+                <input type="date" class="require"/>
+              </td>
+              <th>종료일 <span class="require_sign">*</span></th>
+              <td>
+                <input type="date" class="require"/>
+              </td>
+              <th class="half_area">노출여부 <span class="require_sign">*</span></th>
+              <td class="half_area">
+                <div class="filter__box">
+                  <button class="filter_state ">filter state</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>내용 <span class="require_sign">*</span></th>
+              <td colspan="5">
+                <textarea maxlength="100"></textarea>
+                <div class="length_text">
+                  <p>
+                    <span>0</span>/<span>100</span>
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th rowspan="2">
+                첨부파일
+              </th>
+              <td colspan="5">
+                <label class="file_label">
+                  <div class="file_label_img"></div>
+                  <p>여기로 파일을 드래그하거나 클릭하여 업로드하세요.</p>
+                  <input type="file">
+                </label>
+              </td>
+            </tr>
             <tr>
               <td colspan="5">
                 <ul class="file_list">
@@ -382,40 +398,32 @@
                     <button></button>
                   </li>
                   <li>
-                    <a href="javascript:;">1234567.jpg</a>
+                    <a href="javascript:;">
+                      <span>1234567.jpg</span>
+                    </a>
                     <button></button>
                   </li>
                   <li>
-                    <a href="javascript:;">TEXT.jpg</a>
+                    <a href="javascript:;">
+                      <span>TEXT.jpg</span>
+                    </a>
                     <button></button>
                   </li>
                   <li>
-                    <a href="javascript:;">파일명TEXT.jpg</a>
+                    <a href="javascript:;">
+                      <span>파일명TEXT.jpg</span>
+                    </a>
                     <button></button>
                   </li>
                   <li>
-                    <a href="javascript:;">abcdefg1234567.jpg</a>
+                    <a href="javascript:;">
+                      <span>abcdefg1234567.jpg</span>
+                    </a>
                     <button></button>
                   </li>
                 </ul>
               </td>
             </tr>
-          <tr>
-            <th>게시일 <span class="require_sign">*</span></th>
-            <td>
-              <input type="date" class="require"/>
-            </td>
-            <th>종료일 <span class="require_sign">*</span></th>
-            <td>
-              <input type="date" class="require"/>
-            </td>
-            <th>노출여부 <span class="require_sign">*</span></th>
-            <td>
-              <div class="filter__box">
-                <button class="filter_state ">filter state</button>
-              </div>
-            </td>
-          </tr>
           </tbody>
         </table>
         <div class="modal_btn_box">

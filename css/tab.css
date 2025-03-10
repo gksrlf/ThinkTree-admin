@@ -113,6 +113,9 @@
   background-color: transparent;
   border: none;
   background-image: var(--modal-close-btn-w);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
   margin-bottom: 10px;
 }
 
@@ -122,7 +125,7 @@
   max-width: 1033px;
   max-height: 880px;
   width: calc(100% - 80px);
-  height: calc(100% - 80px);
+  height: 100%;
   padding: 40px;
   text-align: center;
   background-color: rgb(255,255,255);
@@ -148,6 +151,7 @@
   font-size: 24px;
   font-weight: bold;
   font-family: "Pretendard";
+  text-align: left;
 }
 
 .modal_content {
@@ -170,12 +174,11 @@
   height: 52px;
   text-align: left;
 }
-
-
 .modal_table_header {
   width: 100%;
   display: flex;
-  padding-left: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .modal_table_header div {
@@ -186,8 +189,8 @@
   align-items: center;
 }
 
-.modal_table_header div:last-child {
-  padding-left: 20px;
+.modal_table_header div:first-of-type {
+  margin-right: 20px;
 }
 
 .modal_content_table thead tr th {
@@ -229,6 +232,8 @@
 .modal_content_table tbody td input[type="text"] {
   width: 100%;
   height: 52px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .modal_btn_box {
@@ -430,6 +435,73 @@ td ul.file_list li button{
   .content__box .content__item .tab_header li button{
     font-size: 14px;
   }
+
+  /* modal */
+  .modal__wrap{
+    padding: 40px;
+  }
+  .modal_body{
+    width: calc(100% - 40px);
+    padding: 30px 20px;
+  }
+  .modal_content_table{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .modal_content_table thead tr{
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .modal_content_table thead tr th{
+    width: 100%;
+  }
+  .modal_content_table tbody{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+  }
+  .modal_content_table tbody tr{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .modal_content_table tbody th{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    border: none;
+    padding: 0;
+  }
+  .modal_content_table tbody td{
+    width: 100%;
+    padding: 0;
+    border: none;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--neutral-midium);
+  }
+  .modal_content_table tbody td input[type="text"]{
+    height: 45px;
+    padding: 0 15px;
+  }
+  .modal_content_table tbody th.half_area,
+  .modal_content_table tbody td.half_area{
+    width: 50%;
+    border-bottom: 1px solid var(--neutral-midium);
+  }
+  .modal_content_table tbody th.half_area{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  .modal_content_table tbody td.half_area{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: content-box;
+  }
 }
 /* mobile */
 @media screen and (max-width:640px) {
@@ -443,14 +515,62 @@ td ul.file_list li button{
     height: calc(100% - 40px);
     padding: 20px;
   }
-
-  .modal_body {
-    width: 300px;
-    max-height: 500px;
-    overflow-y: scroll;
+  
+  /* modal */
+  .modal{
+    height: 100dvh;
   }
-
-  .modal_body .modal_content_table {
-    table-layout:fixed; word-break:break-all;
+  .modal__wrap{
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: auto;
+    padding: 0;
+  }
+  .modal__box{
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .modal_content_table{
+    margin-bottom: 10px;
+  }
+  .modal_title{
+    line-height: 1.2;
+  }
+  .modal_body{
+    width: 100%;
+    max-height: none;
+    border-radius: 0;
+    padding: 60px 15px 40px;
+    box-sizing: border-box;
+  }
+  .modal__box .btn_modal_close{
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background-image: var(--modal-close-btn-d);
+    margin-bottom: 0;
+  }
+  .modal_content_table thead tr th{
+    font-size: 14px;  
+  }
+  .file_list{
+    width: 100%;
+  }
+  .file_list li{
+    width: 100%;
+  }
+  td ul.file_list li a span{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.2;
+    text-align: left;
   }
 }

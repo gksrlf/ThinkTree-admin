@@ -483,5 +483,5 @@
 
   /* modal close */
   --modal-close-btn-w: var(--modal-close-btn-default);
-  --modal-close-btn-d: var(--modal-close-btn-dark);
+  --modal-close-btn-d: var(--modal-close-btn-default);
 }

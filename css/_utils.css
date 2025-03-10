@@ -85,4 +85,7 @@
   .w_quarter{
     width: 100%;
   }
+  .line{
+    margin: 0 10px;
+  }
 }
