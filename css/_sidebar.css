@@ -43,14 +43,17 @@
   border-bottom: 1px solid var(--neutral-midium);
   box-sizing: border-box;
 }
-.lnb_bar__area .lnb_bar__box{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  max-height: calc(100% - 55px);
-  padding: 25px 0;
-  box-sizing: border-box;
+.lnb_bar__area .nav_logo__box div .pc_logo{
+  display: block;
+}
+.lnb_bar__area.fold .nav_logo__box div .pc_logo{
+  display: none;
+}
+.lnb_bar__area .nav_logo__box div .mobile_logo{
+  display: none;
+}
+.lnb_bar__area.fold .nav_logo__box div .mobile_logo{
+  display: block;
 }
 
 /* lnb_bar_content */
