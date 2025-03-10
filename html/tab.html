@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <link rel="stylesheet" href="/node_modules/js-datepicker/dist/datepicker.min.css"><!-- datepicker -->
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <link rel="stylesheet" type="text/css" href="/css/tab.css">
@@ -348,11 +349,13 @@
             <tr>
               <th>게시일 <span class="require_sign">*</span></th>
               <td>
-                <input type="date" class="require"/>
+                <!-- input require 클래스 추가 시 필수 사항 -->
+                <input id="start_datepicker" class="datepicker require" type="text" placeholder="YYYY-MM-DD" readonly>
               </td>
               <th>종료일 <span class="require_sign">*</span></th>
               <td>
-                <input type="date" class="require"/>
+                <!-- input require 클래스 추가 시 필수 사항 -->
+                <input id="end_datepicker" class="datepicker require" type="text" placeholder="YYYY-MM-DD" readonly>
               </td>
               <th class="half_area">노출여부 <span class="require_sign">*</span></th>
               <td class="half_area">
@@ -454,6 +457,8 @@
 </div>
 <!-- popup -->
 </body>
+<!-- datepicker -->
+<script src="/node_modules/js-datepicker/dist/datepicker.min.js"></script>  
 <!-- aside js -->
 <script src="/js/aside.js"></script>
 <!-- header js -->
