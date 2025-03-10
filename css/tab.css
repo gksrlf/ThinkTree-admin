@@ -491,7 +491,7 @@ td ul.file_list li button{
   }
   .modal_content_table tbody td input[type="text"]{
     height: 45px;
-    padding: 0 15px;
+    padding: 0 10px;
   }
   .modal_content_table tbody th.half_area,
   .modal_content_table tbody td.half_area{
