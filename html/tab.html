@@ -315,7 +315,7 @@
     <div class="modal__box">
       <button class="btn_modal_close">clsoe</button>
       <div class="modal_body">
-      <p class="modal_title">타이틀 영역</p>
+      <h5 class="modal_title">타이틀 영역</h5>
       <div class="modal_content">
         <table class="modal_content_table">
           <thead>
@@ -323,10 +323,14 @@
             <th colspan="6">
               <div class="modal_table_header">
                 <div>
-                  <p class="font_bold">작성자</p><span class="line"></span>관리자
+                  <p class="info_th">작성자</p>
+                  <span class="line"></span>
+                  <span>관리자</span>
                 </div>
                 <div>
-                  <p class="font_bold">작성일자</p><span class="line"></span>2025-01-25
+                  <p class="info_th">작성일자</p>
+                  <span class="line"></span>
+                  <span>2025-01-25</span>
                 </div>
               </div>
             </th>
@@ -334,7 +338,7 @@
           </thead>
           <tbody>
             <tr>
-              <th>제목&nbsp;<span class="require_sign">*</span></th>
+              <th>제목 <span class="require_sign">*</span></th>
               <td colspan="3">
                   <input class="require" type="text"/>
               </td>
@@ -346,7 +350,7 @@
               </td>
             </tr>
           <tr>
-            <th>내용&nbsp;<span class="require_sign">*</span></th>
+            <th>내용 <span class="require_sign">*</span></th>
             <td colspan="5">
               <textarea maxlength="100"></textarea>
               <div class="length_text">
@@ -363,7 +367,7 @@
             <td colspan="5">
               <label class="file_label">
                 <div class="file_label_img"></div>
-                <p>여기로 파일을 드래그하거나 <br>클릭하여 업로드하세요.</p>
+                <p>여기로 파일을 드래그하거나 클릭하여 업로드하세요.</p>
                 <input type="file">
               </label>
             </td>
@@ -397,15 +401,15 @@
               </td>
             </tr>
           <tr>
-            <th>게시일&nbsp;<span class="require_sign">*</span></th>
+            <th>게시일 <span class="require_sign">*</span></th>
             <td>
               <input type="date" class="require"/>
             </td>
-            <th>종료일</th>
+            <th>종료일 <span class="require_sign">*</span></th>
             <td>
               <input type="date" class="require"/>
             </td>
-            <th>노출여부&nbsp;<span class="require_sign">*</span></th>
+            <th>노출여부 <span class="require_sign">*</span></th>
             <td>
               <div class="filter__box">
                 <button class="filter_state ">filter state</button>
