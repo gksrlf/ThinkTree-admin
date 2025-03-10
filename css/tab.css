@@ -425,7 +425,13 @@ td ul.file_list li button{
 /************ Responsive *************/
 /* tablet */
 @media screen and (max-width:1280px) {
-
+  .modal_body {
+    width: calc(100% - 60px);
+    padding: 30px;
+  }
+  .modal_content_table tbody td{
+    padding: 10px;
+  }
 }
 @media screen and (max-width:1024px){
   .content__box .content__item .tab_header li{
