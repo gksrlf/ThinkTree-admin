@@ -4,14 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <link rel="stylesheet" href="/node_modules/js-datepicker/dist/datepicker.min.css"><!-- datepicker -->
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/css/tab.css">
+  <link rel="stylesheet" type="text/css" href="/css/tab.css">
   <title>Tab</title>
-  <!-- aside js -->
-  <script src="/js/aside.js"></script>
-  <!-- header js -->
-  <script src="/js/header.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -315,7 +312,7 @@
     <div class="modal__box">
       <button class="btn_modal_close">clsoe</button>
       <div class="modal_body">
-      <p class="modal_title">타이틀 영역</p>
+      <h5 class="modal_title">타이틀 영역</h5>
       <div class="modal_content">
         <table class="modal_content_table">
           <thead>
@@ -323,10 +320,14 @@
             <th colspan="6">
               <div class="modal_table_header">
                 <div>
-                  <p class="font_bold">작성자</p><span class="line"></span>관리자
+                  <p class="info_th">작성자</p>
+                  <span class="line"></span>
+                  <span>관리자</span>
                 </div>
                 <div>
-                  <p class="font_bold">작성일자</p><span class="line"></span>2025-01-25
+                  <p class="info_th">작성일자</p>
+                  <span class="line"></span>
+                  <span>2025-01-25</span>
                 </div>
               </div>
             </th>
@@ -334,40 +335,58 @@
           </thead>
           <tbody>
             <tr>
-              <th>제목&nbsp;<span class="require_sign">*</span></th>
+              <th>제목 <span class="require_sign">*</span></th>
               <td colspan="3">
                   <input class="require" type="text"/>
               </td>
-              <th>고정</th>
-              <td>
+              <th class="half_area">고정</th>
+              <td class="half_area">
                 <div class="filter__box">
                   <button class="filter_state on">filter state</button>
                 </div>
               </td>
             </tr>
-          <tr>
-            <th>내용&nbsp;<span class="require_sign">*</span></th>
-            <td colspan="5">
-              <textarea maxlength="100"></textarea>
-              <div class="length_text">
-                <p>
-                  <span>0</span>/<span>100</span>
-                </p>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th rowspan="2">
-              첨부파일
-            </th>
-            <td colspan="5">
-              <label class="file_label">
-                <div class="file_label_img"></div>
-                <p>여기로 파일을 드래그하거나 <br>클릭하여 업로드하세요.</p>
-                <input type="file">
-              </label>
-            </td>
-          </tr>
+            <tr>
+              <th>게시일 <span class="require_sign">*</span></th>
+              <td>
+                <!-- input require 클래스 추가 시 필수 사항 -->
+                <input id="start_datepicker" class="datepicker require" type="text" placeholder="YYYY-MM-DD" readonly>
+              </td>
+              <th>종료일 <span class="require_sign">*</span></th>
+              <td>
+                <!-- input require 클래스 추가 시 필수 사항 -->
+                <input id="end_datepicker" class="datepicker require" type="text" placeholder="YYYY-MM-DD" readonly>
+              </td>
+              <th class="half_area">노출여부 <span class="require_sign">*</span></th>
+              <td class="half_area">
+                <div class="filter__box">
+                  <button class="filter_state ">filter state</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>내용 <span class="require_sign">*</span></th>
+              <td colspan="5">
+                <textarea maxlength="100"></textarea>
+                <div class="length_text">
+                  <p>
+                    <span>0</span>/<span>100</span>
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th rowspan="2">
+                첨부파일
+              </th>
+              <td colspan="5">
+                <label class="file_label">
+                  <div class="file_label_img"></div>
+                  <p>여기로 파일을 드래그하거나 클릭하여 업로드하세요.</p>
+                  <input type="file">
+                </label>
+              </td>
+            </tr>
             <tr>
               <td colspan="5">
                 <ul class="file_list">
@@ -378,40 +397,32 @@
                     <button></button>
                   </li>
                   <li>
-                    <a href="javascript:;">1234567.jpg</a>
+                    <a href="javascript:;">
+                      <span>1234567.jpg</span>
+                    </a>
                     <button></button>
                   </li>
                   <li>
-                    <a href="javascript:;">TEXT.jpg</a>
+                    <a href="javascript:;">
+                      <span>TEXT.jpg</span>
+                    </a>
                     <button></button>
                   </li>
                   <li>
-                    <a href="javascript:;">파일명TEXT.jpg</a>
+                    <a href="javascript:;">
+                      <span>파일명TEXT.jpg</span>
+                    </a>
                     <button></button>
                   </li>
                   <li>
-                    <a href="javascript:;">abcdefg1234567.jpg</a>
+                    <a href="javascript:;">
+                      <span>abcdefg1234567.jpg</span>
+                    </a>
                     <button></button>
                   </li>
                 </ul>
               </td>
             </tr>
-          <tr>
-            <th>게시일&nbsp;<span class="require_sign">*</span></th>
-            <td>
-              <input type="date" class="require"/>
-            </td>
-            <th>종료일</th>
-            <td>
-              <input type="date" class="require"/>
-            </td>
-            <th>노출여부&nbsp;<span class="require_sign">*</span></th>
-            <td>
-              <div class="filter__box">
-                <button class="filter_state ">filter state</button>
-              </div>
-            </td>
-          </tr>
           </tbody>
         </table>
         <div class="modal_btn_box">
@@ -446,5 +457,12 @@
 </div>
 <!-- popup -->
 </body>
+<!-- datepicker -->
+<script src="/node_modules/js-datepicker/dist/datepicker.min.js"></script>  
+<!-- aside js -->
+<script src="/js/aside.js"></script>
+<!-- header js -->
+<script src="/js/header.js"></script>
+<!-- tab js -->
 <script src="/js/tab.js"></script>
 </html>

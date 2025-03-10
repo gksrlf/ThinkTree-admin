@@ -1,9 +1,15 @@
-document.addEventListener("DOMContentLoaded", () => {
-  lnbHandleResize();
-	window.addEventListener("resize", lnbHandleResize);
-	asideToggleEvent();
-});
 
+// aside 내부의 핸들러
+const lnbLanguageHandler = () => {
+  const languageBox = document.querySelector(".nav_control__box .language");
+  const languageButton = document.querySelector(".nav_control__box .language > div");
+
+  languageButton.addEventListener("click", () => {
+    languageBox.classList.toggle("on");
+  });
+};
+
+// aside(lnb) 토글 기능
 const asideToggleEvent = () => {
   const lnbBar = document.querySelector(".lnb_bar__area"); // aside bar (lnb)
   const lnbCover = document.querySelector(".lnb_cover"); // 태블릿 & 모바일 메뉴 열렸을때 lnb 배경
@@ -12,6 +18,8 @@ const asideToggleEvent = () => {
 	const mobileCloseBtn = document.querySelector(".lnb_bar__area .btn_nav_close"); // 모바일 aside를 여는 버튼
   const contents = document.querySelector(".contents_container .contents"); // aside를 제외한 실제 컨텐츠 영역
   const saveBox = document.querySelector(".save__box"); // 뷰페이지 하단 save box
+  const languageBox = document.querySelector(".nav_control__box .language"); // 모바일 lnb 내부 언어선택 박스
+
 
   // 요소가 없으면 실행하지 않음
   if (!lnbBar || !asidebutton) return;
@@ -39,6 +47,7 @@ const asideToggleEvent = () => {
     lnbBar.classList.add("open");
     lnbCover.classList.add("on");
     lnbCover.classList.remove("off");
+    languageBox.classList.remove("on");
 	});
 
   // 모바일 lnb 메뉴 닫기
@@ -47,6 +56,7 @@ const asideToggleEvent = () => {
     lnbBar.classList.remove("open");
     lnbCover.classList.remove("on");
     lnbCover.classList.add("off");
+    languageBox.classList.remove("on");
   });
 
   // 백그라운드 눌렀을때 lnb 메뉴 닫기
@@ -57,6 +67,7 @@ const asideToggleEvent = () => {
     contents.classList.add("wide_mode");
     saveBox?.classList.add("wide_mode");
     lnbBar.classList.remove("open");
+    languageBox.classList.remove("on");
   })
 };
 
@@ -102,3 +113,10 @@ const toggleLnb = () => {
     lnbBar.classList.toggle("open");
   }
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+  lnbHandleResize();
+  window.addEventListener("resize", lnbHandleResize);
+  asideToggleEvent();
+  lnbLanguageHandler();
+});

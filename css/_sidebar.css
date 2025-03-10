@@ -418,11 +418,8 @@
 	font-weight: 500;
 	color: var(--neutral-default);
 }
-.nav_control__box .language.on ul{
-	display: block;
-}
 .nav_control__box .language ul{
-	display: none;
+	display: block;
 	position: absolute;
   z-index: 1;
   top: 15px;
@@ -433,7 +430,12 @@
   border-radius: 0 0 15px 15px;
   background-color: var(--bg-default);
   padding-top: 15px;
+  height: 0;
 	overflow: hidden;
+  transition: height 0.2s ease;
+}
+.nav_control__box .language.on ul{
+  height: 60px;
 }
 .nav_control__box .language ul li a{
 	display: flex;

@@ -129,11 +129,8 @@ header .gnb_bar__area .control__box .language ul li a{
 	font-weight: 500;
 	color: var(--neutral-default);
 }
-header .gnb_bar__area .control__box .language.on ul{
-	display: block;
-}
 header .gnb_bar__area .control__box .language ul{
-	display: none;
+	display: block;
 	position: absolute;
   z-index: 1;
   top: 15px;
@@ -144,8 +141,14 @@ header .gnb_bar__area .control__box .language ul{
   border-radius: 0 0 15px 15px;
   background-color: var(--bg-default);
   padding-top: 15px;
+	height: 0;
 	overflow: hidden;
+	transition: height 0.2s ease;
 }
+header .gnb_bar__area .control__box .language.on ul{
+	height: 60px;
+}
+
 header .gnb_bar__area .control__box .language ul li a{
 	display: flex;
 	align-items: center;
