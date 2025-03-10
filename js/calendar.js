@@ -1,25 +1,4 @@
-
-
-// import interactionPlugin from '../packages/interaction/index.global.js'
-// import dayGridPlugin from '../packages/daygrid/index.global.js'
-
-
 const init = () => {
-  // const calendarEl = document.getElementById('calendar')
-  // const calendar = new Calendar(calendarEl, {
-  //   plugins: [
-  //     interactionPlugin,
-  //     dayGridPlugin
-  //   ],
-  //   initialView: 'timeGridWeek',
-  //   editable: true,
-  //   events: [
-  //     { title: 'Meeting', start: new Date() }
-  //   ]
-  // })
-  //
-  // calendar.render()
-  // get calendarBar colors
   const rootStyles = window.getComputedStyle(document.documentElement)
   let scheduleBars = new Array(6).fill('')
   scheduleBars = scheduleBars.map((e,i) => e = rootStyles.getPropertyValue(`--schedule-bullet-color${i + 1}`))
