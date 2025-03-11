@@ -145,6 +145,12 @@
   background-color: var(--schedule-date-focus-bg);
   box-sizing: border-box;
 }
+
+.fc .fc-scrollgrid table,
+.fc .fc-daygrid-body,
+.fc .fc-scrollgrid-section-body table{
+  width: 100% !important;
+}
 /* calendar fin */
 
 

@@ -73,6 +73,15 @@
   box-shadow: none;
 }
 
+.ag-header-cell-text,
+.ag-cell{
+  font-family: "Pretendard";
+  color: var(--neutral-default);
+}
+.ag-header-cell-text{
+  font-weight: 600;
+}
+
 .content .filter__box{
   display: flex;
   gap: 8px;

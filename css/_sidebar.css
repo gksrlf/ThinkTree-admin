@@ -9,6 +9,12 @@
   box-sizing: border-box;
   transition: width 0.2s ease;
 }
+
+.lnb_bar__area .lnb_bar__box{
+  height: 100%;
+  max-height: calc(100dvh - 55px);
+}
+
 .lnb_bar__area .lnb_bar_control__box{
   position: absolute;
   top: 44px;
@@ -32,7 +38,6 @@
 .lnb_bar__area .lnb_bar_control__box.on button{
   background-image: var(--gnb-open-btn);
 }
-
 .lnb_bar__area .nav_logo__box {
   position: relative;
   display: flex;
@@ -43,21 +48,19 @@
   border-bottom: 1px solid var(--neutral-midium);
   box-sizing: border-box;
 }
-.lnb_bar__area .lnb_bar__box{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  max-height: calc(100% - 55px);
-  padding: 25px 0;
-  box-sizing: border-box;
+.lnb_bar__area .nav_logo__box div .full_logo{
+  display: block;
 }
+.lnb_bar__area .nav_logo__box div .short_logo{
+  display: none;
+}
+
 
 /* lnb_bar_content */
 .lnb_bar_content{
   height: 100%;
   max-height: calc(100% - 80px);
-  padding: 0 10px 15px;
+  padding: 15px 10px;
   box-sizing: border-box;
   overflow-y: auto;
   overflow-x: hidden;
@@ -88,8 +91,16 @@
   border-radius: 4px;
   transition: width 0.2s ease;
 }
-.lnb_bar_content ul .lnb1 > a span{
+.lnb_bar_content ul .lnb1 > a .lnb1_title{
   width: calc(100% - 10px);
+  line-height: 1.2;
+}
+.lnb_bar_content ul .lnb1 > a .lnb1_title span{
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .lnb_bar_content ul .lnb1 > a .menu_arrow{
   display: block;
@@ -208,10 +219,18 @@
 
 /* lnb_bar_user__box */
 .lnb_bar_user__box{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 80px;
   padding: 0 5px;
   box-sizing: border-box;
+  background-color: var(--bg-default);
 }
 .lnb_bar_user__inner{
+  width: 100%;
   padding: 0 5px;
   box-sizing: border-box;
 }
@@ -274,6 +293,10 @@
   position: absolute;
   z-index: 100;
   left: 55px;
+}
+.lnb_bar__area.fold .lnb_bar_content ul .lnb1 > a .lnb1_title{
+  width: auto;
+  overflow: visible;
 }
 .lnb_bar__area.fold .lnb_bar_content ul .lnb1.fold_on .sub_menu,
 .lnb_bar__area.fold .lnb_bar_content ul .lnb1.fold_on .lnb1_title{
@@ -348,6 +371,13 @@
 .lnb_bar__area.fold .profile_info{
   display: none;
 }
+.lnb_bar__area.fold .nav_logo__box div .full_logo{
+  display: none;
+}
+.lnb_bar__area.fold .nav_logo__box div .short_logo{
+  display: block;
+}
+
 
 /* control__box - mobile */
 .nav_control__box{
@@ -606,6 +636,7 @@
   .lnb_bar__area.open .lnb_bar_content{
     overflow-y: auto;
     overflow-x: hidden;
+    max-height: calc(100% - 80px);
   }
   .lnb_bar__area .lnb_bar_content ul .lnb1 > a .menu_arrow,
   .lnb_bar__area .lnb_bar_content ul .lnb1 > a div,
@@ -638,6 +669,12 @@
     left: -260px;
     transition: left 0.3s ease;
   }
+  .lnb_bar__area.fold .nav_logo__box div .full_logo{
+    display: block;
+  }
+  .lnb_bar__area.fold .nav_logo__box div .short_logo{
+    display: none;
+  }
   .lnb_bar__area.open{
     width: 260px;
     left: 0;
@@ -648,9 +685,15 @@
   }
   .lnb_bar__area .lnb_bar_content{
     overflow-y: auto;
+    max-height: calc(100% - 217px);
+
+  }
+  .lnb_bar__area.open .lnb_bar_content{
+    max-height: calc(100% - 217px);
   }
   .lnb_bar__area.fold .lnb_bar_content{
     overflow-y: auto;
+    overflow-x: hidden;
   }
   .lnb_bar__area.fold .lnb_bar_content ul .lnb1 > a{
     width: 100%;
@@ -662,6 +705,10 @@
     display: block;
     position: relative;
     left: 0;
+  }
+  .lnb_bar__area.fold .lnb_bar_content ul .lnb1 > a .lnb1_title{
+    width: calc(100% - 10px);
+    overflow: hidden;
   }
   .lnb_bar__area.fold .lnb_bar_content ul .lnb1 .sub_menu{
     display: none;
@@ -693,6 +740,12 @@
   .lnb_bar__area.fold .lnb_bar_content ul .lnb1.fold_on .lnb1_title::before{
     display: none;
   }
+  .lnb_bar__area.fold .lnb_bar_content ul li .sub_menu li a{
+    padding: 0 12px 0 40px;
+  }
+  .lnb_bar__area.fold .lnb_bar_content ul li .sub_menu li a::before{
+    display: block;
+  }
   .lnb_bar__area.fold .lnb_bar_user{
     background-color: var(--neutral-lightest);
   }
@@ -720,6 +773,7 @@
   }
   .lnb_bar__area .lnb_bar__box{
     height: calc(100% - 115px);
+    max-height: none;
     background-color: var(--neutral-lightest);
     padding: 10px 0 0 0;
   }
@@ -729,6 +783,8 @@
     margin-bottom: 10px;
   }
   .lnb_bar_user__box{
+    display: block;
+    height: auto;
     padding: 15px 10px;
     background-color: var(--bg-default);
   }

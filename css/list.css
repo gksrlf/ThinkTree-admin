@@ -129,6 +129,13 @@
 .content .table__box table tbody tr:nth-of-type(even){
   background-color: var(--bg-default);
 }
+.content .table__box table tbody tr:first-of-type{
+  position: sticky;
+  z-index: 1;
+  top: 50px;
+  left: 0;
+}
+
 .content .table__box table tbody td{
   height: 50px;
   text-align: left;
