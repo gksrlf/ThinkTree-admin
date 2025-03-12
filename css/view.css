@@ -238,7 +238,8 @@
   left: 58px;
 }
 
-/* 셀렉트 박스 */
+
+/* 멀티 셀렉트 박스 */
 .multiselect {
   position: relative;
 }
@@ -247,7 +248,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 50px;
+  min-height: 50px;
   border: solid 1px var(--field-inactive-border);
   background-color: var(--field-inactive-bg);
   padding: 7px 20px;
@@ -354,23 +355,19 @@
   height: 16px;
   -webkit-mask-size: cover;
   mask-size: cover;
-  -webkit-transform: rotateX(-180deg);
-  transform: rotateX(-180deg);
-}
-.multiselect__header-arrow.up {
   -webkit-transform: rotateX(0);
   transform: rotateX(0);
 }
+.multiselect__header-arrow.up {
+  -webkit-transform: rotateX(-180deg);
+  transform: rotateX(-180deg);
+}
 .multiselect__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 10rem;
+  gap: 5px;
+  max-width: calc(100% - 16px);
 }
 .multiselect__content {
   position: absolute;
@@ -385,31 +382,14 @@
   z-index: 12;
   box-shadow:0 5px 10px 0 rgba(34,36,38,0.15);
 }
-.multiselect__content::-webkit-scrollbar {
-  width: 10rem;
-  height: 10rem;
-}
-.multiselect__content::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-.multiselect__content::-webkit-scrollbar-thumb {
-  background-color: transparent;
-  border: 1rem solid gray;
-  border-radius: 10rem;
-  -webkit-box-shadow: inset 0px 0px 10rem rgb(0, 0, 0);
-  box-shadow: inset 0px 0px 10rem rgb(0, 0, 0);
-  border: 2rem solid transparent;
-}
 .multiselect__content label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  width: calc(100% - 20px);
   padding: 5px 10px;
   cursor: pointer;
   box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .multiselect__content label::after {
   left: 10rem;
@@ -423,16 +403,35 @@
   height: 20px;
 }
 .multiselect .selected-badge {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
   padding: 5px 10px;
-  background-color: var(--bg-default);
-  color: var(--common-0);
-  border-radius: 22rem;
+  background-color: var(--brand-primary-default);
+  color: var(--button-text-filled-text);
+  border-radius: 30px;
+  gap: 5px;
 }
-
+.badge-remove{
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  background-image: var(--modal-close-btn-w);
+  background-size: 85%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-indent: -99999px;
+  border: none;
+  padding: 0;
+}
 .inp{
   display: flex;
   align-items: center;
+  margin-bottom: 5px;
+}
+.inp:last-of-type{
+  margin-bottom: 0;
 }
 
 /************ Responsive *************/
@@ -449,6 +448,11 @@
   }
   .contents_container .contents .content.content_wide .save__box {
     left: 58px;
+  }
+
+  /* 멀티 셀렉트 박스 */
+  .multiselect__header{
+    padding: 7px 15px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -590,5 +594,10 @@
   }
   .save__box button {
     height: 45px;
+  }
+
+  /* 멀티 셀렉트 박스 */
+  .multiselect__header{
+    padding: 7px 10px;
   }
 }
