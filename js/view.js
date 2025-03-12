@@ -52,22 +52,23 @@ const selectBox = () => {
 
 // 멀티셀렉트 체크상태 옵션 업데이트
 function updateSelectedOptions(e) {
-  const headerDiv = document.querySelector('.multiselect__header div');
+  const headerDiv = document.querySelector('.multiselect__text');
   // headerDiv.empty();
   const checkedBoxes = document.querySelectorAll('.multiselect .inp--checkbox input[type="checkbox"]:checked');
-
+  let badgeHtml = ''
   if (checkedBoxes !== null) {
     checkedBoxes.forEach(function(k) {
-
       const optionText = k.nextElementSibling.innerText;
-      const badgeHtml = `
+      badgeHtml += `
         <span class="selected-badge" data-id="${k.getAttribute('id')}">
           ${optionText}
           <button class="badge-remove" type="button">&times;</button>
         </span>
       `;
-      headerDiv.innerHTML = badgeHtml;
     });
+    if(badgeHtml) {
+      headerDiv.innerHTML = badgeHtml
+    }
   } else {
     headerDiv.innerHTML = '<span>선택하세요</span>';
   }
