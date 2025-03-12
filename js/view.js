@@ -76,17 +76,20 @@ const selectBox = () => {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  startDatePicker();
-  endDatePicker();
-  selectBox()
-
-
+const eventBind = () => {
   // 멀티셀렉트 헤더 클릭 이벤트
   document.querySelector('.multiselect__header').addEventListener('click',function(e) {
-    if (e.target.classList.contains('multiselect__header') || e.target.classList.contains('multiselect__header-arrow')) {
+    debugger
+    if (e.currentTarget.classList.contains('multiselect__header') || e.currentTarget.classList.contains('multiselect__header-arrow')) {
       document.querySelector('.multiselect__header-arrow').classList.add('up');
       // document.querySelector.next('.multiselect__content').slideToggle(100);
     }
   });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  startDatePicker();
+  endDatePicker();
+  selectBox()
+  eventBind()
 });
