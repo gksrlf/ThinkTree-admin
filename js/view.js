@@ -50,13 +50,24 @@ const selectBox = () => {
   updateSelectedOptions();
 }
 
+const removeBadge = () => {
+  // 뱃지 삭제 버튼 이벤트
+  document.querySelector('.badge-remove').addEventListener('click',  function(e) {
+    e.stopPropagation();
+    const badge = e.target.parentElement;
+    const checkboxId = badge.dataset.id;
+    document.querySelector(`#${checkboxId}`).checked = false
+    updateSelectedOptions();
+  });
+}
+
 // 멀티셀렉트 체크상태 옵션 업데이트
 function updateSelectedOptions(e) {
   const headerDiv = document.querySelector('.multiselect__text');
   // headerDiv.empty();
   const checkedBoxes = document.querySelectorAll('.multiselect .inp--checkbox input[type="checkbox"]:checked');
   let badgeHtml = ''
-  if (checkedBoxes !== null) {
+  if (checkedBoxes.length > 0) {
     checkedBoxes.forEach(function(k) {
       const optionText = k.nextElementSibling.innerText;
       badgeHtml += `
@@ -68,6 +79,7 @@ function updateSelectedOptions(e) {
     });
     if(badgeHtml) {
       headerDiv.innerHTML = badgeHtml
+      removeBadge()
     }
   } else {
     headerDiv.innerHTML = '<span>선택하세요</span>';

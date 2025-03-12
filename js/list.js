@@ -47,11 +47,13 @@ const tableHoverEvent = () => {
   });
 };
 
-(() => {
+const thema = (type) => {
+  document.documentElement.className = type
+}
 
-})()
 
 document.addEventListener("DOMContentLoaded", () => {
   tableHoverEvent();
   initDatePicker();
+  thema();
 });
