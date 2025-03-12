@@ -1,15 +1,15 @@
-.contents_container .contents .content{
+.contents_container .contents .content {
   width: calc(100% - 55px);
   padding: 0;
   transition: width 0.2s ease;
 }
 /* snb가 fold 되어 있을 때 content 넓이 조정정 */
-.contents_container .contents .content.content_wide{
+.contents_container .contents .content.content_wide {
   width: 100%;
 }
 
 /* view wrap */
-.view__wrap{
+.view__wrap {
   max-height: calc(100% - 100px);
   overflow-y: auto;
   padding: 25px;
@@ -17,7 +17,7 @@
 }
 
 /* th 필수 요소 표시 */
-.require_sign{
+.require_sign {
   margin-left: 5px;
 }
 /* input_form__box */
@@ -32,27 +32,27 @@
   padding: 30px;
   box-sizing: border-box;
 }
-.input_form__box input[type='text'],
-.input_form__box input[type='password']{
+.input_form__box input[type="text"],
+.input_form__box input[type="password"] {
   height: 50px;
   padding: 0 20px;
   box-sizing: border-box;
 }
-.input_form__box input[type='password']{
+.input_form__box input[type="password"] {
   padding-right: 50px;
 }
-.input_form__box .input_title{
+.input_form__box .input_title {
   display: inline-block;
   margin-bottom: 10px;
 }
 
 .input_form__box .input_item_box {
   display: flex;
-  gap:16px;
+  gap: 16px;
 }
 
 .input_item_box .select_label .err {
-  border : 1px solid var(--field-error-border);
+  border: 1px solid var(--field-error-border);
   background-color: var(--field-error-bg);
 }
 
@@ -63,15 +63,15 @@
   padding-left: 22px;
   margin-top: 8px;
 }
-.date_label{
+.date_label {
   width: 100%;
 }
-.date_label .date_box{
+.date_label .date_box {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.date_box .datepicker{
+.date_box .datepicker {
   max-width: 260px;
 }
 
@@ -126,42 +126,42 @@
   border-right: none;
   padding-right: 0;
 }
-.title_form_table input[type='text']{
+.title_form_table input[type="text"] {
   height: 50px;
   padding: 0 20px;
   box-sizing: border-box;
 }
 
 .title_form_table td ul.check_list,
-.title_form_table td ul.file_list{
+.title_form_table td ul.file_list {
   display: flex;
   flex-wrap: wrap;
 }
 
 /* title_form_table check_list */
-.title_form_table td ul.check_list{
+.title_form_table td ul.check_list {
   gap: 15px;
 }
-.title_form_table td ul.check_list li{
+.title_form_table td ul.check_list li {
   display: flex;
   align-items: center;
 }
 
 /* title_form_table file_list */
-.title_form_table td ul.file_list{
+.title_form_table td ul.file_list {
   gap: 10px;
 }
-.title_form_table td ul.file_list li{
+.title_form_table td ul.file_list li {
   position: relative;
   height: 40px;
 }
-.title_form_table td ul.file_list li:before{
+.title_form_table td ul.file_list li:before {
   position: absolute;
   z-index: 1;
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   background-image: var(--input-file-icon);
@@ -169,7 +169,7 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-.title_form_table td ul.file_list li a{
+.title_form_table td ul.file_list li a {
   position: relative;
   display: flex;
   justify-content: center;
@@ -183,7 +183,7 @@
   box-sizing: border-box;
   border-radius: 6px;
 }
-.title_form_table td ul.file_list li button{
+.title_form_table td ul.file_list li button {
   position: absolute;
   z-index: 3;
   top: 50%;
@@ -200,7 +200,7 @@
 }
 
 /* save__box */
-.save__box{
+.save__box {
   position: fixed;
   bottom: 0;
   left: 190px;
@@ -213,59 +213,46 @@
   height: 100px;
   box-sizing: border-box;
   background-color: var(--bg-default);
-  -webkit-box-shadow: 0 -4px 14px 0 rgba(0,0,0,0.06);
-  box-shadow: 0 -4px 14px 0 rgba(0,0,0,0.06);
+  -webkit-box-shadow: 0 -4px 14px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 -4px 14px 0 rgba(0, 0, 0, 0.06);
   transition: left 0.2s ease, width 0.2s ease;
 }
-.save__box.wide_mode{
+.save__box.wide_mode {
   left: 0;
   width: 100%;
 }
-.save__box button{
+.save__box button {
   width: 105px;
   height: 50px;
   font-size: 14px;
   font-weight: 500;
 }
 /* snb가 fold 되었을 때 저장/취소 버튼 영역 넓이 */
-.contents_container .contents .content.content_wide .save__box{
+.contents_container .contents .content.content_wide .save__box {
   width: calc(100% - 190px);
 }
 /* snb와 aside(lnb)가 모두 fold 되었을 때 저장/취소 버튼 영역 넓이 */
-.contents_container .contents.wide_mode .content.content_wide .save__box{
+.contents_container .contents.wide_mode .content.content_wide .save__box {
   width: calc(100% - 58px);
   left: 58px;
 }
-
 
 /* 셀렉트 박스 */
 .multiselect {
   position: relative;
 }
 .multiselect__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
-  min-height: 40rem;
-  padding: 10rem 5rem 10rem 10rem;
-  /*background-color: var(--white);*/
-  background-color: var(--common-100);
-  border-radius: 3rem;
-  /*border: 1px solid var(--black-20);*/
-  border: 1px solid var(--common-0);
+  height: 50px;
+  border: solid 1px var(--field-inactive-border);
+  background-color: var(--field-inactive-bg);
+  padding: 7px 20px;
+  border-radius: 4px;
   cursor: pointer;
-  --tw-shadow: 1rem 2rem 10rem -2rem rgba(0, 0, 0, 0.3);
-  /*--tw-shadow-colored: 1rem 2rem 10rem -2rem var(--tw-shadow-color);*/
-  --tw-shadow-colored: 1rem 2rem 10rem -2rem rgba(0,0,0,0);
-  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-sizing: border-box;
 }
 .multiselect__header::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.5);
@@ -354,20 +341,16 @@
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.multiselect__header:focus, .multiselect__header:hover {
+.multiselect__header:focus,
+.multiselect__header:hover {
   color: rgb(0, 0, 0);
-  border: 1rem solid rgba(0, 0, 0, 0.8);
 }
-.multiselect__header-arrow{
-  /*background-color: var(--black);*/
+.multiselect__header-arrow {
   background-color: var(--gray-5);
   -webkit-mask-image: var(--select-arrow);
-  /*mask-image: url("../img/icon/icon_menu_updown.svg");*/
   mask-image: var(--select-arrow);
-  width: 24rem;
-  height: 24rem;
-  min-width: 24rem;
-  min-height: 24rem;
+  width: 16px;
+  height: 16px;
   -webkit-mask-size: cover;
   mask-size: cover;
   -webkit-transform: rotateX(-180deg);
@@ -393,12 +376,9 @@
   overflow: auto;
   width: 100%;
   max-height: 190rem;
-  /*background-color: var(--white);*/
   background-color: var(--common-100);
-  border-radius: 3rem;
-  /*border: 1px solid var(--black-20);*/
-  border: 1px solid var(--common-0);
-  border-width: 0 1rem 1rem;
+  border-radius: 4px;
+  border: solid 1px var(--field-inactive-border);
   z-index: 12;
 }
 .multiselect__content::-webkit-scrollbar {
@@ -423,16 +403,14 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 10rem 10rem 10rem 32rem;
+  padding: 10px;
 }
 .multiselect__content label::after {
   left: 10rem;
 }
 .multiselect__content label:hover {
-  /*background-color: var(--form);*/
-  /*color: var(--white);*/
   background-color: var(--bg-default);
-  color: var(--common-100);
+  /* color: var(--common-100); */
 }
 .multiselect .selected-badge {
   display: inline-block;
@@ -443,95 +421,96 @@
   border-radius: 22rem;
 }
 
-
 /************ Responsive *************/
 /* tablet */
-@media screen and (max-width:1280px) {
+@media screen and (max-width: 1280px) {
   .save__box,
   .save__box.wide_mode,
   .contents_container .contents .content.content_wide .save__box,
-  .contents_container .contents.wide_mode .content.content_wide .save__box{
+  .contents_container .contents.wide_mode .content.content_wide .save__box {
     width: calc(100% - 55px);
   }
-  .save__box{
+  .save__box {
     left: 0;
   }
-  .contents_container .contents .content.content_wide .save__box{
+  .contents_container .contents .content.content_wide .save__box {
     left: 58px;
   }
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width: 1024px) {
   .input_form__box,
-  .title_form__box{
+  .title_form__box {
     padding: 20px 15px;
   }
-  .title_form_table th{
+  .title_form_table th {
     width: 80px;
   }
-  .title_form_table td{
+  .title_form_table td {
     padding: 15px;
   }
 }
 /* mobile */
-@media screen and (max-width:640px) {
-  .contents_container .contents .content{
+@media screen and (max-width: 640px) {
+  .contents_container .contents .content {
     width: 100%;
   }
   .save__box,
   .save__box.wide_mode,
   .contents_container .contents .content.content_wide .save__box,
-  .contents_container .contents.wide_mode .content.content_wide .save__box{
+  .contents_container .contents.wide_mode .content.content_wide .save__box {
     width: 100%;
   }
   .contents_container .contents .content.content_wide .save__box,
-  .contents_container .contents.wide_mode .content.content_wide .save__box{
+  .contents_container .contents.wide_mode .content.content_wide .save__box {
     left: 0;
   }
 
   /* view__wrap */
-  .view__wrap{
+  .view__wrap {
     max-height: calc(100% - 75px);
     padding: 15px;
   }
 
   /* input_form__box */
-  .input_form__box{
+  .input_form__box {
     gap: 20px;
   }
-  .input_form__box .input_item_box{
+  .input_form__box .input_item_box {
     flex-direction: column;
     gap: 20px;
   }
-  .input_form__box input[type='text'],
-  .input_form__box input[type='password'],
-  .input_item_box .select_label select{
+  .input_form__box input[type="text"],
+  .input_form__box input[type="password"],
+  .input_item_box .select_label select {
     height: 45px;
     padding: 0 10px;
   }
-  .input_form__box input[type='password']{
+  .input_form__box input[type="password"] {
     padding-right: 40px;
   }
-  .password__box button{
+  .password__box button {
     right: 10px;
   }
-  .input_item_box .text_label .search{
+  .input_item_box .text_label .search {
     padding-left: 45px;
     background-position: center left 10px;
   }
-  .input_form__box .search_box{
+  .input_form__box .search_box {
     gap: 10px;
   }
-  .input_btn__box{
+  .input_btn__box {
     width: 100%;
     gap: 8px;
   }
   .input_btn__box .search_btn,
-  .input_btn__box .delete_btn{
+  .input_btn__box .delete_btn {
     height: 45px;
     width: 50%;
   }
-  .date_box{flex-wrap: wrap;}
-  .date_box .datepicker{
+  .date_box {
+    flex-wrap: wrap;
+  }
+  .date_box .datepicker {
     width: calc(100% - 25px);
     max-width: none;
     padding: 0 10px;
@@ -539,47 +518,49 @@
 
   /* title_form__box */
   .title_form_table,
-  .title_form_table tbody{
+  .title_form_table tbody {
     display: block;
   }
-  .title_form_table tr{
+  .title_form_table tr {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 15px 0;
   }
-  .title_form_table tr:last-of-type{
+  .title_form_table tr:last-of-type {
     padding-bottom: 0;
   }
-  .title_form_table tr:not(:last-of-type){
+  .title_form_table tr:not(:last-of-type) {
     border-bottom: 1px solid var(--neutral-midium);
   }
-  .title_form_table th{
+  .title_form_table th {
     border: none;
     width: 100%;
   }
-  .title_form_table th br{display: none;}
-  .title_form_table td{
+  .title_form_table th br {
+    display: none;
+  }
+  .title_form_table td {
     width: 100%;
     height: auto;
     padding: 0;
     border: none;
   }
-  .title_form_table td:not(:last-of-type){
+  .title_form_table td:not(:last-of-type) {
     padding-bottom: 20px;
     border-bottom: 1px solid var(--neutral-midium);
   }
-  .title_form_table input[type='text']{
+  .title_form_table input[type="text"] {
     height: 45px;
     padding: 0 10px;
   }
-  .title_form_table td ul.file_list li{
+  .title_form_table td ul.file_list li {
     width: 100%;
   }
-  .title_form_table td ul.file_list li a{
+  .title_form_table td ul.file_list li a {
     justify-content: flex-start;
   }
-  .title_form_table td ul.file_list li a span{
+  .title_form_table td ul.file_list li a span {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -589,11 +570,11 @@
   }
 
   /* save__box */
-  .save__box{
+  .save__box {
     height: 75px;
     border-top: 1px solid var(--neutral-midium);
   }
-  .save__box button{
+  .save__box button {
     height: 45px;
   }
 }
