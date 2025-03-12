@@ -264,20 +264,45 @@
               </label>
             </div>
             <div class="input_item_box">
-              <label class="select_label w_quarter">
-                <span class="input_title">Label</span>
-                <select>
-                  <option>
-                    Text
-                  </option>
-                  <option>
-                    Text
-                  </option>
-                  <option>
-                  Text
-                </option>
-                </select>
-              </label>
+              <div style="width: 100%">
+                <!--    싱크트리 요청으로 추가된 셀렉트박스        -->
+                <div class="multiselect inp--required">
+                  <div class="multiselect__header">
+                    <div class="multiselect__text">
+                      <span>선택하세요</span>
+                    </div>
+                    <span class="multiselect__header-arrow"></span>
+                  </div>
+                  <div class="multiselect__content" style="display: none;">
+                    <div class="inp inp--checkbox">
+                      <input type="checkbox" id="baseId2_1" name="inputName1">
+                      <label for="baseId2_1">TT</label>
+                    </div>
+                    <div class="inp inp--checkbox">
+                      <input type="checkbox" id="baseId2_2" name="inputName1">
+                      <label for="baseId2_2">TDB</label>
+                    </div>
+                    <div class="inp inp--checkbox">
+                      <input type="checkbox" id="baseId2_3" name="inputName1">
+                      <label for="baseId2_3">LG</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!--              <label class="select_label w_quarter">-->
+<!--                <span class="input_title">Label</span>-->
+<!--                <select>-->
+<!--                  <option>-->
+<!--                    Text-->
+<!--                  </option>-->
+<!--                  <option>-->
+<!--                    Text-->
+<!--                  </option>-->
+<!--                  <option>-->
+<!--                  Text-->
+<!--                </option>-->
+<!--                </select>-->
+<!--              </label>-->
               <label class="text_label w_quarter">
                 <span class="input_title">Label</span>
                 <input type="text" placeholder="Placeholder">
@@ -507,7 +532,7 @@
 </div>
 </body>
 <!-- datepicker -->
-<script src="/node_modules/js-datepicker/dist/datepicker.min.js"></script>  
+<script src="/node_modules/js-datepicker/dist/datepicker.min.js"></script>
 <!-- view js -->
 <script src="/js/view.js"></script>
 <!-- aside js -->

@@ -45,7 +45,48 @@ const endDatePicker = () => {
   });
 };
 
+const selectBox = () => {
+  // 멀티샐렉트 로드
+  updateSelectedOptions();
+  // 멀티셀렉트 이벤트 핸들러
+  document.querySelector('.multiselect .inp--checkbox input[type="checkbox"]').addEventListener('change', function(e) {
+    updateSelectedOptions(e);
+  });
+
+  // 멀티셀렉트 체크상태 옵션 업데이트
+  function updateSelectedOptions(e) {
+    const headerDiv = document.querySelector('.multiselect__header div');
+    // headerDiv.empty();
+    const checkedBoxes = document.querySelector('.multiselect .inp--checkbox input[type="checkbox"]:checked');
+    debugger
+    if (checkedBoxes !== null) {
+      checkedBoxes.forEach(function() {
+        const optionText = e.target.currentTarget.next('label').text();
+        const badgeHtml = `
+          <span class="selected-badge" data-id="${e.target.currentTarget.attributes('id')}">
+            ${optionText}
+            <button class="badge-remove" type="button">&times;</button>
+          </span>
+        `;
+        headerDiv.append(badgeHtml);
+      });
+    } else {
+      headerDiv.innerHTML = '<span>선택하세요</span>';
+    }
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   startDatePicker();
   endDatePicker();
+  selectBox()
+
+
+  // 멀티셀렉트 헤더 클릭 이벤트
+  document.querySelector('.multiselect__header').addEventListener('click',function(e) {
+    if (e.target.classList.contains('multiselect__header') || e.target.classList.contains('multiselect__header-arrow')) {
+      document.querySelector('.multiselect__header-arrow').classList.add('up');
+      // document.querySelector.next('.multiselect__content').slideToggle(100);
+    }
+  });
 });
