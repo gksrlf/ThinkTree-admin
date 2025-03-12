@@ -55,10 +55,10 @@ function updateSelectedOptions(e) {
   const headerDiv = document.querySelector('.multiselect__header div');
   // headerDiv.empty();
   const checkedBoxes = document.querySelectorAll('.multiselect .inp--checkbox input[type="checkbox"]:checked');
-  debugger
+
   if (checkedBoxes !== null) {
     checkedBoxes.forEach(function(k) {
-      debugger
+
       const optionText = k.nextElementSibling.innerText;
       const badgeHtml = `
         <span class="selected-badge" data-id="${k.getAttribute('id')}">
@@ -76,7 +76,7 @@ function updateSelectedOptions(e) {
 const eventBind = () => {
   // 멀티셀렉트 헤더 클릭 이벤트
   document.querySelector('.multiselect__header').addEventListener('click',function(e) {
-    debugger
+
     if (e.currentTarget.classList.contains('multiselect__header') || e.currentTarget.classList.contains('multiselect__header-arrow')) {
       document.querySelector('.multiselect__header-arrow').classList.add('up');
       document.querySelector('.multiselect__content').style.display = 'block'
@@ -86,7 +86,7 @@ const eventBind = () => {
 
   // 멀티셀렉트 이벤트 핸들러
   document.querySelector('.multiselect .inp--checkbox input[type="checkbox"]').addEventListener('click', (e) => {
-    debugger
+
     updateSelectedOptions(e);
   });
 }
