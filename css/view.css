@@ -414,11 +414,14 @@
 }
 .multiselect .selected-badge {
   display: inline-block;
-  padding: 5rem 10rem;
-  /*background-color: var(--form);*/
+  padding: 5px 10px;
   background-color: var(--bg-default);
-  color: var(--common-100);
+  color: var(--common-0);
   border-radius: 22rem;
+}
+
+.inp{
+  display: flex;
 }
 
 /************ Responsive *************/
