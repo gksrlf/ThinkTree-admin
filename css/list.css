@@ -154,7 +154,6 @@
   width: 100%;
   height: auto;
   border: 1px solid var(--field-table-border);
-  background-color: var(--field-table-bg);
   padding: 7px 10px;
   box-sizing: border-box;
   border-radius: 4px;
@@ -168,7 +167,7 @@
   -moz-appearance:none; /*for firefox*/
   appearance:none;
   background: var(--select-arrow) no-repeat 95% 50%/12px auto;
-  background-color: var(--bg-default);
+  background-color: var(--field-inactive-bg);
   cursor: pointer;
 }
 .content .table__box table tbody td select:focus{
