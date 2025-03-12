@@ -34,7 +34,7 @@ input[type="checkbox"]:focus{
 }
 
 input[type="checkbox"]:checked {
-  background: var(--brand-primary-default) url("../img/btn_checkbox.svg") no-repeat center;
+  background: var(--brand-primary-default) var(--btn-checkbox) no-repeat center;
 }
 
 input[type="checkbox"] + label {

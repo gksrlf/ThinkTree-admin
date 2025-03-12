@@ -74,7 +74,9 @@ const init = () => {
 
 
 
-
+const thema = (type) => {
+  document.documentElement.className = type
+}
 
 (() => {
   init()

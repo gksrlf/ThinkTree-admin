@@ -104,6 +104,10 @@ const eventBind = () => {
   });
 }
 
+const thema = (type) => {
+  document.documentElement.className = type
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   startDatePicker();
   endDatePicker();

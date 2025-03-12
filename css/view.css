@@ -103,6 +103,7 @@
   text-align: left;
   line-height: 1.2;
   word-break: keep-all;
+  color: var(--neutral-default);
 }
 
 .title_form_table td {

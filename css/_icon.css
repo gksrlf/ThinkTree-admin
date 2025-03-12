@@ -189,6 +189,11 @@
   --icon-pop-success: url('../img/icon/icon_pop_success.svg');
   --icon-pop-warning: url('../img/icon/icon_pop_warning.svg');
   --icon-pop-error: url('../img/icon/icon_pop_error.svg');
+
+  /*  checkbox img  */
+  --icon-check-box-img-light : url('../img/btn_checkbox.svg');
+  --icon-check-box-img-pastel : url('../img/btn_checkbox_p.svg');
+  --icon-check-box-img-dark : url('../img/btn_checkbox_d.svg');
 }
 
 
@@ -291,6 +296,9 @@
   /* modal close */
   --modal-close-btn-w: var(--modal-close-btn-default);
   --modal-close-btn-d: var(--modal-close-btn-dark);
+
+  /*  checkbox img  */
+  --btn-checkbox : var(--icon-check-box-img-light);
 }
 
 :root.pastel {
@@ -388,6 +396,9 @@
   /* modal close */
   --modal-close-btn-w: var(--modal-close-btn-default);
   --modal-close-btn-d: var(--modal-close-btn-dark);
+
+  /*  checkbox img  */
+  --btn-checkbox : var(--icon-check-box-img-pastel);
 }
 
 :root.dark {
@@ -438,14 +449,14 @@
   --table-pdf: var(--table-pdf-dark);
 
   /* header 아이콘 */
-  --header-home: var(--header-home-pastel);
-  --header-arrow: var(--header-arrow-pastel);
-  --header-notify: var(--header-notify-pastel);
-  --header-notify-on: var(--header-notify-on-pastel);
-  --header-mail: var(--header-mail-pastel);
-  --header-language: var(--header-language-pastel);
-  --header-logout: var(--header-logout-pastel);
-  --header-screen: var(--header-screen-pastel);
+  --header-home: var(--header-home-dark);
+  --header-arrow: var(--header-arrow-dark);
+  --header-notify: var(--header-notify-dark);
+  --header-notify-on: var(--header-notify-on-dark);
+  --header-mail: var(--header-mail-dark);
+  --header-language: var(--header-language-dark);
+  --header-logout: var(--header-logout-dark);
+  --header-screen: var(--header-screen-dark);
 
   /* header 모바일 아이콘 */
   --header-mobile-menu: var(--header-menu-dark);
@@ -484,4 +495,7 @@
   /* modal close */
   --modal-close-btn-w: var(--modal-close-btn-default);
   --modal-close-btn-d: var(--modal-close-btn-default);
+
+  /*  checkbox img  */
+  --btn-checkbox : var(--icon-check-box-img-dark);
 }

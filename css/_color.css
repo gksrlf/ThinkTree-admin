@@ -276,7 +276,7 @@
   --button-hover-form-bg : var(--red-50);
   --button-disabled-outlined-bg : var(--gray-99);
   --button-tab-default-inactive-text : var(--gray-pink-900);
-  --button-tab-default-inactive-bg : var(--blue-100);
+  --button-tab-default-inactive-bg : var(--gray-pink-100);
   --button-tab-top-inactive-bg : var(--gray-pink-700);
   --button-tab-top-active-bg : var(--gray-pink-900);
   --button-disabled-outlined-border :var(--gray-90);
