@@ -51,13 +51,16 @@ const selectBox = () => {
 }
 
 const removeBadge = () => {
+  const targetEl = document.querySelectorAll('.badge-remove')
   // 뱃지 삭제 버튼 이벤트
-  document.querySelector('.badge-remove').addEventListener('click',  function(e) {
-    e.stopPropagation();
-    const badge = e.target.parentElement;
-    const checkboxId = badge.dataset.id;
-    document.querySelector(`#${checkboxId}`).checked = false
-    updateSelectedOptions();
+  targetEl.forEach(el => {
+  el.addEventListener('click',  function(e) {
+      e.stopPropagation();
+      const badge = e.target.parentElement;
+      const checkboxId = badge.dataset.id;
+      document.querySelector(`#${checkboxId}`).checked = false
+      updateSelectedOptions();
+    });
   });
 }
 
@@ -89,17 +92,18 @@ function updateSelectedOptions(e) {
 const eventBind = () => {
   // 멀티셀렉트 헤더 클릭 이벤트
   document.querySelector('.multiselect__header').addEventListener('click',function(e) {
-
-    if (e.currentTarget.classList.contains('multiselect__header') || e.currentTarget.classList.contains('multiselect__header-arrow')) {
+    if (!document.querySelector('.multiselect__header-arrow').classList.contains('up')) {
       document.querySelector('.multiselect__header-arrow').classList.add('up');
       document.querySelector('.multiselect__content').style.display = 'block'
       // document.querySelector.next('.multiselect__content').slideToggle(100);
+    } else {
+      document.querySelector('.multiselect__header-arrow').classList.remove('up');
+      document.querySelector('.multiselect__content').style.display = 'none'
     }
   });
 
   // 멀티셀렉트 이벤트 핸들러
   document.querySelector('.multiselect .inp--checkbox input[type="checkbox"]').addEventListener('click', (e) => {
-
     updateSelectedOptions(e);
   });
 }
