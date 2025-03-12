@@ -595,6 +595,7 @@
     height: 45px;
   }
 
+  /* 멀티 셀렉트 박스 */
   .multiselect__header{
     padding: 7px 10px;
   }
